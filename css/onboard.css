@@ -94,19 +94,195 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 header{
-    height:142px;
+    height:68px;
+   /* position:fixed;*/
+    background-color:#edefef;
+    width:100%;   
 }
 
 header .header-logo {
     float:left;
-    height:142px;
+    height:68px;
+    padding-left:95px;
+}
+
+header .header-logo img {
+    height:68px;
+    width:68px;
+
   }
 
 header a {
     float:right;
-    height:142px;
+    height:68px;
+    color:#e77824;
+    padding-top:32px;
+    padding-right:94px;
+   
 }
+
+section img{
+height:68px;
+width:68px;
+}
+
+/*Welcome Section */
+
+.welcome {
+    width:361px;
+    margin:0 auto;
+    text-align: center;
+}
+
+.welcome img {
+    width:342px;
+    height:165px;
+}
+
+/*.buttons {
+    border-radius: 100px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display:block;
+    width:321px;
+    padding:18px;
+}*/
+
+.welcome .signup{
+    background-color:#e77824;
+    display:block;
+    width:321px;
+    color:#fff;
+    margin:40px auto 28px;
+    border-radius: 100px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display:block;
+    padding:18px;
+}
+
+.welcome .subscription {
+    color:#ecba1d;
+    border: solid #ecba1d;   
+    margin:0 auto 55px;
+    display:block;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 100px;
+    width:321px;
+    padding:18px;
+}
+
+footer {
+    background-color: #e77824;
+    height:70px;
+    text-align: center;
+    margin-bottom:100px;
+}
+footer a, footer img {
+    display:block; 
+}
+
+footer a {
+    margin:22px 0 10px;
+    color:#fff;
+}
+
+footer img {
+    width:21px;
+    height:13px;
+    margin:0 auto;
+}
+/*Definition Section*/
+
+.definition{
+    width:453px;
+    margin:0 auto;
+
+}
+.definition img {
+    width:102px;
+    height:47px;
+}
+.definition b{
+    display:block;
+}
+
+.definition div {
+    float:left;
+    width:40%;
+}
+
+/*This is the line separator*/
+.orange_line {
+    width:835px;
+    margin:100px auto;
+    height:1px;
+    background-color: #e67824;
+}
+
+.about_beo {
+    width:465px;
+    margin:30px auto;
+    text-align: center;
+}
+
+.about_beo .container{
+    width:836px;
+}
+
+.about_beo article {
+    float:left;
+    width:238px;
+    margin-right:63px;
+}
+
+.about_beo article:last-child{
+    margin-right: 0px;
+}
+
+
+
+.about_beo .first img {
+    height:72px;
+    width:62px;
+} 
+
+.about_beo .first img {
+    height:72px;
+    width:62px;
+} 
+
+.about_beo .second img{
+    width:65px;
+    height:65px;
+}
+
+.about_beo .third img{
+    width:63px;
+    height:61px;
+}
+
+.honeycomb {
+    width:520px;
+    margin:85px auto;
+    text-align: center;
+}
+
+
 
 
 
