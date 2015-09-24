@@ -94,8 +94,19 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+header{
+    height:142px;
+}
 
+header .header-logo {
+    float:left;
+    height:142px;
+  }
 
+header a {
+    float:right;
+    height:142px;
+}
 
 
 
