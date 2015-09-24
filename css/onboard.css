@@ -106,6 +106,16 @@ textarea {
   clear: both;
 }
 
+
+.container {
+    width:81.64%;
+    max-width:1024px;
+    margin:0 auto;
+}
+
+html, body {
+    width:100%;
+}
 header{
     height:68px;
    /* position:fixed;*/
@@ -116,7 +126,7 @@ header{
 header .header-logo {
     float:left;
     height:68px;
-    padding-left:95px;
+    /*padding-left:95px;*/
 }
 
 header .header-logo img {
@@ -130,7 +140,7 @@ header a {
     height:68px;
     color:#e77824;
     padding-top:32px;
-    padding-right:94px;
+  /*  padding-right:94px;*/
    
 }
 
@@ -166,8 +176,8 @@ width:68px;
     display:block;
     width:321px;
     color:#fff;
-    margin:40px auto 28px;
     border-radius: 100px;
+    margin:40px auto 28px;
     text-decoration: none;
     text-transform: uppercase;
     display:block;
@@ -234,47 +244,32 @@ footer img {
     background-color: #e67824;
 }
 
-.about_beo {
-    width:465px;
+.container2{
     margin:30px auto;
     text-align: center;
+    width:466px;
+    margin-bottom:62px;
 }
 
-.about_beo .container{
-    width:836px;
-}
 
-.about_beo article {
+
+.course article{
     float:left;
-    width:238px;
     margin-right:63px;
+    width:236px;
+    background-color:#eceeee;
+    border-radius: 10px;
+    height:236px;
+    font-size:12px;
+    text-align: center;
+
 }
 
-.about_beo article:last-child{
-    margin-right: 0px;
+.course article:last-child{
+    margin-right:0;
 }
 
-
-
-.about_beo .first img {
-    height:72px;
-    width:62px;
-} 
-
-.about_beo .first img {
-    height:72px;
-    width:62px;
-} 
-
-.about_beo .second img{
-    width:65px;
-    height:65px;
-}
-
-.about_beo .third img{
-    width:63px;
-    height:61px;
-}
+/*Honeycomb section*/
 
 .honeycomb {
     width:520px;
