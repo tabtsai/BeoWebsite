@@ -98,6 +98,7 @@ textarea {
 
 * {
   box-sizing: border-box;
+
 }
 
 .clearfix:after {
@@ -107,20 +108,29 @@ textarea {
 }
 
 
-.container {
-    width:81.64%;
+body, html {
     max-width:1024px;
+    width:100%;
     margin:0 auto;
 }
 
-html, body {
-    width:100%;
-}
+
+      
+.main_container {     
+      margin:0 auto;
+      width:82%;
+      height:68px;
+    }
+
 
 header{
-    height:68px; 
+   /* height:68px; */
+    top:0;
     background-color:#edefef;
-    width:100%;   
+    max-width:1024px;
+    width:100%;
+    margin:0 auto;
+    position:fixed;   
             .header-logo {
                 float:left;
                 height:68px;  
@@ -242,8 +252,11 @@ header{
 /*About Beo*/
 
  .entire_width{
-    /*width:100%;*/
+    width:100%;
+}
     .about_beo {
+        margin:0 auto;
+        width:82%;
         h2 {
             text-align: center;
         }
@@ -254,21 +267,22 @@ header{
             float:left;
             margin-right:63px;
             width:236px;
+            padding:20px;
             background-color:#eceeee;
             border-radius: 10px;
-            height:236px;
+           
             font-size:12px;
             text-align: center;
             &:last-child {
                 margin-right:0;
             }
-            & img {
+            img {
                 width: 65px;
                 height: 75px;
             }
         }
     }
-}
+
  
 /*Honeycomb section*/
 
@@ -289,7 +303,7 @@ header{
             }
 
 
-.learning {
+/*.learning {
      .container;
 
     h2 {
@@ -303,7 +317,7 @@ header{
         width:835.16px;
         height:398.402px;     
     }
-}
+}*/
 
 aside {
     height:645px;

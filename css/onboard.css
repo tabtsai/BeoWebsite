@@ -85,19 +85,25 @@ textarea {
   display: table;
   clear: both;
 }
-.container {
-  width: 81.64%;
+body,
+html {
   max-width: 1024px;
+  width: 100%;
   margin: 0 auto;
 }
-html,
-body {
-  width: 100%;
+.main_container {
+  margin: 0 auto;
+  width: 82%;
+  height: 68px;
 }
 header {
-  height: 68px;
+  /* height:68px; */
+  top: 0;
   background-color: #edefef;
+  max-width: 1024px;
   width: 100%;
+  margin: 0 auto;
+  position: fixed;
 }
 header .header-logo {
   float: left;
@@ -213,32 +219,36 @@ header a {
 }
 /*About Beo*/
 .entire_width {
-  /*width:100%;*/
+  width: 100%;
 }
-.entire_width .about_beo h2 {
+.about_beo {
+  margin: 0 auto;
+  width: 82%;
+}
+.about_beo h2 {
   text-align: center;
 }
-.entire_width .about_beo .answer {
+.about_beo .answer {
   margin: 30px auto;
   text-align: center;
   width: 466px;
   margin-bottom: 62px;
   display: block;
 }
-.entire_width .about_beo article {
+.about_beo article {
   float: left;
   margin-right: 63px;
   width: 236px;
+  padding: 20px;
   background-color: #eceeee;
   border-radius: 10px;
-  height: 236px;
   font-size: 12px;
   text-align: center;
 }
-.entire_width .about_beo article:last-child {
+.about_beo article:last-child {
   margin-right: 0;
 }
-.entire_width .about_beo article img {
+.about_beo article img {
   width: 65px;
   height: 75px;
 }
@@ -262,25 +272,21 @@ header a {
   height: 340px;
   width: 642px;
 }
-.learning {
-  width: 81.64%;
-  max-width: 1024px;
-  margin: 0 auto;
-}
-.learning h2 {
-  text-align: center;
-}
-.learning p {
-  margin: 30px auto;
-  text-align: center;
-  width: 466px;
-  margin-bottom: 62px;
-  display: block;
-}
-.learning img {
-  width: 835.16px;
-  height: 398.402px;
-}
+/*.learning {
+     .container;
+
+    h2 {
+        text-align: center;
+
+    }
+    p {
+        .container2;
+    }
+    img {
+        width:835.16px;
+        height:398.402px;     
+    }
+}*/
 aside {
   height: 645px;
   width: 100%;
