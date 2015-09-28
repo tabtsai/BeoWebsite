@@ -120,19 +120,20 @@ h2 {
 }
 body,
 html {
-  max-width: 1024px;
+  /* max-width:1024px;*/
   width: 100%;
   margin: 0 auto;
 }
 .main_container {
   margin: 0 auto;
-  width: 80.762%;
+  /*width:80.762%;*/
+  width: 827.0028px;
   height: 68px;
 }
 header {
   top: 0;
   background-color: #edefef;
-  max-width: 1024px;
+  /*max-width:1024px;*/
   width: 100%;
   margin: 0 auto;
   color: #E67725;
@@ -167,7 +168,8 @@ header {
 }
 main {
   top: 68px;
-  width: 80.762%;
+  /*width:80.762%;*/
+  width: 827.0028px;
   margin: 0 auto 45px;
 }
 .main_left,
@@ -176,6 +178,7 @@ main {
   height: 595px;
   border-radius: 10px;
 }
+/*Left Section*/
 /* margin-top:45px;*/
 .main_left {
   float: left;
@@ -193,6 +196,7 @@ main {
     position:relative;
     z-index: 200;
 }*/
+/*Profile Image and Achievements*/
 .main_left figure img {
   width: 120.218px;
   height: 110px;
@@ -256,7 +260,7 @@ main {
             }
 }*/
 /*===================================
-test for bottom carrot for top right nav*/
+ Bottom carrot for top right nav*/
 .main_right .right_top_nav li {
   float: left;
   width: 33.3333%;
@@ -265,6 +269,9 @@ test for bottom carrot for top right nav*/
   text-transform: uppercase;
   cursor: pointer;
   color: #E9EBEA;
+  font-family: "universe-condensed";
+  font-stretch: condensed;
+  font-size: 16px;
 }
 .main_right .right_top_nav li:first-child {
   border-top-left-radius: 10px;
@@ -280,9 +287,10 @@ test for bottom carrot for top right nav*/
 /* Required for Down Triangle */
 .main_right .right_top_nav .active {
   color: #e67824;
-  border-left: solid #e67824;
-  border-right: solid #e67824;
-  border-bottom: solid #e67824;
+  border: solid #e67824;
+  /*border-left:solid #e67824;
+    border-right:solid #e67824;
+    border-bottom:solid #e67824;*/
 }
 .active:before,
 .active:after {
@@ -312,10 +320,11 @@ test for bottom carrot for top right nav*/
   position: relative;
   margin-bottom: 32px;
   padding: 17.5px;
-  border-bottom: 3px solid #BDBDBD;
+  /* border-bottom:3px solid #BDBDBD;*/
   background: #CBCBCB;
   width: 190px;
-  border-right: solid #BDBDBD;
+  /* border-right: solid #BDBDBD;*/
+  border: solid #BDBDBD;
   text-align: center;
 }
 .completed_nav {
@@ -323,10 +332,11 @@ test for bottom carrot for top right nav*/
   position: relative;
   margin-bottom: 32px;
   padding: 17.5px;
-  border-bottom: 3px solid #BDBDBD;
+  /* border-bottom:3px solid #BDBDBD;*/
   background: #CBCBCB;
   width: 190px;
-  border-right: solid #BDBDBD;
+  /* border-right: solid #BDBDBD;*/
+  border: solid #BDBDBD;
   /* border-left: solid #e67824;*/
   text-align: center;
 }
@@ -335,8 +345,9 @@ test for bottom carrot for top right nav*/
   position: relative;
   margin-bottom: 32px;
   padding: 17.5px;
-  border-bottom: 3px solid #BDBDBD;
-  border-left: solid #BDBDBD;
+  /*border-bottom:3px solid #BDBDBD;*/
+  /*border-left: solid #BDBDBD;*/
+  border: solid #BDBDBD;
   background: #CBCBCB;
   width: 190px;
   /* border-left: solid #e67824;*/
@@ -434,6 +445,7 @@ test for bottom carrot for top right nav*/
   -webkit-transform: rotate(135deg);
 }
 /*=====================================*/
+/*Container Class for the right content*/
 .size_container {
   width: 82.7586%;
   margin: 0 auto;
@@ -479,18 +491,22 @@ test for bottom carrot for top right nav*/
   text-transform: uppercase;
   font-size: 12px;
 }
+/*Footer*/
 footer {
-  max-width: 1024px;
+  /* max-width: 1024px;*/
   width: 100%;
   margin: 0 auto;
   background-color: #767676;
 }
 footer .bottom {
   margin: 0 auto;
-  width: 80.762%;
+  /*width:80.762%;*/
+  width: 827.0028px;
   height: 68px;
   text-decoration: none;
   color: #eceeee;
+  font-family: "universe-condensed";
+  font-size: 13px;
 }
 footer p {
   display: block;

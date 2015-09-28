@@ -101,9 +101,12 @@ textarea {
 h1 {
   font-family: "universe-black";
   font-size: 37px;
+  font-weight: black;
+  color: #E77826;
 }
 a {
   font-family: "universe-black";
+  font-size: black;
 }
 p {
   font-family: "serif-roman";
@@ -112,6 +115,15 @@ p {
 h2 {
   font-family: "universe-condensed";
   font-size: 37px;
+  color: #767676;
+}
+b {
+  font-size: 34px;
+  color: #e67824;
+}
+h3 {
+  font-family: "universe-condensed";
+  font-size: 18px;
 }
 .clearfix:after {
   content: "";
@@ -120,13 +132,14 @@ h2 {
 }
 body,
 html {
-  max-width: 1024px;
+  /*max-width:1024px;*/
   width: 100%;
   margin: 0 auto;
 }
 .main_container {
   margin: 0 auto;
-  width: 80.762%;
+  /*width:80.762%;*/
+  width: 827.0028px;
   height: 68px;
 }
 header {
@@ -134,7 +147,7 @@ header {
   /* height:68px; */
   top: 0;
   background-color: #edefef;
-  max-width: 1024px;
+  /*  max-width: 1024px;*/
   width: 100%;
   margin: 0 auto;
   position: fixed;
@@ -154,6 +167,7 @@ header {
   padding-top: 32px;
   font-size: 14.23px;
   text-decoration: none;
+  font-weight: bold;
 }
 .button {
   display: block;
@@ -178,7 +192,7 @@ header {
 }
 .welcome {
   top: 0;
-  width: 361px;
+  width: 388px;
   margin: 0 auto;
   text-align: center;
   /*.signup{
@@ -218,6 +232,7 @@ header {
   margin: 18px 0 10px;
   color: #fff;
   text-decoration: none;
+  text-transform: uppercase;
 }
 .learn_more img {
   width: 21px;
@@ -231,13 +246,18 @@ header {
 }
 .term {
   float: left;
-  width: 30%;
-  margin-right: 11px;
+  /*width:30%;*/
+  width: 34%;
+  margin-left: 60px;
   text-align: center;
+}
+#beo_upsidedown {
+  font-size: 34px;
 }
 .define {
   float: right;
-  width: 67%;
+  /*width:67%;*/
+  width: 50%;
 }
 .orange_line {
   width: 835px;
@@ -258,7 +278,8 @@ header {
 }
 .about_beo {
   margin: 0 auto;
-  width: 80.762%;
+  /*width:80.762%;*/
+  width: 827.0028px;
 }
 .about_beo h2 {
   text-align: center;
@@ -309,7 +330,8 @@ header {
   width: 642px;
 }
 .learning {
-  width: 83.34%;
+  /*width:83.34%;*/
+  width: 820.0028px;
   margin: 0 auto 130px;
 }
 .learning h2 {
@@ -324,7 +346,8 @@ header {
   display: block;
 }
 .learning img {
-  width: 860.16px;
+  border: 2px solid;
+  width: 818.16px;
   height: 398.402px;
 }
 aside {
