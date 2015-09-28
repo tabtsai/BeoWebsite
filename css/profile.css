@@ -80,6 +80,39 @@ textarea {
 * {
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "universe-black";
+  scr: url("../fonts/UniveBla.pfb");
+}
+@font-face {
+  font-family: "universe-condensed";
+  scr: url("../fonts/UniveCon.pfb");
+}
+@font-face {
+  font-family: "serif-roman";
+  scr: url("../fonts/UniveBla.pfb");
+}
+@font-face {
+  font-family: "serif-light";
+  scr: url("../fonts/UniveBla.pfb");
+}
+/*General*/
+h1 {
+  font-family: "universe-black";
+  font-size: 37px;
+}
+a {
+  font-family: "universe-black";
+}
+p,
+figcaption {
+  font-family: "serif-roman";
+  font-size: 13px;
+}
+h2 {
+  font-family: "universe-condensed";
+  font-size: 37px;
+}
 .clearfix:after {
   content: "";
   display: table;
@@ -93,7 +126,7 @@ html {
 }
 .main_container {
   margin: 0 auto;
-  width: 82%;
+  width: 80.762%;
   height: 68px;
 }
 header {
@@ -102,7 +135,9 @@ header {
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
-  position: fixed;
+  color: #E67725;
+  cursor: pointer;
+  /*    position:fixed; */
 }
 .header_logo {
   float: left;
@@ -111,27 +146,372 @@ header {
   height: 68px;
   width: 68px;
 }
-.header_nav li {
+.header_nav {
   float: right;
+}
+.header_nav li {
   display: inline-block;
   margin-right: 35px;
-  /*  &:first-child{
-            margin-left:0;
-        }*/
 }
-.main_container {
-  margin: 0 auto;
-  width: 82%;
+.header_nav li:last-child {
+  margin-right: 0;
 }
+.header_nav img {
+  width: 39px;
+  height: 36px;
+  margin-right: 6px;
+}
+.header_nav a {
+  color: #E67725;
+  text-decoration: none;
+}
+main {
+  top: 68px;
+  width: 80.762%;
+  margin: 0 auto 45px;
+}
+.main_left,
+.main_right {
+  margin-top: 45px;
+  height: 595px;
+  border-radius: 10px;
+}
+/* margin-top:45px;*/
 .main_left {
   float: left;
-  width: 28%;
-  margin-right: 20px;
+  width: 235px;
   list-style: none;
+  background-color: #eceeee;
+  padding: 10px;
 }
+.main_left:last-child {
+  margin-right: none;
+}
+/*.main_left .profile_picture {
+    background:url(../img/profile_picture_honeycomb.svg) center center no-repeat fixed;
+    background-size: cover;
+    position:relative;
+    z-index: 200;
+}*/
+.main_left figure img {
+  width: 120.218px;
+  height: 110px;
+  margin: 0 auto;
+  z-index: -1;
+}
+.main_left figcaption {
+  margin-bottom: 25px;
+  color: #b3b3b3;
+}
+.main_left figcaption img {
+  width: 22px;
+  height: 20px;
+}
+.main_left figcaption h3 {
+  font-size: 27px;
+  margin: 13px auto;
+  color: #3f4040;
+}
+.main_left ul {
+  margin: 0 auto;
+  padding: 0;
+}
+.main_left ul li {
+  /*margin:0 auto; */
+  float: left;
+  width: 33.3333%;
+  list-style: none;
+  margin-bottom: 20px;
+}
+.main_left ul li img {
+  width: 70px;
+  height: 58px;
+}
+/*Right Section*/
 .main_right {
   float: right;
+  width: 580px;
+  background-color: #eceeee;
+}
+.main_right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/*.main_right .right_top_nav li {
+    float:left;
+    width:33.3333%;
+    margin-bottom: 20px;
+    margin-left:0px;
+    background-color: #cbcbcb;
+        &:first-child{    
+        border-top-left-radius: 10px;
+        }
+        &:last-child{
+        border-top-right-radius: 10px;
+        };
+            img {
+                width:25px;
+                height:25px;
+            }
+}*/
+/*===================================
+test for bottom carrot for top right nav*/
+.main_right .right_top_nav li {
+  float: left;
+  width: 33.3333%;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #E9EBEA;
+}
+.main_right .right_top_nav li:first-child {
+  border-top-left-radius: 10px;
+}
+.main_right .right_top_nav li:last-child {
+  border-top-right-radius: 10px;
+}
+.main_right .right_top_nav li img {
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+}
+/* Required for Down Triangle */
+.main_right .right_top_nav .active {
+  color: #e67824;
+  border-left: solid #e67824;
+  border-right: solid #e67824;
+  border-bottom: solid #e67824;
+}
+.active:before,
+.active:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom: 0;
+}
+.active:before {
+  bottom: -23px;
+  left: 76px;
+  /* If 1px darken stroke slightly */
+  border-top-color: #e67824;
+  border-width: 22px;
+}
+.active:after {
+  bottom: -19px;
+  left: 79px;
+  border-top-color: #CBCBCB;
+  border-width: 19px;
+}
+.in_progress_nav {
+  /* Styling block element, not required */
+  position: relative;
+  margin-bottom: 32px;
+  padding: 17.5px;
+  border-bottom: 3px solid #BDBDBD;
+  background: #CBCBCB;
+  width: 190px;
+  border-right: solid #BDBDBD;
+  text-align: center;
+}
+.completed_nav {
+  /* Styling block element, not required */
+  position: relative;
+  margin-bottom: 32px;
+  padding: 17.5px;
+  border-bottom: 3px solid #BDBDBD;
+  background: #CBCBCB;
+  width: 190px;
+  border-right: solid #BDBDBD;
+  /* border-left: solid #e67824;*/
+  text-align: center;
+}
+.bookmarks_nav {
+  /* Styling block element, not required */
+  position: relative;
+  margin-bottom: 32px;
+  padding: 17.5px;
+  border-bottom: 3px solid #BDBDBD;
+  border-left: solid #BDBDBD;
+  background: #CBCBCB;
+  width: 190px;
+  /* border-left: solid #e67824;*/
+  text-align: center;
+}
+/*=====================================*/
+/*This is for the second navigation right and left carrots */
+/*.in_progress*/
+.main_right .right_content nav .active2 {
+  background-color: #e67824;
+  color: #eceeee;
+}
+.main_right .right_content nav .active2 div:after {
+  background-color: #e67824;
+}
+.right_content nav .courses_project_nav li div p {
+  margin-top: 5px;
+}
+.right_content .courses_project_nav {
+  list-style: none;
+  padding: 0;
+  width: 220px;
+  margin: 20px auto 35px;
+}
+.right_content .courses_project_nav ul {
+  margin: 0 auto;
+}
+.right_content .courses_project_nav li {
+  float: left;
   width: 50%;
+  color: #bdbcbc;
+  height: 32px;
+  cursor: pointer;
+}
+.square1 {
+  width: 110px;
+  border-top: solid #E67725;
+  border-bottom: solid #E67725;
+  height: 35px;
+  top: 30px;
+  text-align: center;
+}
+.square2 {
+  width: 110px;
+  border-top: solid #E67725;
+  border-left: solid #E67725;
+  border-bottom: solid #E67725;
+  height: 35px;
+  text-align: center;
+  position: relative;
+}
+.right_triangle {
+  margin-left: 15px;
+  width: 100px;
+  border: 0px solid #E67725;
+  padding: 4px;
+  position: relative;
+  min-height: 40px;
+}
+.right_triangle:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -30px;
+  right: -8px;
+  /*width changes the thickness of the shape*/
+  width: 21px;
+  height: 21px;
+  /* this is what color you want to change when active*/
+  border-right: 4px solid #E67725;
+  border-bottom: 4px solid #E67725;
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.left_triangle {
+  margin-left: -15px;
+  width: 100px;
+  border: 0px solid #E67725;
+  padding: 4px;
+  position: relative;
+  min-height: 40px;
+}
+.left_triangle:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -30px;
+  right: 72px;
+  /*width changes the thickness of the shape*/
+  width: 21px;
+  height: 21px;
+  border-right: 4px solid #E67725;
+  border-bottom: 4px solid #E67725;
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(135deg);
+}
+/*=====================================*/
+.size_container {
+  width: 82.7586%;
+  margin: 0 auto;
+}
+.size_container li {
+  float: left;
+  width: 45%;
+  margin-right: 35px;
+}
+.size_container li:last-child {
+  margin-right: 0;
+}
+.size_container img {
+  width: 231.2px;
+  height: 206.6px;
+  margin-bottom: 45px;
+}
+.bookmarks section h3 {
+  color: #e67824;
+}
+.test {
+  fill: #E67725;
+}
+/*The other nav*/
+/*.main_right .right_content .courses_project_nav {
+    width:220px;
+    height:35px;
+    margin:35px auto;
+    border:solid;
+    text-align: center;
+    padding:1px;
+        li {
+            float:left;
+            width:50%;
+        }
+}*/
+.main_right .right_content .search {
+  padding: 10px;
+  background-color: #39a5e1;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 100px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+footer {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #767676;
+}
+footer .bottom {
+  margin: 0 auto;
+  width: 80.762%;
+  height: 68px;
+  text-decoration: none;
+  color: #eceeee;
+}
+footer p {
+  display: block;
+  float: left;
+}
+footer ul {
+  float: right;
+}
+footer ul li {
+  display: inline-block;
+}
+footer ul a {
+  text-decoration: none;
+  color: #eceeee;
+}
+/*.in_progress,*/
+.progress_projects,
+.bookmarks,
+.completed_projects,
+.completed {
+  display: none;
 }
 /* ==========================================================================
    Helper classes

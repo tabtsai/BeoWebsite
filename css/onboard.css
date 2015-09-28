@@ -98,10 +98,12 @@ textarea {
   scr: url("../fonts/UniveBla.pfb");
 }
 /*General*/
-h1,
-a {
+h1 {
   font-family: "universe-black";
   font-size: 37px;
+}
+a {
+  font-family: "universe-black";
 }
 p {
   font-family: "serif-roman";
@@ -124,7 +126,7 @@ html {
 }
 .main_container {
   margin: 0 auto;
-  width: 82%;
+  width: 80.762%;
   height: 68px;
 }
 header {
@@ -256,7 +258,7 @@ header {
 }
 .about_beo {
   margin: 0 auto;
-  width: 82%;
+  width: 80.762%;
 }
 .about_beo h2 {
   text-align: center;
@@ -369,7 +371,7 @@ aside .grey_logo {
   font-family: "universe-condensed";
   font-size: 13px;
   background-color: #767676;
-  width: 82%;
+  width: 80.762%;
   margin: 0 auto;
 }
 .bottom p {

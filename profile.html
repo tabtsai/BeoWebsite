@@ -24,23 +24,31 @@
                     <ul>
                         <li><a href="#">HONEYCOMB</a></li>
                         <li><a href="#">FORUM</a></li>
-                        <li><a href="#"><img src= "#" alt="">Riley1992</a></li>
+                        <li><a href="#"><img src="img/header_profile_honeycomb.svg" alt="">Riley1992</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
-        <main class="main_container clearfix">
+        <main class= "clearfix">
 
 <!--INTRODUCTION -->    
-
-            <section class="main_left clearfix">  <!--aside?-->  
-                <figure> <!--figure?--> 
-                    <figcaption>Riley1992</figcaption>
+       
+            <section class="main_left clearfix"> 
+                <figure class="clearfix"> <!-- figure?  -->
+                    <div class="profile_picture"><img src="img/profile_picture_honeycomb.svg" alt="#">
+                    </div>
+                    <figcaption>
+                        <h3>Riley1992</h3>
+                        <img src="img/achievements.svg">
+                       ACHIEVEMENTS
+                    </figcaption>
                 </figure>
+               
+
                 <ul>
                     <li>
-                        <img src="img/lessons_bagde.svg">
+                        <img src="img/lessons_badge.svg">
                     </li>
                     <li>
                         <img src="img/layer_master_badge.svg">
@@ -57,58 +65,76 @@
 <!--MAIN CONTENT-->        
 
             <article class="main_right">
-                <nav>
+                <nav class="right_top_nav clearfix">
                     <ul>
-                        <li class = "active"><img src="#" alt="">In progress</li>
-                        <li><img src="#" alt="">completed</li>
-                        <li><img src="#" alt="">bookmarks</li>
+                        <li class ="in_progress_nav active"><img src="img/pencil_profile.svg" alt="">In progress</li>
+                        <li class="completed_nav"><img src="img/checkmark_complete.svg" alt="">completed</li>
+                        <li class="bookmarks_nav "><img src="img/bookmark.svg" alt="">bookmarks</li>
                     </ul>
                 </nav>
 
 <!--IN PROGRESS-->
 
-       
+            <div class="right_content">
                 <ul>
 <!-- Page 1 of the progress page -->        
-                    <li>    
+                    <li class="in_progress">    
                     <!--SMALL NAV-->   
-                        <nav>
-                            <ul>
-                                <li class = "active">Courses</li>
-                                <li>Projects</li>
-                            </ul>
-                        </nav>
-    <!-- Course Page -->                
-                            <ul>    
-                                <li>
+
+            <nav>
+              <ul class="courses_project_nav clearfix">
+                  <li class ="courses_nav active2"> 
+                    <div class="square1">
+                    <p>Courses</p>
+                    </div>
+                  <div class="left_triangle"></div>
+                  </li>
+                  <li class="projects_nav">
+                    <div class="square2"> 
+                    <p>Projects</p>
+                    </div>
+                 <div class="right_triangle"></div>  
+                  </li>
+               </ul>
+            </nav>
+
+                     <!-- Course Page -->                
+                            <ul>   
+                            <!-- this class resizes images and contains honeycomb cards --> 
+                                <li class="size_container">
                                      <!--COURSES-->
                                     <ul>
                                         <li>
-                                            <h4>Adobe Illustrator Basics</h4>
+                                            <img src="img/honeycomb_card_progress1.svg" alt="#">
+
+                                         <!--    <h4>Adobe Illustrator Basics</h4>
                                             <p>Illustrator is a vector drawing program.  It is often used to draw illustrations, cartoons, diagrams, charts and logos</p>
-                                            <div></div><!--Progress bar-->
-                                            <ul>
+                                            <div></div> -->
+                                            <!--Progress bar-->
+                                         <!--    <ul>
                                                 <li><a href="#"></a></li>
                                                 <li><a href="#"></a></li>
-                                            </ul>
+                                            </ul> -->
                                         </li>
                                         <li>
-                                            <h4>Typography in Depth</h4>
+                                            <img src="img/honeycomb_card_progress2.svg" alt="#">
+                                         <!--    <h4>Typography in Depth</h4>
                                             <p>After you've learned the basics of typography, there is much more to learn to become a knowledgeable and experienced designer.</p>
-                                            <div></div><!--Progress bar-->
+                                            <div></div>Progress bar
                                             <ul>
                                                 <li><a href="#"></a></li>
                                                 <li><a href="#"></a></li>
-                                            </ul>
+                                            </ul> -->
                                         </li>
                                     </ul>
-                                    <a href="#">Search for more courses</a>
+                                    <a class="search" href="#">Search for more courses</a>
                                 </li>
                                 
-                                    <!--PROJECTS-->
-                                <li>
+                        <!--PROJECTS-->
+                                <li class= "progress_projects size_container">
                                     <ul>
                                         <li>
+                                            <img src="img/honeycomb_progress_card_projects.svg" alt="#">
                                             <!--Removed project item, because it is also in the complete section-->
                                         </li>
                                     </ul>
@@ -120,52 +146,68 @@
 
 
                 <!--COMPLETED-->     
-                    <li>                                         
+                    <li class="completed">                                         
                   <!--SMALL NAV-->
-                        <nav>
-                            <ul>
-                                <li class= "active">Courses</li>
-                                <li>Projects</li>
-                            </ul>
-                        </nav>
+            <nav>
+              <ul class="courses_project_nav clearfix">
+                  <li class ="courses_nav active2"> 
+                    <div class="square1">
+                    <p>Courses</p>
+                    </div>
+                  <div class="left_triangle"></div>
+                  </li>
+                  <li class="projects_nav">
+                    <div class="square2"> 
+                    <p>Projects</p>
+                    </div>
+                 <div class="right_triangle"></div>  
+                  </li>
+               </ul>
+            </nav>
+
                             <ul>
                                 <!-- Completed Courses -->
-                                <li>        
-
+                                <li class="size_container">        
                                      <!--COURSES-->
                                     <ul>
                                         <li>
-                                            <h4>Adobe Photoshop Basics</h4>
+                                            <img src="img/honeycomb_completed_card_courses1.svg" alt="#">
+
+
+<!--                                             <h4>Adobe Photoshop Basics</h4>
                                             <p>Photoshop is an essential tool in the creative realm.  From editing photos to making beautiful compositions, it is a grea tool!</p>
                                             <span>2 bades earned</span>
                                             <ul>
                                                 <li><a href="#"><img src="#" alt=""></a></li>
-                                                <li><a href="#"><img src="#" alt=""></a></li>
-                                            </ul>
+                                                <li><a href="#"><img src="#" alt=""></a><</li>/ul> -->
                                         </li>
                                         <li>
-                                            <h4>Adobe InDesign Basics</h4>
+                                            <img src="img/honeycomb_completed_card_courses2.svg" alt="#">
+                                            <!-- <h4>Adobe InDesign Basics</h4>
                                             <p>Adobe InDesign is a great tool to create works such as posters, flyers, brochures, magaines, newspapers and books.</p>
                                             <span>2 badges earned</span>
                                             <ul>
                                                 <li><a href="#"><img src="#" alt=""></a></li>
-                                                <li><a href="#"><img src="#" alt=""></a></li>
-                                            </ul>
+                                                <li><a href="#"><img src="#" alt=""></a> </li>
+                                                     </ul> -->
                                         </li>
                                     </ul>
                                 </li>
                                     <!--PROJECTS-->
-                                <li>
+                                <li class="completed_projects size_container">
                                     <ul>
                                         <li>
-                                            <h4>Design an Icon</h4>
+                                            <img src="img/honeycomb_completed_card_projects.svg" alt="#">
+                                           <!--  <h4>Design an Icon</h4>
                                             <p>Icons are essential in all aspects of design.  In this project, you can use illustrator to create an icon of your own</p>
                                             <span>1 badge earned</span>
                                             <ul>
                                                 <li><a href="#"><img src="#" alt=""></a></li>
                                                 <li><a href="#"><img src="#" alt=""></a></li>
                                             </ul>
-                                            <div><img src="#" alt=""></div> <!--new message - position absolute-->
+                                            <div><img src="#" alt=""></div>
+
+                                             --> <!--new message - position absolute-->
                                         </li>
                                     </ul> 
                                 </li>
@@ -175,23 +217,26 @@
 
                 <!--BOOKMARKS--> 
 
-                    <li>  
+                    <li class="bookmarks size_container">  
                         <section>
-                             <h2>You haven't booked marked anything yet. </h2>
-                             <h2>Check ot all our courses to start bookmarking </h2>
-                             <a href="#">Search for more courses</a>
+                             <h3>You haven't booked marked anything yet. </h3>
+                             <h3>Check ot all our courses to start bookmarking </h3>
+                             <a class="search" href="#">Search for more courses</a>
                          </section>
                     </li>
-                </ul>    
+                </ul>
+            </div>    
 
 </article>
 
-        </main>
-        <footer>
-            <p>Beo 2014</p>
+</main>
+    <footer>
+        <div class="bottom">
+            <p>&copy;Beo 2014</p>
             <ul>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Terms of Use</a></li>
                 <li><a href="#">About</a></li>
             </ul>
-        </footer> 
+        </div>
+    </footer> 
