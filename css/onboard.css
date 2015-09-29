@@ -82,38 +82,40 @@ textarea {
 }
 /*fonts*/
 @font-face {
-  font-family: "universe-black";
-  scr: url("../fonts/UniveBla.pfb");
+  font-family: 'SerifRom';
+  src: url('fonts/SerifRom.eot');
+  src: url('fonts/SerifRom.eot') format('embedded-opentype'), url('fonts/SerifRom.woff2') format('woff2'), url('../fonts/SerifRom.woff') format('woff'), url('fonts/SerifRom.ttf') format('truetype'), url('fonts/SerifRom.svg#SerifRom') format('svg');
 }
 @font-face {
-  font-family: "universe-condensed";
-  scr: url("../fonts/UniveCon.pfb");
+  font-family: 'SerifLigIta';
+  src: url('../fonts/SerifLigIta.eot');
+  src: url('fonts/SerifLigIta.eot') format('embedded-opentype'), url('fonts/SerifLigIta.woff2') format('woff2'), url('../fonts/SerifLigIta.woff') format('woff'), url('fonts/SerifLigIta.ttf') format('truetype'), url('fonts/SerifLigIta.svg#SerifLigIta') format('svg');
 }
 @font-face {
-  font-family: "serif-roman";
-  scr: url("../fonts/UniveBla.pfb");
+  font-family: 'UniveBla';
+  src: url('fonts/UniveBla.eot');
+  src: url('fonts/UniveBla.eot') format('embedded-opentype'), url('fonts/UniveBla.woff2') format('woff2'), url('../fonts/UniveBla.woff') format('woff'), url('fonts/UniveBla.ttf') format('truetype'), url('fonts/UniveBla.svg#UniveBla') format('svg');
 }
 @font-face {
-  font-family: "serif-light";
-  scr: url("../fonts/UniveBla.pfb");
+  font-family: 'UniveCon';
+  src: url('fonts/UniveCon.eot');
+  src: url('fonts/UniveCon.eot') format('embedded-opentype'), url('fonts/UniveCon.woff2') format('woff2'), url('../fonts/UniveCon.woff') format('woff'), url('fonts/UniveCon.ttf') format('truetype'), url('fonts/UniveCon.svg#UniveCon') format('svg');
 }
 /*General*/
-h1 {
-  font-family: "universe-black";
-  font-size: 37px;
-  font-weight: black;
-  color: #E77826;
-}
+/*h1 {
+    font-family:"UniveBla";
+    font-size:37px;
+    color:#E77826;
+}*/
 a {
-  font-family: "universe-black";
-  font-size: black;
+  font-family: "UniveBla";
 }
 p {
-  font-family: "serif-roman";
+  font-family: "SerifRom";
   font-size: 13px;
 }
 h2 {
-  font-family: "universe-condensed";
+  font-family: "UniveBla";
   font-size: 37px;
   color: #767676;
 }
@@ -122,7 +124,7 @@ b {
   color: #e67824;
 }
 h3 {
-  font-family: "universe-condensed";
+  font-family: "UniveCon";
   font-size: 18px;
 }
 .clearfix:after {

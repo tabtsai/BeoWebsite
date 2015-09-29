@@ -99,6 +99,12 @@ textarea {
   box-sizing: border-box;
 }
 
+
+.clearfix:after {
+    content:"";
+    display: table;
+    clear:both;
+}
 @font-face {
     font-family: 'SerifRom';
     src: url('fonts/SerifRom.eot');
@@ -144,7 +150,7 @@ textarea {
 
 h1 {
     font-family:"UniveBla";
-    font-size:37px;
+    font-size:25px;
 }
 a {
     font-family:"UniveBla";
@@ -173,13 +179,15 @@ body, html {
     margin:0 auto;
 }
 
+
 .main_container {
     margin:0 auto;
     /*width:80.762%;*/
     width:827.0028px;
-    height:68px;
+   /* height:68px;*/
 
 }
+
 
 header{
     top:0;
@@ -235,8 +243,7 @@ main {
      border-radius: 10px;
 }
 
-/*Left Section*/
-/* margin-top:45px;*/
+
 .main_left {
     float:left;
     width:235px;
@@ -246,61 +253,26 @@ main {
     &:last-child{
         margin-right:none;
     }
-}
-
-/*.main_left .profile_picture {
-    background:url(../img/profile_picture_honeycomb.svg) center center no-repeat fixed;
-    background-size: cover;
-    position:relative;
-    z-index: 200;
-}*/
-
-/*Profile Image and Achievements*/
-
-.main_left figure img {
-    width:120.218px;
-    height:110px;
-    margin:0 auto;
-    z-index: -1;
-}
-
-.main_left figcaption {
-    margin-bottom:25px;
-    color:#b3b3b3;
     img {
-        width:22px;
-        height:20px;
-    }
-    h3 {
-        font-size:27px;
-        margin: 13px auto;
-        color:#3f4040;
+        width:19.05px;
+        height:23.25px;
     }
 }
+
+
 
 .main_left ul {
-    margin:0 auto;
-    padding:0;
-}
-.main_left ul li{ 
-    /*margin:0 auto; */ 
+    li {
     float:left;
-    width:33.3333%;
-    list-style: none;
-    margin-bottom:20px;
-        img {
-            width:70px;
-            height:58px;
-        }
+    width:50%;
+    }
 }
-
-/*Right Section*/
-
 
 .main_right {
     float:right;
     width:580px;
     background-color: #eceeee;
+   /* overflow:scroll;*/
     ul {
         list-style: none;
         padding:0;
@@ -310,31 +282,13 @@ main {
 
 
 
-/*.main_right .right_top_nav li {
-    float:left;
-    width:33.3333%;
-    margin-bottom: 20px;
-    margin-left:0px;
-    background-color: #cbcbcb;
-        &:first-child{    
-        border-top-left-radius: 10px;
-        }
-        &:last-child{
-        border-top-right-radius: 10px;
-        };
-            img {
-                width:25px;
-                height:25px;
-            }
-}*/
+/*=========================================
 
-
-/*===================================
- Bottom carrot for top right nav*/
+Carrot Nav Menu*/
 
 .main_right .right_top_nav li {
     float:left;
-    width:33.3333%;
+    width:50%;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -355,6 +309,8 @@ main {
                 margin-right:8px;
             }
 }
+
+
 
 
 
@@ -380,7 +336,7 @@ main {
 
 .active:before {
     bottom: -23px;
-    left: 76px;
+    left: 124px;
 
     /* If 1px darken stroke slightly */
     border-top-color: #e67824;
@@ -389,12 +345,12 @@ main {
 
   .active:after {
     bottom: -19px;
-    left: 79px;
+    left: 127px;
     border-top-color: #CBCBCB;
     border-width: 19px;
   }
 
-.in_progress_nav {
+.gallery_nav {
 
     /* Styling block element, not required */
     position: relative;
@@ -408,7 +364,7 @@ main {
     text-align:center;
   }
 
-.completed_nav {
+.messages_nav {
 
     /* Styling block element, not required */
     position: relative;
@@ -423,189 +379,242 @@ main {
     text-align:center;
   }
 
-  .bookmarks_nav {
+/*=====================================================*/
 
-    /* Styling block element, not required */
-    position: relative;
-    margin-bottom: 32px;
-    padding: 17.5px;
-    /*border-bottom:3px solid #BDBDBD;*/
-    /*border-left: solid #BDBDBD;*/
-    border:solid #BDBDBD;
-    background: #CBCBCB;
-    width:190px;
-   /* border-left: solid #e67824;*/
-    text-align:center;
-  }
- 
-/*=====================================*/
-/*This is for the second navigation right and left carrots */ 
-/*.in_progress*/ 
-.main_right .right_content nav .active2 {
-    background-color:#e67824;
-    color:#eceeee;
-        div {
-        &:after {
-            background-color:#e67824;
+/*right gallery section*/
+
+/*.content {
+    overflow: scroll;
+}*/
+
+.gallery_content {
+     overflow: scroll;
+     width:523px;
+     margin:0 auto;
+    /* height:510px;*/
+    height:400px;
+        p {
+            display:inline;
+            margin:0;
+            padding-right:2px;
+            font-size: 11px;
         }
+}
+
+
+
+
+/*each projects*/
+.gallery_content .project_images li {
+    float:left;
+    width: 31%;
+    margin-right:15px;
+    margin-bottom:25px;
+   /* padding-top:5px;*/
+    padding:5px 5px;
+    background-color:#fff;  
+    &:nth-child(3n+3) {
+        margin-right:0;
     }
 }
 
-.right_content nav .courses_project_nav li div p{
-  margin-top:5px;
+/*each project images*/
+
+.content .gallery_content img {
+    width:152.181px;
+    height:114.136px;
+    display:block;
+    margin:0 auto;
 }
 
-.right_content .courses_project_nav {
-  list-style:none;
-  padding:0;
-  width:220px;
-  margin:20px auto 35px;
-    ul {
-        margin:0 auto;
+/*heart and bubbletext image*/
+.project_images .right li img {
+            width:12px;
+            height:12px;
+            display:inline;
+            padding-right:3px;
+        }
+
+/*project profile image*/
+.project_images .caption_contain .left img {
+        width:20px;
+        height:20px;
+        display:inline;
+    }
+
+/*stats*/
+.gallery_content .project_images .caption_contain .right{
+            float:right;
+            width:44%;
+            margin-right:-5px;
+             li {
+                float:left;
+                width:50%;
+                padding:0;
+                margin:0;
+             }
+        }
+.gallery_content .project_images .caption_contain .left {
+        float:left;
+        width:50%;
+}
+
+/*===========================================*/
+
+/*Messages Page*/
+
+.message_container {
+    width:533px;
+    margin:0 auto;
+}
+
+.top_left_section {
+    float:left;
+    width:40%;
+        img {
+            width:195px;
+            height:146px;
+        }
+}
+
+.top_right_section {
+    float:right;
+    width:60%;
+        h1{
+        margin:0;
     }
 }
 
-.right_content .courses_project_nav li {
-  float:left;
-  width:50%;
-  color:#bdbcbc;
-  height:32px;
-  cursor:pointer;
+.user_feedback {
+    float:left;
+        li {
+            width:155px;
+            height:55px;
+            margin:0 auto 5px;
+            background-color: #BDBBBC;
+
+        }
+        span {
+            display:block;
+            font-size:12px;
+        }
 }
 
-.square1 {
-  width:110px;
-  border-top: solid #E67725;
-  border-bottom:solid #E67725;
-  height:35px;
-  top:30px;
-  text-align:center;
+/*=====================================
+feedback navigation*/
+
+.user_feedback li {
+    width: 155px;
+    background: #FFFFFF;
+   /* border: 1px solid #CAD5E0;*/
+    padding: 4px;
+    position: relative;
+    min-height: 55px;
+    /*border:1px solid #CAD5E0; */
 }
 
-.square2 {
-  width:110px;
-  border-top: solid #E67725;
-  border-left: solid #E67725;
-  border-bottom:solid #E67725;
-  height:35px;
+
+
+.active2:after {
+content: '';
+display: block;
+position: absolute;
+top: 12px;
+left:144px;
+width: 25px;
+height: 25px; 
+    background: #fff;
+    border-left:6px solid #eceeee;
+    border-top:6px solid #eceeee;
+ -moz-transform:rotate(-135deg);
+  -webkit-transform:rotate(135deg);
+}
+
+
+
+
+
+
+/*.square {
+  width:155px;
+  border: solid #E67725;
+
+  height:55px;
   text-align:center;
   position:relative;
 }
 
 
-.right_triangle {
+
+.square {
     margin-left: 15px;
-    width: 100px;
+    width: 148px;
+    background: #FFFFFF;
     border: 0px solid #E67725;
     padding: 4px;
     position: relative;
     min-height: 40px;
-}
+}*/
 
-.right_triangle:after {
+/*.square:after {
 content: '';
 display: block;
 position: absolute;
-top:-30px;
-right:-8px;
-  /*width changes the thickness of the shape*/
-width: 21px; 
-height: 21px; 
- /* this is what color you want to change when active*/
-    border-right:4px solid #E67725;
-    border-bottom:4px solid #E67725;
+top:-45px;
+right:-3px;
+  width changes the fattest of the shape
+width: 25px; 
+height: 25px; 
+  this is what color you want to change when active
+    background: #fff;
+    border-right:3px solid #EDEFEE;
+    border-bottom:3px solid #EDEFEE;
  -moz-transform:rotate(-45deg);
   -webkit-transform:rotate(-45deg);
-}
-
-
-
-.left_triangle {
-    margin-left: -15px;
-    width: 100px;
-    border: 0px solid #E67725;
-    padding: 4px;
-    position: relative;
-    min-height: 40px;
-}
-
-.left_triangle:after {
-content: '';
-display: block;
-position: absolute;
-top:-30px;
-right:72px;
-  /*width changes the thickness of the shape*/
-width: 21px; 
-height: 21px; 
-    
-    border-right:4px solid #E67725;
-    border-bottom:4px solid #E67725;
- -moz-transform:rotate(-45deg);
-  -webkit-transform:rotate(135deg);
-}
-
-/*=====================================*/
-
-
-
-/*Container Class for the right content*/
-.size_container {
-    width:82.7586%;
-    margin:0 auto;
-    li {
-        float:left;
-        width:45%;
-        margin-right:35px;
-        &:last-child {
-            margin-right:0;
-        }
-    }
-    img {
-        width:231.2px;
-        height:206.6px;
-        margin-bottom:45px;
-    }
-}
-
-.bookmarks section h3 {
-    color:#e67824;
-}
-
-
-
-.test {
-    fill:#E67725;
-}
-
-/*The other nav*/
-
-/*.main_right .right_content .courses_project_nav {
-    width:220px;
-    height:35px;
-    margin:35px auto;
-    border:solid;
-    text-align: center;
-    padding:1px;
-        li {
-            float:left;
-            width:50%;
-        }
 }*/
 
 
+/*=============================================*/
 
-.main_right .right_content .search {
-    padding:10px;
-    background-color: #39a5e1;
-    color:#fff;
-    text-decoration: none;
-    border-radius: 100px;
-    text-transform: uppercase;
-    font-size: 12px;
+.content_feedback{
+    float:right;
+    width:69%;
+    background-color:#FFF;
+    overflow:scroll;
+  /*  height:500px;*/
+    li {
+        margin-left:15px;
+        display:none;
+    }
 }
 
-/*Footer*/
+
+.content_feedback .active3 {
+    display:block;
+}
+
+.content_feedback div {
+    img {
+        float:left;
+        display:block;
+        width:50%;
+    }
+    p {
+        float:right;
+        width:50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
     
@@ -644,21 +653,9 @@ footer ul {
 
 
 
-
-
-
-/*.in_progress,*/ .progress_projects, .bookmarks, .completed_projects , .completed{
+/*.messages */   .gallery_content {
     display:none;
 }
-
-
-
-
-
-
-
-
-
 
 
 

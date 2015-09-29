@@ -12,12 +12,13 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+         <link rel="stylesheet" href="css/projects.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
 <!--HEADER--> 
     
-        <header>
+   <!--      <header>
             <div><img src="#" alt=""></div>
             <nav class="header_nav">
                 <ul>
@@ -26,217 +27,323 @@
                     <li><a href="#"><img src= "#" alt="">Riley1992</a></li>
                 </ul>
             </nav>
+        </header> -->
+
+       <header>
+            <div class="main_container clearfix">
+                <div class="header_logo"><img src="img/logo_s.svg" alt=""></div>
+                <nav class="header_nav">
+                    <ul>
+                        <li><a href="#">HONEYCOMB</a></li>
+                        <li><a href="#">FORUM</a></li>
+                        <li><a href="#"><img src="img/header_profile_honeycomb.svg" alt="">Riley1992</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
-        <main>
+        <main class="clearfix">
 
 <!--Project Info-->    
             <!-- Introductory -->
-            <section>  
+            <section class="main_left">  
                 <time> completed a month ago</time>
                 <h1>Design an Icon</h1>
-                <img src="#" alt=""><span>beginner level</span>
+                <img src="img/bee.svg" alt=""><span>beginner level</span>
                 <p>Iconography is the science of identifcation, description, classification, and interpretation of symbols, themes, and subject matter in the visual arts.  Icons serve as an important visual aid in any graphical communication.  Their primary function is to serve as a common visual language, removing the possibility of open interpretation or ambiguity.</p>
                 <p>In this project, you will be designing a set of icons of your choice.  If you're not sure what topic to create icons for, here are some possible topics.</p>
                 <ul>
-                    <li>sports</li>
-                    <li>space</li>
-                    <li>ocean</li>
-                    <li>food</li>
-                    <li>education</li>
-                    <li>medical</li>
-                    <li>travel</li>
-                    <li>animals</li>
+                    <li>Sports</li>
+                    <li>Education</li>
+                    <li>Space</li>
+                    <li>Medical</li>
+                    <li>Ocean</li>
+                    <li>Travel</li>
+                    <li>Food</li>
+                    <li>Animals</li>
                 </ul>
             </section>
 
 <!--PROFILE DASHBOARD-->        
         <!-- main content -->
-            <article>
-                <nav>
+            <article class="main_right">
+                <nav class="right_top_nav clearfix">
                     <ul>
-                        <li class = "active"><img src="#" alt="">Gallery</li>
-                        <li><img src="#" alt="">Messages
+                        <li class="gallery_nav active"><img src="#" alt="">Gallery</li>
+                        <li class="messages_nav"><img src="#" alt="">Messages
                             <div></div><!--message alert-->  
                         </li>
                     </ul>
                 </nav>
 
 <!--Gallery-->
+        <nav class="content">
             <ul>    
-                <li>
-                    <ul><!--should these be lists or articles?-->
+                <li class="gallery_content">   
+                    <ul class="project_images"><!--should these be lists or articles?-->
                         <li>
-                            <img src="#" alt="">
-                            <div>
+                            <img src="img/project1_image.svg" alt="">
+                        <div class="caption_contain">  
+                            <div class="left">  
                                 <img src="#" alt="">
                                 <p>You</p>
                             </div>
-                            <ul>
+                        
+                            <ul class="right">
                                 <li><p>85</p><img src="#" alt=""></li>
                                 <li><p>4</p><img src="#" alt=""></li>
                             </ul>
+                        </div>   
+                    
+                    
                         </li>
+                        
                         <li>
-                            <img src="#" alt="">
-                            <div>
-                                <img src="#" alt="">
+                            <img src="img/project2_image.svg" alt="">
+                        <div class="caption_contain">
+                                
+                                <div class="left">
+                                <img src="img/project_profile_img.svg" alt="">
                                 <p>Andy117</p>
-                            </div>
-                            <ul>
-                                <li><p>120</p><img src="#" alt=""></li>
-                                <li><p>27</p><img src="#" alt=""></li>
+                                </div>
+                      
+                            <ul class="right">
+                                <li><p>120</p><img src="img/gallery_favorite_heart.svg" alt=""></li>
+                                <li><p>27</p><img src="img/gallery_comment_bubble.svg" alt=""></li>
                             </ul>
+                        
+                        </div>
+                       
+                        </li>
+                         <li>
+                            <img src="img/project3_image.svg" alt="">
+                        <div class="caption_contain">
+                                
+                                <div class="left">
+                                <img src="img/project_profile_img.svg" alt="">
+                                <p>Andy117</p>
+                                </div>
+                      
+                            <ul class="right">
+                                <li><p>120</p><img src="img/gallery_favorite_heart.svg" alt=""></li>
+                                <li><p>27</p><img src="img/gallery_comment_bubble.svg" alt=""></li>
+                            </ul>
+                        
+                        </div>
+                       
+                        </li>
+
+                          <li>
+                            <img src="img/project4_image.svg" alt="">
+                        <div class="caption_contain">
+                                
+                                <div class="left">
+                                <img src="img/project_profile_img.svg" alt="">
+                                <p>Andy117</p>
+                                </div>
+                      
+                            <ul class="right">
+                                <li><p>120</p><img src="img/gallery_favorite_heart.svg" alt=""></li>
+                                <li><p>27</p><img src="img/gallery_comment_bubble.svg" alt=""></li>
+                            </ul>
+                        
+                        </div>
+                       
+                        </li>
+                      <li>
+                            <img src="img/project5_image.svg" alt="">
+                        <div class="caption_contain">
+                                
+                                <div class="left">
+                                <img src="img/project_profile_img.svg" alt="">
+                                <p>Andy117</p>
+                                </div>
+                      
+                            <ul class="right">
+                                <li><p>120</p><img src="img/gallery_favorite_heart.svg" alt=""></li>
+                                <li><p>27</p><img src="img/gallery_comment_bubble.svg" alt=""></li>
+                            </ul>
+                        
+                        </div>
+                       
+                        </li>                                                                     
+                          <li>
+                            <img src="img/project6_image.svg" alt="">
+                        <div class="caption_contain">
+                                
+                                <div class="left">
+                                <img src="img/project_profile_img.svg" alt="">
+                                <p>Andy117</p>
+                                </div>
+                      
+                            <ul class="right">
+                                <li><p>120</p><img src="img/gallery_favorite_heart.svg" alt=""></li>
+                                <li><p>27</p><img src="img/gallery_comment_bubble.svg" alt=""></li>
+                            </ul>
+                        
+                        </div>
+                       
+                        </li>
+                          <li>
+                            <img src="img/project7_image.svg" alt="">
+                        <div class="caption_contain">
+                                
+                                <div class="left">
+                                <img src="img/project_profile_img.svg" alt="">
+                                <p>Andy117</p>
+                                </div>
+                      
+                            <ul class="right">
+                                <li><p>120</p><img src="img/gallery_favorite_heart.svg" alt=""></li>
+                                <li><p>27</p><img src="img/gallery_comment_bubble.svg" alt=""></li>
+                            </ul>
+                        
+                        </div>
+                       
+                        </li>
+                          <li>
+                            <img src="img/project8_image.svg" alt="">
+                        <div class="caption_contain">
+                                
+                                <div class="left">
+                                <img src="img/project_profile_img.svg" alt="">
+                                <p>Andy117</p>
+                                </div>
+                      
+                            <ul class="right">
+                                <li><p>120</p><img src="img/gallery_favorite_heart.svg" alt=""></li>
+                                <li><p>27</p><img src="img/gallery_comment_bubble.svg" alt=""></li>
+                            </ul>
+                        
+                        </div>
+                       
                         </li>
                         <li>
-                            <img src="#" alt="">
-                            <div>
-                                <img src="#" alt="">
-                                <p>SportMan</p>
-                            </div>
-                            <ul>
-                                <li><p>119</p><img src="#" alt=""></li>
-                                <li><p>35</p><img src="#" alt=""></li>
+                            <img src="img/project9_image.svg" alt="">
+                        <div class="caption_contain">
+                                
+                                <div class="left">
+                                <img src="img/project_profile_img.svg" alt="">
+                                <p>Andy117</p>
+                                </div>
+                      
+                            <ul class="right">
+                                <li><p>120</p><img src="img/gallery_favorite_heart.svg" alt=""></li>
+                                <li><p>27</p><img src="img/gallery_comment_bubble.svg" alt=""></li>
                             </ul>
+                        
+                        </div>
+                       
                         </li>
-                        <li>
-                            <img src="#" alt="">
-                            <div>
-                                <img src="#" alt="">
-                                <p>Artsy229</p>
-                            </div>
-                            <ul>
-                                <li><p>165</p><img src="#" alt=""></li>
-                                <li><p>19</p><img src="#" alt=""></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <img src="#" alt="">
-                            <div>
-                                <img src="#" alt="">
-                                <p>SportGal</p>
-                            </div>
-                            <ul>
-                                <li><p>119</p><img src="#" alt=""></li>
-                                <li><p>35</p><img src="#" alt=""></li>
-                            </ul>
-                        </li>                                                                      
-                        <li>
-                            <img src="#" alt="">
-                            <div>
-                                <img src="#" alt="">
-                                <p>BeoMan88</p>
-                            </div>
-                            <ul>
-                                <li><p>105</p><img src="#" alt=""></li>
-                                <li><p>12</p><img src="#" alt=""></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <img src="#" alt="">
-                            <div>
-                                <img src="#" alt="">
-                                <p>Eater8288</p>
-                            </div>
-                            <ul>
-                                <li><p>209</p><img src="#" alt=""></li>
-                                <li><p>45</p><img src="#" alt=""></li>
-                            </ul>
-                        </li>       
-                        <li>
-                            <img src="#" alt="">
-                            <div>
-                                <img src="#" alt="">
-                                <p>TravelinMan</p>
-                            </div>
-                            <ul>
-                                <li><p>177</p><img src="#" alt=""></li>
-                                <li><p>27</p><img src="#" alt=""></li>
-                            </ul>
-                        </li> 
-                        <li>
-                            <img src="#" alt="">
-                            <div>
-                                <img src="#" alt="">
-                                <p>You</p>
-                            </div>
-                            <ul>
-                                <li><p>145</p><img src="#" alt=""></li>
-                                <li><p>18</p><img src="#" alt=""></li>
-                            </ul>
-                        </li> 
 <!--This is 9 gallery items, no info for items below-->
-                        <li>
-                            <img src="#" alt="">
-                            <div>
-                                <img src="#" alt="">
-                                <p>You</p>
-                            </div>
-                            <ul>
-                                <li><p>85</p><img src="#" alt=""></li>
-                                <li><p>4</p><img src="#" alt=""></li>
+                          <li>
+                            <img src="img/project2_image.svg" alt="">
+                        <div class="caption_contain">
+                                
+                                <div class="left">
+                                <img src="img/project_profile_img.svg" alt="">
+                                <p>Andy117</p>
+                                </div>
+                      
+                            <ul class="right">
+                                <li><p>120</p><img src="img/gallery_favorite_heart.svg" alt=""></li>
+                                <li><p>27</p><img src="img/gallery_comment_bubble.svg" alt=""></li>
                             </ul>
-                        </li> 
-                        <li>
-                            <img src="#" alt="">
-                            <div>
-                                <img src="#" alt="">
-                                <p>You</p>
-                            </div>
-                            <ul>
-                                <li><p>85</p><img src="#" alt=""></li>
-                                <li><p>4</p><img src="#" alt=""></li>
+                        
+                        </div>
+                       
+                        </li>
+                          <li>
+                            <img src="img/project2_image.svg" alt="">
+                        <div class="caption_contain">
+                                
+                                <div class="left">
+                                <img src="img/project_profile_img.svg" alt="">
+                                <p>Andy117</p>
+                                </div>
+                      
+                            <ul class="right">
+                                <li><p>120</p><img src="img/gallery_favorite_heart.svg" alt=""></li>
+                                <li><p>27</p><img src="img/gallery_comment_bubble.svg" alt=""></li>
                             </ul>
-                        </li> 
-                        <li>
-                            <img src="#" alt="">
-                            <div>
-                                <img src="#" alt="">
-                                <p>You</p>
-                            </div>
-                            <ul>
-                                <li><p>85</p><img src="#" alt=""></li>
-                                <li><p>4</p><img src="#" alt=""></li>
+                        
+                        </div>
+                       
+                        </li>
+                          <li>
+                            <img src="img/project2_image.svg" alt="">
+                        <div class="caption_contain">
+                                
+                                <div class="left">
+                                <img src="img/project_profile_img.svg" alt="">
+                                <p>Andy117</p>
+                                </div>
+                      
+                            <ul class="right">
+                                <li><p>120</p><img src="img/gallery_favorite_heart.svg" alt=""></li>
+                                <li><p>27</p><img src="img/gallery_comment_bubble.svg" alt=""></li>
                             </ul>
-                        </li>                  
+                        
+                        </div>
+                       
+                        </li>     
                     </ul>
                 </li>
 
                
 
 <!--Messages-->                
-                <li>
-                    <div></div><!--Message Alert-->
-                    <section>
-                        <div><img src="#" alt=""></div>
-                        <div>
+                <li class="messages">
+                  <!--   <div></div>Message Alert -->
+                    <section class="message_container clearfix">
+                        <div class="top_left_section"><img src="img/projects_messages_image1.svg" alt=""></div>
+                        <div class="top_right_section">
                             <h1>Happy Holidays</h1>
                             <time datetime="2015-02-08 20:00">August 2, 2015</time>
                             <p>I decided to create a set of icons for the holidays.  I wanted to make this set because I felt really like the idea of Christmas and the holiday feelings and I liked being able to create a cohesive set of images that were fun and colorful.</p>
                         </div>
                     </section>
+<!-- <nav>
+<ul class="containers">
+  
+  <li> 
+    <div class="square"><p>Projects</p></div>
+<div class="container"></div>
+  </li>
+  </ul>
+</nav> -->
 
 
                    <!--Feedback--> 
-                    <section>
-                        <nav>
+                    <section class="message_container">
+                        <nav class="user_feedback">
                             <ul>
-                                <li><a href="">Nick Petit<span>Feedback on your "Happy Holidays Icons"</span></a></li>
+                                <li class="active2">
+                                    <a href="">Nick Petit<span>Feedback on your "Happy Holidays Icons"</span></a>
+                                   <!--  <div class="square"></div> -->
+                                </li>
                                 <li><a href="">Joey Fatone<span>Feedback on your "Design Icon Project"</span></a></li>
                                 <li><a href="">Rick Louden<span>Your "Design Icon Project" for Beo</span></a></li>
                                 <li><a href="">Linda Aberhen<span>Beo Feedback on the "Design Icon Project"</span></a></li>
                                 <li><a href="">Julie Dunkes<span>Feedback on the "Design Icon Project"</span></a></li>
                             </ul>
                         </nav>
-                        <ul>
-                            <li>
+                        <ul class="content_feedback">
+                            <li class="active3">
                                <!--  Maybe split these into 2 divs or use css to change to block? Or even a list of items? -->
                                 <h1>Feedback on your "Happy Holidays Icons"</h1>
+                              
                                 <p>I'm Nick, an instructor here at Beo. I see you posted a piece of work for the "Desin an Icon" prjoect.  Below you'll find some critques I've made.</p>
-                                <p>I really love all of your different icons and think they are beautiful representations of the holiday season.  I think the snoman feels a little unsimilar to the other icons so I would try working on that one more.</p>
+                                <div>
+                                        <img src="#" alt="">
+                                        <p>I really love all of your different icons and think they are beautiful representations of the holiday season.  I think the snoman feels a little unsimilar to the other icons so I would try working on that one more.
+                                        </p>
+                                </div>
+                                
+                                <div>
+                                <img src="#" alt="">
                                 <p>A couple of other icons that feel somehwat misplaced are the bow and the Star of David.  I think that if there is going to be an...</p>
-                                <img src="#" alt="">
-                                <img src="#" alt="">
+                                </div>
                             </li>  
                             <li>
                                 <h1>Feedback on your "Design Icon Project</h1>
@@ -274,16 +381,19 @@
                     </section>
                 </li>
             </ul>
-        </article>
+        </nav>
+    </article>
 
         </main>
         <footer>
+          <div class= "bottom">  
             <p>Beo 2014</p>
             <ul>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Terms of Use</a></li>
                 <li><a href="#">About</a></li>
             </ul>
+          </div>  
         </footer>   
 
         <!--[if lt IE 8]>
