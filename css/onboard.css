@@ -393,11 +393,12 @@ aside .grey_logo {
   /*padding-bottom:30px;*/
 }
 .bottom {
-  font-family: "universe-condensed";
+  font-family: "UniveCon";
   font-size: 13px;
   background-color: #767676;
   width: 80.762%;
   margin: 0 auto;
+  height: 50px;
 }
 .bottom p {
   float: left;

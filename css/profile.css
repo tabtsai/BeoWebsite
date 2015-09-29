@@ -509,8 +509,10 @@ footer .bottom {
   height: 68px;
   text-decoration: none;
   color: #eceeee;
-  font-family: "universe-condensed";
+  background-color: #767676;
+  font-family: "UniveCon";
   font-size: 13px;
+  height: 50px;
 }
 footer p {
   display: block;
