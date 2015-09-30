@@ -411,29 +411,8 @@ aside .grey_logo {
   display: inline-block;
 }
 
-/***********Tab Modal Injected***/
-.button{
-  padding:20px;
-  background:orange;
-  border-radius:20px;
-  display:inline-block;
-  width:200px;
-  color:white;
-  text-align:center;
-  text-transform:uppercase;
-  font-family: sans-serif;
-  font-size:25px;
-  text-decoration:none;
-  cursor:pointer;
-    
-} 
+/***********Tab Modal Injected**********/
 
-h2{
-  font-family:sans-serif;
-  font-size:30px;
-  color:#E67824;
-  text-transform:uppercase;
-}
 
 .inputbox{
   border-radius:10px;
@@ -446,11 +425,9 @@ h2{
   
 }
 
-
-
 .modal {
    display:none;
-  position:absolute;
+  position:fixed;
   border-radius: 50px;
   background:#eceeee;
   text-align:center;
@@ -467,11 +444,19 @@ h2{
   padding:20px;
   }
 
+.modal h2{
+ color:orange;
+ text-transform: uppercase;
+
+  padding:20px;
+  }
+
 .close{
+  background:white;
   display: inline-block;
   position: absolute;
-  right:30px;
-  top:30px;
+  right:15px;
+  top:15px;
 }
 /* ==========================================================================
    Helper classes

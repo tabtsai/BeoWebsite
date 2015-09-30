@@ -1,4 +1,4 @@
-$( ".sign_up" ).click(function() {
+$( "#sign_up_modal" ).click(function() {
   $('.modal').show( "slow" );
 });
 
