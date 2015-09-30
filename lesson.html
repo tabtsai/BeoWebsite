@@ -12,12 +12,13 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/lesson.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
 
   <!-- Header Section -->
-    <header>
+<!--     <header>
         <div><img src="#" alt=""></div>
         <nav class="header_nav">
             <ul>
@@ -26,102 +27,95 @@
                 <li><a href="#"><img src= "#" alt="">Riley1992</a></li>
             </ul>
         </nav>
-    </header>
+    </header> -->
+         <header>
+            <div class="main_container clearfix">
+                <div class="header_logo"><img src="img/logo_s.svg" alt=""></div>
+                <nav class="header_nav">
+                    <ul>
+                        <li><a href="#">HONEYCOMB</a></li>
+                        <li><a href="#">FORUM</a></li>
+                        <li><a href="#"><img src="img/header_profile_honeycomb.svg" alt="">Riley1992</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
     <!-- Content Section -->
-    <main>
+    <main class="clearfix">
         <a href="#"><img src="#" alt="">back to catalog</a>
  
-        <h2>Lesson 1</h2>
-        <h3>What is Adobe Illustrator?</h3>
+        <h2>Adobe Illustrator Basics</h2>
+        <h3>Learning the tools of the trade</h3>
      
  <!-- INTRODUCTION:Challenge -->   
-                <section class="introduction">
-                   
-                    <h2>Lesson 1</h2>
-                    <h3>What is Adobe Illustrator?</h3>
+                <section class="main_left clearfix">
+                 
+                    <h3>Lesson 1</h3>
+                    <h4>What is Adobe Illustrator?</h4>
                     <p> Illustrator is a program used by both artists and graphic designers to create vector images and artwork. These images can then be used for company logos, promotional uses or even personal work, both in print and digital form. </p>
                    
     <!-- Bookmark -->
-                    <div>  <!-- position abslutely -->
-                        <img class="bookmark_icon" src="#" alt="">
-                    </div>
-                
+                      <!-- position abslutely -->
+                        <img class="bookmark_icon" src="img/bookmark.svg" alt="">
+                    
+                  
+                <hr>
 
 <!-- Additional Info  -->
-                    <div class="additional_info">
-                        <h3>Vocabulary</h3>
-                        <ul>
-                            <li class="vocabulary1">
-                                <ul>
-                                    <li>
-                                        <div class="vocabulary_icon">
-                                            <img src="#" alt="">
-                                        </div>
-                                        <div class="vocabulary_icon_label">
-                                            Selection Tool
-                                        </div>
+                    <div class="additional_info clearfix">
+                        <h4>Vocabulary</h4>
+                        <ul class="clearfix">
+                            <li>
+                                <ul class="clearfix">
+                                    <li class="left">
+                                        <img src="img/lesson_vocab_icon1.svg" alt="">
+                                         <p>Selection Tool</p>
                                     </li>
-                                    <li>
-                                        <p>Black arrow that will select the whole or grouped objects.</p>
+                                    <li class="right">
+                                      <p>  Black arrow that will select the whole or grouped objects. </p>
                                     </li>
-                                </ul>
+                                </ul> 
                             </li>
-                            <li class="vocabulary2">
-                                <ul>
-                                    <li>
-                                        <div class="vocabulary_icon2">
-                                            <img src="#" alt="">
-                                        </div>
-                                        <div class="vocabulary_icon_label2">
-                                            Direct Selection Tool
-                                        </div>
+                            <li>
+                                <ul class="clearfix">
+                                    <li class="left">
+                                            <img src="img/lesson_vocab_icon2.svg" alt="">
+                                            <p>Direct Selection</p>
                                     </li>
-                                    <li>
+                                    <li class="right">
                                         <p>White arrow that will select individual objects in a group or anchor points.</p>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="vocabulary3">
-                                <ul>
-                                    <li>
-                                        <div class="vocabulary_icon3">
-                                            <img src="#" alt="">
-                                        </div>
-                                        <div class="vocabulary_icon_label3">
-                                            Art Boards
-                                        </div>
+                            <li>
+                                <ul class="clearfix">
+                                     <li class="left">
+                                        <img src="img/lesson_vocab_icon3.svg" alt="">
+                                        <p>  Art Boards </p>
                                     </li>
-                                    <li>
+                                    <li class="right">
                                         <p>Printable portion of the work area, where illustrations can be finalized.</p>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="vocabulary4">
-                                <ul>
-                                    <li>
-                                        <div class="vocabulary_icon4">
-                                        <img src="#" alt="">
-                                        </div>
-                                        <div class="vocabulary_icon_label4">
-                                            Layer
-                                        </div>
+                            <li>
+                                <ul class="clearfix">
+                                    <li class="left">
+                                        <img src="img/lesson_vocab_icon4.svg" alt="">
+                                        Layer
                                     </li>
-                                    <li>
+                                    <li class="right">
                                         <p>A single level in the stacking order that can hold any number of object.</p>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="vocabulary5">
-                                <ul>
-                                    <li>
-                                        <div class="vocabulary_icon5">
-                                        <img src="#" alt="">
-                                        </div>
-                                        <div class="vocabulary_icon_label5">
+                            <li>
+                                <ul class="clearfix">
+                                    <li class="left">
+                                        <img src="img/lesson_vocab_icon4.svg" alt="">
                                             Sublayer
-                                        </div>
                                     </li>
-                                    <li>
+                                    <li class="right">
                                         <p>A layer within a layer that can have its own name and its own settings.</p>
                                     </li>
                                 </ul>
@@ -130,7 +124,7 @@
                     </div>
 
 <!-- Question and Forum -->
-                    <aside>   
+                    <aside class="questions">   
                         <p>Have questions? Check out the community forum</p>
                         <a href="#">Forum</a>       
                     </aside>
@@ -139,81 +133,76 @@
 
 
 <!-- MAIN SECTION -->
-                <article>
+                <article class="main_right">
        
 <!-- Video -->
-                <video>
-                    
-                </video>
+               <video width="580px" height="350px" controls></video>
 
-                <div>
-                    <div class="left">
-                        <p>Instructed by Nick Pettit – @nickynick<p>
-                    </div>
-                    <div class="right">
-                        <ul>
-                            <li><a href="#">Take the Challenge</a></li>
-                            <li><img src="#" alt=""></li>
-                        </ul>
+                <div class="author clearfix">
+                   
+                    <p class="left">Instructed by Nick Pettit – @nickynick<p> 
+                    <div class="right2">
+                        <a href="#">Start the Challenge</a>
+                        <img src="img/lesson_start_icon.svg" alt="">  
                     </div>
                 </div>
     <!-- Progress Bar -->
-                <section>
+                <section class="progress">
                     <ul>
                         <li>
-                            <a href="#"><img class="progress_icon1" src="#" alt=""></a>
+                            <a href="#"><img src="img/lesson_progress_cont.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <div class="progress_line"></div>
+                            <a  href="#"><img src="img/lesson_progress_exercise.svg" alt=""></a>
+                            
+                        </li>
+                        <li>
+                            <div class="progress_line"></div>
+                            <a href="#"><img src="img/lesson_progress_cont2.svg" alt=""></a>
                            
                         </li>
                         <li>
-                            <div class="progress_line1"></div>
-                            <a href="#"><img class="progress_icon2" src="#" alt=""></a>
+                            <div class="progress_line"></div>
+                            <a href="#"><img src="img/lesson_progress_exercise.svg" alt=""></a>
                             
                         </li>
                         <li>
-                            <div class="progress_line2"></div>
-                            <a href="#"><img class="progress_icon3" src="#" alt=""></a>
-                           
-                        </li>
-                        <li>
-                            <div class="progress_line3"></div>
-                            <a href="#"><img class="progress_icon4" src="#" alt=""></a>
+                            <div class="progress_line"></div>
+                            <a href="#"><img src="img/lesson_progress_cont2.svg" alt=""></a>
                             
                         </li>
                         <li>
-                            <div class="progress_line4"></div>
-                            <a href="#"><img class="progress_icon5" src="#" alt=""></a>
-                            
-                        </li>
-                        <li>
-                            <div class="progress_line5"></div>
-                            <a href="#"><img class="progress_icon6" src="#" alt=""></a>
-                            
+                            <div class="progress_line"></div>
+                            <a href="#"><img src="img/lesson_progress_exercise.svg" alt=""></a> 
                         </li>
                     </ul>
                 </section>
 
     <!-- Resources -->
-                <footer>
+                <aside class="resources">
                     <b>Resources</b>
                     <ul>
                         <li><a href="#">Adobe.com</a></li>
                         <li><a href="#">VecTips.com</a></li>
                         <li><a href="#">AIVault.com</a></li>
                     </ul>
-                </footer> 
+                </aside> 
           </article>   
           </main>  
         
         
     <!-- Footer Section --> 
-        <footer>
+     <footer>
+          <div class= "bottom">  
             <p>Beo 2014</p>
             <ul>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Terms of Use</a></li>
                 <li><a href="#">About</a></li>
             </ul>
-        </footer>    
+          </div>  
+        </footer>   
 
 
 
@@ -223,7 +212,7 @@
 
 
 <!--Congrats Modal --> 
-        <aside>
+ <!--        <aside>
             <img src="#" alt="#">
             <div>
                 <h1>Congrats!</h1>
@@ -234,7 +223,7 @@
             </div>
         </aside>
     
-
+ -->
 
 
 
@@ -247,7 +236,7 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+       <!--  <p>Hello world! This is HTML5 Boilerplate.</p> -->
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>

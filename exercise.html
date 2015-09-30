@@ -12,54 +12,55 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/exercise.css"
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
 
 
     <!-- Header Section -->
-    <header>
-        <div><img src="#" alt=""></div>
-        <nav class="header_nav">
-            <ul>
-                <li><a href="#">HONEYCOMB</a></li>
-                <li><a href="#">FORUM</a></li>
-                <li><a href="#"><img src= "#" alt="">Riley1992</a></li>
-            </ul>
-        </nav>
-    </header>
+        <header>
+            <div class="main_container clearfix">
+                <div class="header_logo"><img src="img/logo_s.svg" alt=""></div>
+                <nav class="header_nav">
+                    <ul>
+                        <li><a href="#">HONEYCOMB</a></li>
+                        <li><a href="#">FORUM</a></li>
+                        <li><a href="#"><img src="img/header_profile_honeycomb.svg" alt="">Riley1992</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
     <!-- Content Section -->
-    <main>
+    <main class="clearfix">
         <a href="#"><img src="#" alt="">back to catalog</a>
  
-        <h1>Adobe Illustrator Basics</h1>
-        <p> Learning the tools of the trade </p>
+        <h2>Adobe Illustrator Basics</h2>
+        <h3> Learning the tools of the trade </h3>
      
  <!-- INTRODUCTION:Challenge -->   
-                <section class="challenge">
+                <section class="main_left clearfix">
                    
-                    <h2>Challenge 1</h2>
-                    <h3>The Pen Tool</h3>
+                    <h3>Challenge 1</h3>
+                    <h4>The Pen Tool</h4>
                     <p>The Pen Tool makes appearances across almost the entire Adobe product range. Its function and behavior varies depending on the application, but by mastering it you’ll find your work quicker, smoother and with better results. This guide will give you a comprehensive basis for working with the Pen Tool in Illustrator.</p>
                    
     <!-- Bookmark -->
-                    <div>  <!-- position abslutely -->
-                        <img class="bookmark_icon" src="#" alt="">
-                    </div>
+                       <img class="bookmark_icon" src="img/bookmark.svg" alt="">
                 
-
+                 <hr>
     <!-- List of Keyboard Shortcuts  -->
                     <div class="keyboard_shortcuts">
                         <h3>KEYBOARD SHORTCUTS</h3>
-                            <ul>
-                                <li>
-                                    <div> <img src="#" alt=""></div>
-                                    <div><p>To activate the pen tool, press “P” on your keyboard<p>
-                                    </div>
+                            <ul class="clearfix">
+                                <li class="clearfix">
+                                   <!--  <div class="shortcut1">  --><img id="shortcut1" src="img/exercise_shortcut_icon1.svg" alt=""><!-- </div> -->
+                                    <p>To activate the pen tool, press “P” on your keyboard<p>
+                                   
                                 </li>
                                 <li>
-                                    <div><img src="#" alt=""></div>
-                                    <div>To undo your last action, press “Command” and “Z” on your keyboard</div>
+                                   <!--  <div class="shortcut2"> --><img id="shortcut2" src="img/exercise_shortcut_icon2.svg" alt=""><!-- </div> -->
+                                    <p>To undo your last action, press “Command” and “Z” on your keyboard</p>
                                 </li>
                             </ul>
                              
@@ -68,7 +69,7 @@
                     </div>
 
 <!-- Question and Forum -->
-                    <aside>   
+                    <aside class="questions">   
                         <p>Have questions? Check out the community forum</p>
                         <a href="#">Forum</a>       
                     </aside>
@@ -77,15 +78,15 @@
 
 
 <!-- MAIN SECTION -->
-                <article>
+                <article class="main_right">
        
-<!-- Video & Call to Action-->
+<!--  Video & Call to Action
                 <div>
                     <h2>Nice Work!</h2>
                     <h3>Head to the next lesson</h3>
                     <a href="#"><img src="#" alt=""></a>
                 </div>
-<!-- Video nav-->
+ Video nav
                 <nav>
                     <div><a href="#">Replay tutorial</a></div>
                     <div>
@@ -98,55 +99,52 @@
                             </ul>
                         </nav>
                     </div>
-                </nav>
-                <div>
-                    <div class="left">
-                        <p>Instructed by Nick Pettit – @nickynick<p>
-                    </div>
-                    <div class="right">
-                        <ul>
-                            <li><a href="#">Next Lesson</a></li>
-                            <li><img src="#" alt=""></li>
-                        </ul>
+                </nav> -->
+                  <video width="580px" height="350px" controls></video>
+
+                <div class="author clearfix">
+                   
+                    <p class="left">Instructed by Nick Pettit – @nickynick<p> 
+                    <div class="right2">
+                        <a href="#">Start the Challenge</a>
+                        <img src="img/lesson_start_icon.svg" alt="">  
                     </div>
                 </div>
     <!-- Progress Bar -->
-                <section>
+                 <section class="progress">
                     <ul>
                         <li>
-                            <a href="#"><img class="progress_icon1" src="#" alt=""></a>
+                            <a href="#"><img src="img/lesson_progress_cont.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <div class="progress_line"></div>
+                            <a  href="#"><img src="img/lesson_progress_exercise.svg" alt=""></a>
+                            
+                        </li>
+                        <li>
+                            <div class="progress_line"></div>
+                            <a href="#"><img src="img/lesson_progress_cont2.svg" alt=""></a>
                            
                         </li>
                         <li>
-                            <div class="progress_line1"></div>
-                            <a href="#"><img class="progress_icon2" src="#" alt=""></a>
+                            <div class="progress_line"></div>
+                            <a href="#"><img src="img/lesson_progress_exercise.svg" alt=""></a>
                             
                         </li>
                         <li>
-                            <div class="progress_line2"></div>
-                            <a href="#"><img class="progress_icon3" src="#" alt=""></a>
-                           
-                        </li>
-                        <li>
-                            <div class="progress_line3"></div>
-                            <a href="#"><img class="progress_icon4" src="#" alt=""></a>
+                            <div class="progress_line"></div>
+                            <a href="#"><img src="img/lesson_progress_cont2.svg" alt=""></a>
                             
                         </li>
                         <li>
-                            <div class="progress_line4"></div>
-                            <a href="#"><img class="progress_icon5" src="#" alt=""></a>
-                            
-                        </li>
-                        <li>
-                            <div class="progress_line5"></div>
-                            <a href="#"><img class="progress_icon6" src="#" alt=""></a>
-                            
+                            <div class="progress_line"></div>
+                            <a href="#"><img src="img/lesson_progress_exercise.svg" alt=""></a> 
                         </li>
                     </ul>
                 </section>
 
     <!-- Resources -->
-                <footer>
+                <footer class="resources">
                     <b>Resources</b>
                     <ul>
                         <li><a href="#">Adobe.com</a></li>
@@ -159,14 +157,16 @@
         
         
     <!-- Footer Section --> 
-        <footer>
+           <footer>
+          <div class= "bottom">  
             <p>Beo 2014</p>
             <ul>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Terms of Use</a></li>
                 <li><a href="#">About</a></li>
             </ul>
-        </footer>    
+          </div>  
+        </footer>  
 
 
 
@@ -178,7 +178,7 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+  <!--       <p>Hello world! This is HTML5 Boilerplate.</p> -->
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
