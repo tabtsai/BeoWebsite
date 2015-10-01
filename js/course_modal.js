@@ -4,11 +4,11 @@ Modal Show/Hide
 *************/
 
 $( "#course_modal" ).click(function() {
-  $('.wrap').show( "slow" );
+  $('.overlay').show( "slow" );
 });
 
 $( ".close" ).click(function() {
-  $('.wrap').hide( "slow" );
+  $('.overlay').hide( "slow" );
 });
 
 /************
