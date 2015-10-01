@@ -539,6 +539,162 @@ footer ul a {
 .messages {
   display: none;
 }
+/*main {
+display:none;
+}*/
+/*============================================*/
+/*Modal CSS*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.close {
+  width: 28px;
+  height: 28px;
+}
+left {
+  float: left;
+}
+right {
+  float: right;
+}
+/*body {
+
+    width:1024px;
+}*/
+aside {
+  width: 666px;
+  margin: 0 auto;
+  background-color: #EDEFEE;
+  border-radius: 10px;
+}
+.entire_page {
+  /*width:91.5915%;*/
+  width: 610px;
+  position: relative;
+  padding-top: 25px;
+  margin: 20px auto;
+}
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.aside_header_container {
+  width: 90%;
+}
+#top_profile_img {
+  width: 77px;
+  height: 72px;
+}
+/*Picture Section and Description*/
+.picture {
+  width: 47%;
+  margin: 0;
+  float: left;
+}
+/*Profile Image*/
+.stats {
+  width: 18%;
+  float: left;
+  text-align: left;
+}
+.image {
+  float: left;
+  width: 35%;
+}
+figcaption {
+  float: left;
+  width: 64%;
+}
+figcaption h1 {
+  margin: 0;
+}
+figcaption p {
+  float: left;
+  width: 50%;
+  margin: 0;
+}
+figcaption p time {
+  float: right;
+  width: 50%;
+}
+.stats {
+  padding-top: 10px;
+}
+.stats img {
+  width: 14px;
+  height: 14px;
+}
+.stats p {
+  display: inline;
+}
+#project_image {
+  width: 370px;
+  height: 277px;
+  float: left;
+  padding-right: 10px;
+}
+/*Labels */
+.comment_labels {
+  margin-top: 60px;
+}
+.comment_labels h2 {
+  float: left;
+  width: 370px;
+  margin: 0;
+  font-size: 20px;
+}
+.comment_labels ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+.comment_labels ul li {
+  display: inline-block;
+}
+.comment_labels ul li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.comment_labels #add_comment {
+  width: 25px;
+  height: 25px;
+  border-radius: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+/*Comment Section*/
+.comment_section {
+  float: left;
+  width: 78%;
+  margin: 10px 0 20px;
+}
+.comment_section h3 {
+  margin: 0;
+}
+.comment_section p {
+  margin: 0;
+}
+.comment_section img {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-right: 15px;
+}
+.user time {
+  float: right;
+  width: 22%;
+  text-align: right;
+  margin: 10px 0 20px;
+}
+.user {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-top: 1px solid black;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */

@@ -144,7 +144,7 @@ textarea {
 
 h1 {
     font-family:"UniveBla";
-    font-size:37px;
+    font-size:25px;
 }
 a {
     font-family:"UniveBla";
@@ -180,10 +180,29 @@ left {
 right {
     float:right;
 }
+/*body {
 
-body {
+    width:1024px;
+}*/
+aside {
     width:666px;
     margin:0 auto;
+    background-color:#EDEFEE;
+    border-radius: 10px;
+   
+}
+main {
+    /*width:91.5915%;*/
+    width:610px;
+    position:relative;
+    padding-top:25px; 
+    margin:0 auto;
+}
+
+.close {
+    position:absolute;
+    top:0;
+    right:0;
 }
 
 .container {
@@ -197,7 +216,7 @@ body {
 }
 /*Picture Section and Description*/
 .picture {
-    width:76%;
+    width:47%;
     margin:0;
     float:left;
 }
@@ -205,18 +224,19 @@ body {
 /*Profile Image*/
 
 .stats {
-    width:24%;
-    float:right;
+    width:18%;
+    float:left;
+    text-align:right;
 }
 
 .image {
     float:left;
-    width:28%;
+    width:35%;
 }
 
 figcaption {
-    float:right;
-    width:72%;
+    float:left;
+    width:64%;
 }
 figcaption h1 {
     margin:0;
@@ -253,17 +273,73 @@ figcaption p {
     padding-right:10px;
 }
 
+/*Labels */
+
+.comment_labels {
+    margin-top:60px;
+}
 .comment_labels h2 {
     float:left;
     width:370px;
+    margin:0;
+    font-size:20px;
 }
 
 .comment_labels ul {
     float:right;
+    margin:0;
+    padding:0;
         li {
             display:inline-block;
+             img {
+                width:20px;
+                height:20px;
+                margin-right:10px;
+             }
         }
 }
+
+.comment_labels #add_comment {
+    width:25px;
+    height:25px;
+    border-radius: 10px;
+    border:1px solid black;
+    text-align: center;
+}
+
+/*Comment Section*/
+.comment_section {
+    float:left;
+    width:78%;
+    margin:10px 0 20px;
+    h3 {
+        margin:0;
+    }
+    p {
+        margin:0;
+    }
+    img {
+        width:50px;
+        height:50px;
+        float:left;
+        margin-right:15px;
+    }
+}
+
+.user time {
+    float:right;
+    width:22%;
+    text-align:right;
+    margin:10px 0 20px;
+}
+
+.user {
+    margin-top:10px;
+    margin-bottom:20px;
+    border-top:1px solid black;
+
+}
+
 
 
 
