@@ -1,0 +1,337 @@
+@font-face {
+  font-family: 'SerifRom';
+  src: url('fonts/SerifRom.eot');
+  src: url('fonts/SerifRom.eot') format('embedded-opentype'), url('fonts/SerifRom.woff2') format('woff2'), url('fonts/SerifRom.woff') format('woff'), url('fonts/SerifRom.ttf') format('truetype'), url('fonts/SerifRom.svg#SerifRom') format('svg');
+}
+@font-face {
+  font-family: 'SerifLigIta';
+  src: url('fonts/SerifLigIta.eot');
+  src: url('fonts/SerifLigIta.eot') format('embedded-opentype'), url('fonts/SerifLigIta.woff2') format('woff2'), url('fonts/SerifLigIta.woff') format('woff'), url('fonts/SerifLigIta.ttf') format('truetype'), url('fonts/SerifLigIta.svg#SerifLigIta') format('svg');
+}
+@font-face {
+  font-family: 'UniveBla';
+  src: url('fonts/UniveBla.eot');
+  src: url('fonts/UniveBla.eot') format('embedded-opentype'), url('fonts/UniveBla.woff2') format('woff2'), url('fonts/UniveBla.woff') format('woff'), url('fonts/UniveBla.ttf') format('truetype'), url('fonts/UniveBla.svg#UniveBla') format('svg');
+}
+@font-face {
+  font-family: 'UniveCon';
+  src: url('fonts/UniveCon.eot');
+  src: url('fonts/UniveCon.eot') format('embedded-opentype'), url('fonts/UniveCon.woff2') format('woff2'), url('fonts/UniveCon.woff') format('woff'), url('fonts/UniveCon.ttf') format('truetype'), url('fonts/UniveCon.svg#UniveCon') format('svg');
+}
+/*General*/
+* {
+  box-sizing: border-box;
+}
+h1 {
+  font-family: "UniveBla";
+  font-size: 37px;
+  line-height: 1;
+}
+a {
+  font-family: "UniveBla";
+}
+p,
+figcaption {
+  font-family: "SerifRom";
+  font-size: 10px;
+}
+h2 {
+  font-family: "UniveCon";
+  font-size: 37px;
+  line-height: 1;
+}
+h3 {
+  font-family: "UniveBla";
+}
+li {
+  list-style: none;
+}
+h4 {
+  font-size: 13px;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body,
+body,
+html {
+  /* max-width:1024px;*/
+  width: 100%;
+  margin: 0 auto;
+}
+.main_container {
+  margin: 0 auto;
+  /*width:80.762%;*/
+  width: 827.0028px;
+  height: 68px;
+}
+header {
+  top: 0;
+  background-color: #edefef;
+  /*max-width:1024px;*/
+  width: 100%;
+  margin: 0 auto;
+  color: #E67725;
+  cursor: pointer;
+  z-index: 1000;
+  position: fixed;
+}
+.header_logo {
+  float: left;
+}
+.header_logo img {
+  height: 68px;
+  width: 68px;
+}
+.header_nav {
+  float: right;
+}
+.header_nav li {
+  display: inline-block;
+  margin-right: 35px;
+}
+.header_nav li:last-child {
+  margin-right: 0;
+}
+.header_nav img {
+  width: 39px;
+  height: 36px;
+  margin-right: 6px;
+}
+.header_nav a {
+  color: #E67725;
+  text-decoration: none;
+}
+main {position:relative;
+   margin: 0 auto;
+  /*width:80.762%;*/
+
+  padding-top:100px;
+  height:auto;
+
+}
+
+.main-content{
+  margin:30px auto;
+}
+
+nav select, nav>div, nav .h4{
+  display:inline-block;
+margin-right:30px;
+}
+
+nav.filter {
+  margin:20px ;
+}
+
+
+select {
+    text-align: right;
+    
+    border-style:none;
+    color:#BDBBBC;
+   
+}
+
+/**filter**/
+.gallery li {
+   display: none;
+}
+.gallery li.gap {
+  /* used in combination with text-align: justify to align gallery elements */
+  opacity: 0;
+  height: 0;
+  display: inline-block;
+}
+
+.gallery .cd-fail-message {
+  display: none;
+  text-align: center;
+}
+
+
+
+/**honeycomb**/
+section{
+   
+        background:#bdbcbc;
+        background-image: url('../img/newtest.png');
+        width:1024px;
+        min-height:1419px;
+        height:100%;
+        position:relative;
+        margin: 0 auto;
+}
+
+.grid {
+       position:relative;
+       width: 850px;
+       top: 34px;
+       margin:0 auto;
+       text-align:center;
+  
+}
+
+.grid::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.grid-item {
+  position:relative;
+  display:block;
+  width: 231px;
+  padding-bottom: 210px;
+  overflow: hidden;
+  float: left;
+  margin-top: -149px;
+  margin-right: 167px;
+  margin-bottom: 61px;
+  margin-left: 4px;
+  
+}
+
+
+.grid-item > div{
+  top: 55px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  text-align:center;
+  width:185px;
+
+}
+
+h6{font-size:12px;
+  margin:0;
+  color:#777;
+  margin-bottom:15px;
+}
+
+p, time{font-size:12px;
+  line-height:1.0;
+  font-family: "Palatino Linotype", "Book Antiqua",serif
+}
+
+time{
+  display:block;
+  font-size:11px;
+  color:#8BC53F;
+  margin-top:10px;
+
+}
+
+.grid-item > footer{
+  position:absolute;
+  bottom:10px;
+   left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width:185px;
+  background-color:transparent;
+}
+
+img.info{
+  display:inline-block;
+  width:27px;
+  height:27px;
+  margin-right:50px;
+}
+
+img.proceed{
+  display:inline-block;
+  width:36.591px;
+  height:33.759px;
+}
+
+
+.grid-item:nth-child(1),
+.grid-item:nth-child(2) {
+    margin-top: 13px;
+}
+
+.grid-item:nth-child(4n+3) {
+    margin-left: 206px;
+
+}
+
+.grid-item:nth-child(4n+4) {
+    margin-right:0;
+
+}
+
+.grid-item:nth-child(4n+3) {
+    clear:left;
+}
+ 
+.grid li.easy{
+   background-image: url("../img/beginnerhex.svg");
+   background-size:cover;
+     width:234px;
+   height:208px;
+}
+
+.grid li.med{
+    background-image: url("../img/intermediatehex.svg");
+    background-size:cover;
+       width:234px;
+   height:208px;
+  
+}
+.grid li.hard{
+    background-image: url("../img/difficulthex.svg");
+    background-size:cover;
+       width:234px;
+   height:208px;
+  
+}
+
+.grid li.more{
+    background-image: url("../img/morehex.svg");
+    background-size:cover;
+       width:234px;
+   height:208px;
+  
+}
+/**honeycomb**/
+
+footer {
+  /* max-width: 1024px;*/
+  width: 100%;
+  margin: 0 auto;
+  background-color: #767676;
+}
+footer .bottom {
+  margin: 0 auto;
+  /*width:80.762%;*/
+  width: 827.0028px;
+  /* height:68px;*/
+  text-decoration: none;
+  color: #eceeee;
+  background-color: #767676;
+  font-family: "UniveCon";
+  font-size: 13px;
+  height: 50px;
+}
+footer p {
+  display: block;
+  float: left;
+}
+footer ul {
+  float: right;
+}
+footer ul li {
+  display: inline-block;
+}
+footer ul a {
+  text-decoration: none;
+  color: #eceeee;
+}
