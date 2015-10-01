@@ -254,7 +254,11 @@ main {
 section {
     background-color:#ebeded;
     border-radius: 10px;
-    height:780px;
+    /*height:780px;*/
+}
+
+.comments {
+    height:750px;
 }
 
 .navigation {
@@ -293,6 +297,9 @@ input[type="text"] {
     border: solid #fff;
     padding-left: 40px;
     margin-left: 13px;
+    outline-style:none;
+    box-shadow:none;
+    border-color:transparent;
 }
 
 form::after {
@@ -322,7 +329,7 @@ form::after {
 }
 
 .filters {
-    width:50%;
+    width:52%;
     padding:0;
 }
 
@@ -335,15 +342,44 @@ form::after {
    display:inline-block;
    margin-right:10px;
    text-transform: uppercase;
-   text-decoration: none;
+   font-size:14px;
     &:last-child {
-        margin-left:16px;
+        margin-right:0;
+        padding-left:31px;
     }
+
+        a {
+            text-decoration: none;
+            color:#767676;
+        }
 }
 
 
 /*===============================*/
 /*Messages*/
+
+.comments {
+     overflow-y:auto;
+     height:750px;
+}
+
+.scroll::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.scroll::-webkit-scrollbar:vertical {
+    width: 11px;
+}
+
+/*.frame::-webkit-scrollbar:horizontal {
+    height: 11px;
+}*/
+
+.scroll::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white; /* should match background, can't be transparent */
+    background-color: rgba(0, 0, 0, .5);
+}
 
 
 article { 
@@ -389,6 +425,10 @@ article {
         margin-left:-5px;
         margin-top:0px;
         text-transform: uppercase;
+        color:#767676;
+    }
+    b {
+        color:#767676;
     }
 }
 
@@ -415,7 +455,6 @@ footer .bottom {
 footer p {
     display:block;
     float:left;
- 
 }
 
 footer ul {
