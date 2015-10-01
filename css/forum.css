@@ -144,7 +144,7 @@ html {
   width: 827.0028px;
   height: 68px;
 }
-.top {
+#top {
   top: 0;
   background-color: #edefef;
   /*max-width:1024px;*/
@@ -155,84 +155,120 @@ html {
   z-index: 1000;
   position: fixed;
 }
-.top .header_logo {
+#top .header_logo {
   float: left;
 }
-.top .header_logo img {
+#top .header_logo img {
   height: 68px;
   width: 68px;
 }
-.top .header_nav {
+#top .header_nav {
   float: right;
-  /*Main Section*/
 }
-.top .header_nav li {
+#top .header_nav li {
   display: inline-block;
   margin-right: 35px;
 }
-.top .header_nav li:last-child {
+#top .header_nav li:last-child {
   margin-right: 0;
 }
-.top .header_nav img {
+#top .header_nav img {
   width: 39px;
   height: 36px;
   margin-right: 6px;
 }
-.top .header_nav a {
+#top .header_nav a {
   color: #E67725;
   text-decoration: none;
 }
+/*Main Section*/
+/*Header Filter Section
+*/
 main {
   top: 68px;
-  margin: 68px auto 0;
+  margin: 103px auto 0;
   width: 827.0028px;
-  background-color: #ECEEED;
 }
-.filter_navigation div {
-  width: 49%;
+section {
+  background-color: #ebeded;
+  border-radius: 10px;
+}
+.navigation {
+  width: 98%;
+  margin: 0 auto;
+  border-bottom: 1px solid #e57824;
+}
+#search_icon {
+  width: 49px;
+  height: 43px;
+  position: absolute;
+}
+.search {
+  margin-top: 20px;
+}
+div {
   position: relative;
 }
-.search img {
-  width: 49px;
-  height: 44px;
-  float: left;
-  display: inline;
-  position: absolute;
-  z-index: 100;
+#ask_icon {
+  width: 68px;
+  height: 62px;
 }
 input[type="text"] {
   width: 328.81px;
   height: 44px;
   border: solid #fff;
-  margin-left: 30px;
-  padding-left: 30px;
-  /* background-image:url(../img/search_icon.svg);
-    background-repeat: no-repeat;
-    text-indent:10px;
-    padding-left:40px;*/
-  /*background-position: -100;*/
-}
-.filter_navigation .navigation {
-  padding: 0;
-  width: 60%;
-}
-.navigation li {
-  float: left;
-  padding-right: 20px;
-}
-.navigation li #arrow {
-  width: 18px;
-  height: 11px;
-}
-.navigation li #ask {
-  width: 68px;
-  height: 62px;
+  padding-left: 40px;
+  margin-left: 13px;
+  /*   left:50%;*/
 }
 .left {
   float: left;
 }
 .right {
   float: right;
+}
+.filters {
+  width: 50%;
+  padding: 0;
+}
+#filter_icon {
+  width: 18px;
+  height: 11px;
+}
+.filters li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.filters li:last-child {
+  margin-right: none;
+}
+/*===============================*/
+/*Messages*/
+article {
+  border-bottom: 1px solid #bcbbbb;
+}
+article img {
+  width: 47.66px;
+  height: 47.66px;
+}
+/*This holds the figure and forum top*/
+.left_container {
+  float: left;
+  width: 90%;
+}
+.left_container figure {
+  float: left;
+  width: 10%;
+  margin: 0;
+}
+.left_container figure .left_container h2 {
+  float: right;
+  width: 90%;
+  margin: 0;
+}
+.right_container {
+  float: right;
+  width: 10%;
 }
 /* ==========================================================================
    Helper classes
