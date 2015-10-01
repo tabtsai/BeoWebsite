@@ -30,24 +30,25 @@
             </div>
         </header>
 
-        <main>
+        <main class="clearfix">
             <h1>Talk to the hive</h1>
             <section>
                 <header class="search navigation">
-                    <div class="clearfix">
+                   <div class="whole_container clearfix">
                     <div class="search left">
                         <img class="left" id="search_icon" src="img/forum_search_icon.svg" alt="search icon">
                         <form class="left">
-                               <input type="text" name="search" placeholder="Illustrator crashes, how to change doc settings">
+                               <input type="text" name="search" placeholder="">
                         </form>
                     </div>
-                        <ul class="filters right">
+                    <ul class="filters right">
                             <li><a href="#">Popular</a></li>
                             <li><a href="#">Recent</a></li>
                             <li><a href="#">All Topics</a></li>
                             <li><a href="#"> <img id="filter_icon" src="img/forum_nav_down_arrow.svg" alt=""></a></li>
-                            <li><a id = "ask_modal" href="#"> <img id="ask_icon" src="img/forum_nav_ask.svg" alt=""></a>
-                        </ul>
+                            <li><a id="ask_modal" href="#"> <img id="ask_icon" src="img/forum_nav_ask.svg" alt=""></a>
+                            </li>
+                    </ul>
                     </div>
                 </header>
                 <article class="clearfix">
@@ -63,8 +64,8 @@
                         <b>2</b><p>answers</p>
                     </div>
                 </article>
-                <article>
-                    <div>
+                <article class="clearfix">
+                    <div class="left_container clearfix">
                         <figure>
                             <img src="img/forum_user2.svg" alt="">
                             <figcaption>SportGal</figcaption>
@@ -72,12 +73,12 @@
                         <h2>What are some pros and cons of Illustrator vs Sketch</h2>
                         <time>2 days ago</time>
                     </div>
-                    <div>    
+                   <div class="right_container">    
                         <b>3</b><p>answers</p>
                     </div>
                 </article>
-                <article>
-                    <div>
+                <article class="clearfix">
+                    <div class="left_container clearfix">
                         <figure>
                             <img src="img/forum_user3.svg" alt="">
                             <figcaption>Artsy229</figcaption>
@@ -85,12 +86,12 @@
                         <h2>Does anybody hae suggestions on portfolio websites?</h2>
                         <time>5 days ago</time>
                     </div>
-                    <div>    
+                   <div class="right_container">   
                         <b>5</b><p>answers</p>
                     </div>
                 </article>
-                <article>
-                    <div>
+                <article class="clearfix">
+                    <div class="left_container clearfix">
                         <figure>
                             <img src="img/forum_user4.svg" alt="">
                             <figcaption>SportMan</figcaption>
@@ -98,12 +99,12 @@
                         <h2>Is it a good idea to become better at drawing for a designer?</h2>
                         <time>1 week ago</time>
                     </div>
-                    <div>    
+                    <div class="right_container">  
                         <b>2</b><p>answers</p>
                     </div>
                 </article>
-                <article>
-                    <div>
+                <article class="clearfix">
+                    <div class="left_container clearfix">
                         <figure>
                             <img src="img/forum_user5.svg" alt="">
                             <figcaption>TravelinMan</figcaption>
@@ -111,12 +112,12 @@
                         <h2>Can anyone recommend me som good design books?</h2>
                         <time>1 week ago</time>
                     </div>
-                    <div>    
+                   <div class="right_container">  
                         <b>4</b><p>answers</p>
                     </div>
                 </article>
-                <article>
-                    <div>
+                <article class="clearfix">
+                    <div class="left_container clearfix">
                         <figure>
                             <img src="img/forum_user6.svg" alt="">
                             <figcaption>BeoMan88</figcaption>
@@ -124,7 +125,7 @@
                         <h2>In tech, what is the difference between a Visual Designer and Web designer?</h2>
                         <time>2 weeks ago</time>
                     </div>
-                    <div>    
+                    <div class="right_container">  
                         <b>2</b><p>answers</p>
                     </div>
                 </article>
@@ -132,16 +133,18 @@
 
         </main>
         <footer>
+          <div class= "bottom">  
             <p>Beo 2014</p>
             <ul>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Terms of Use</a></li>
                 <li><a href="#">About</a></li>
             </ul>
-        </footer>    
+          </div>  
+        </footer>   
 <!-- Ask -->
 
-        <aside class="modal"> 
+      <!--   <aside class="modal"> 
             <h2>User Log In</h2>
             <form method="post">
                <div class ="inputbox">
@@ -159,9 +162,9 @@
           <a class="buttonsubmit"> Submit now</a>
          
              
-                <a href="" class="close">close</a><!--Absolutely positioned closing button--> 
-       </aside>
-
+                <a href="" class="close">close</a> --><!--Absolutely positioned closing button--> 
+     <!--   </aside>
+ -->
 
 
 
@@ -170,7 +173,7 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+   
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>

@@ -139,8 +139,10 @@ textarea {
 
 h1 {
     font-family:"UniveBla";
-    font-size:37px;
+    font-size: 25px;
     line-height: 1;
+    color: rgb(229, 120, 36);
+    text-transform: uppercase;
 }
 a {
     font-family:"UniveBla";
@@ -148,12 +150,12 @@ a {
 
 p, figcaption {
     font-family:"SerifRom";
-    font-size:10px;
+    font-size:12px;
 }
 
 h2 {
-    font-family:"UniveCon";
-    font-size:37px;
+    font-family:"UniveBla";
+    font-size:16px;
     line-height: 1;
 }
 h3 {
@@ -166,6 +168,17 @@ li {
 
 h4 {
     font-size:13px;
+}
+
+time {
+    font-family:"UniveCon";
+    font-size:15px;
+    color:rgb(118,118,118);
+}   
+
+b  { 
+    font-family:"UniveBl";
+    font-size:27px;
 }
 
 
@@ -233,20 +246,26 @@ body, html {
 */
 main {
     top:68px;
-    margin:103px auto 0;
+    margin:103px auto 40px;
     width:827.0028px;
+
 }
 
 section {
     background-color:#ebeded;
     border-radius: 10px;
+    height:780px;
 }
 
 .navigation {
-    width:98%;
-    margin:0 auto;
+    /*width:98%;*/
+   /* margin:0 auto;*/
     border-bottom:1px solid #e57824;
+}
 
+.whole_container {
+    width:95.5%;
+    margin:0 auto;
 }
 
 #search_icon {
@@ -269,15 +288,30 @@ section {
 }
 
 input[type="text"] {
-    width:328.81px;
-    height:44px;
-    border:solid #fff;
-    padding-left:40px;
-    margin-left:13px;
+    width: 328.81px;
+    height: 44px;
+    border: solid #fff;
+    padding-left: 40px;
+    margin-left: 13px;
+}
+
+form::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 328px;
+    width: 31px;
+    height: 31px;
+    background: rgb(255, 255, 255);
+    border-left: 6px solid rgb(236, 238, 238);
+    border-top: 6px solid rgb(236, 238, 238);
+    transform: rotate(135deg);
+}
 
  /*   left:50%;*/
     
-}
+
 
 .left {
     float:left;
@@ -300,8 +334,10 @@ input[type="text"] {
 .filters li {
    display:inline-block;
    margin-right:10px;
+   text-transform: uppercase;
+   text-decoration: none;
     &:last-child {
-        margin-right:none;
+        margin-left:16px;
     }
 }
 
@@ -312,10 +348,11 @@ input[type="text"] {
 
 article { 
     border-bottom:1px solid #bcbbbb;
-    img {
-    width:47.66px;
-    height:47.66px;
-    }
+    padding: 26px 0 20px 20px;
+        img {
+        width:47.66px;
+        height:47.66px;
+        }
 }
 
 /*This holds the figure and forum top*/
@@ -324,25 +361,74 @@ article {
     width:90%;
 }
 
-.left_container figure {
+.left_container {
     float:left;
-    width:10%;
-    margin:0;
-    .left_container h2 {
-        float:right;
-        width:90%;
+    width:90%;
+
+        figure {
+        float:left;
+        width:10%;
         margin:0;
+        }
+
+        h2 {
+        margin-bottom:2px;
+        margin-top:2px;
+        }
     }
-}
+
+
 
 
 .right_container {
     float:right;
     width:10%;
+    text-align: center;
+    padding-right:41px;
+    p {
+        margin-left:-5px;
+        margin-top:0px;
+        text-transform: uppercase;
+    }
 }
 
 
+footer {
+    
+   /* max-width: 1024px;*/
+    width:100%;
+    margin:0 auto;
+    background-color: #767676;
+}
 
+footer .bottom {
+    .main_container;
+    text-decoration: none;
+    color:#eceeee;
+    background-color:#767676;
+    font-family:"UniveCon";
+    font-size:13px;
+    height:50px; 
+
+}
+
+footer p {
+    display:block;
+    float:left;
+ 
+}
+
+footer ul {
+    float:right;
+        li {
+            display:inline-block;
+        }
+        a{
+             font-family:"UniveCon";
+             text-decoration: none;
+             color:#eceeee;
+        }
+}
 
 
 
