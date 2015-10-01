@@ -24,7 +24,7 @@
                 <nav class="header_nav">
                     <ul>
                         <li><a href="#">HONEYCOMB</a></li>
-                        <li><a href="#">FORUM</a></li>
+                        <li><a href="forum.html">FORUM</a></li>
                         <li><a href="#"><img src="img/header_profile_honeycomb.svg" alt="">Riley1992</a></li>
                     </ul>
                 </nav>
@@ -76,7 +76,7 @@
 		<section class="gallery">
 			<div class="grid">
 			<ul>
-				<li class="grid-item mix easy ai" data-myorder="1" data-myname="Adobe Illustrator Basics">
+				<li id ="course_modal" class="grid-item mix easy ai" data-myorder="1" data-myname="Adobe Illustrator Basics">
 						<div>
                             <h6>Adobe Illustrator Basics</h6>
                             <p>Illustrator is a vector drawing program. It is often used to draw illustrations, cartoons, diagrams, charts and logos.</p>
@@ -234,6 +234,96 @@
           </div>  
         </footer> 
 
+ <!-- course preview modal-->
+
+
+        <aside class="wrap"> 
+            <div class = "slide-container">
+             <ul class= "slideshow">
+                <li class="slide active" id="slide0">
+                    <h2>Adobe Ilustrator Basics</h2>
+                    <h3>Learning the very vector fundamentals</h3>
+                    <p>Since its release, Adobe's Illustrator has grown to become the designer's right hand man when it comes to creating premier vector graphics and elements.  There's so much you can do with the tool that it can e difficult to know where to start.</p>
+
+                    <p>On this course we will be introducing to the program and covering some essential practice exercises.</p>
+
+                    <p>Sed venenatis mi a mi fringilla, a sodales lorem pellentesque. In hac habitasse platea dictumst. Praesent blandit ullamcorper elit ut fermentum. Praesent tincidunt dui sit amet enim mollis, at ultricies tortor finibus. Phasellus efficitur tempor justo, congue congue eros pharetra ac</p>
+
+                    <a class = "button">Begin Course</a>
+                    
+                    <div class="videowrap">
+                    <video width="600" controls>
+                       <source src="videos/demo.mp4" >
+                     </video>
+                      
+                        <div id = "end-poster">
+                            <h2>Continue to next</h2>
+                            <a href="#">Click here</a>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="slide" id="slide1">     
+                    <h2>Photoshop</h2> 
+                    <h3>Power Packed Features for Rasters</h3>
+                    <p>Phasellus porttitor dolor quis ante sodales vulputate. Nullam ac sollicitudin nunc. Donec aliquam felis auctor, consectetur dui nec, rutrum velit. Vivamus porttitor, massa id rutrum molestie, augue ipsum dapibus lectus, nec laoreet velit nunc interdum augue. Nulla in ex vel neque tincidunt ullamcorper.</p>
+
+                    <p>On this course we will be introducing to the program and covering some essential practice exercises.</p>
+
+                    <p>Along the way we will be covering mayn topics, such as how to set up your document, understand how the program works, use text in Illustrator, prepare and import images into Illustrator and finally export your document ready for print.</p>
+
+                    <a class = "button">Begin Course</a>
+
+                    <div class="videowrap">
+                    <video width="600" controls>
+                       <source src="videos/demo.mp4" >
+                     </video>
+                      
+                        <div id = "end-poster">
+                            <h2>Continue to next</h2>
+                            <a href="#">Click here</a>
+                        </div>
+                    </div>
+
+                    </li>
+                <li class="slide" id="slide2">
+                    <h2>Web Design</h2>
+                    <h3>Principles and best practices</h3>
+                    <p> Vestibulum auctor vulputate congue. Nam id neque vitae purus sollicitudin hendrerit. Quisque id nibh a quam sagittis posuere. In ut luctus quam, in scelerisque erat. </p>
+
+                    <p>On this course we will be introducing to the program and covering some essential practice exercises.</p>
+
+                    <p>Along the way we will be covering mayn topics, such as how to set up your document, understand how the program works, use text in Illustrator, prepare and import images into Illustrator and finally export your document ready for print.</p>
+
+                    <a class = "button">Begin Course</a>
+
+                    
+                    <div class="videowrap">
+                    <video width="600" controls>
+                       <source src="videos/demo.mp4" >
+                     </video>
+                      
+                        <div id = "end-poster">
+                            <h2>Continue to next</h2>
+                            <a href="#">Click here</a>
+                        </div>
+                    </div>
+
+                </li>
+              </ul>
+   
+
+
+              <a href="" class="close">close</a><!--Absolutely positioned closing button--> 
+            </div>
+
+              <div id="next" class="buttonnav">NEXT</div>
+              <div id="prev" class="buttonnav">PREV</div>
+
+              
+
+
+        </aside>
 
 
         <!--[if lt IE 8]>
@@ -248,6 +338,7 @@
         <script src="js/vendor/jquery-2.1.1.js"></script>
         <script src="js/vendor/jquery.mixitup.min.js"></script>
         <script src="js/honeycomb.js"></script> <!-- Resource jQuery -->
+        <script src="js/course_modal.js"></script> <!-- Resource jQuery -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
