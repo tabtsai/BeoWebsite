@@ -46,7 +46,7 @@
                             <li><a href="#">Recent</a></li>
                             <li><a href="#">All Topics</a></li>
                             <li><a href="#"> <img id="filter_icon" src="img/forum_nav_down_arrow.svg" alt=""></a></li>
-                            <li><a href="#"> <img id="ask_icon" src="img/forum_nav_ask.svg" alt=""></a>
+                            <li><a id = "ask_modal" href="#"> <img id="ask_icon" src="img/forum_nav_ask.svg" alt=""></a>
                         </ul>
                     </div>
                 </header>
@@ -140,23 +140,29 @@
             </ul>
         </footer>    
 <!-- Ask -->
-        <aside>
-            <img src="#" alt="#">
-            <div>
-                <h1>Ask the Hive</h1>
-                <form>
-                    <input type="text" value="Write your questions here...">
-                    <input type="submit"  value="Submit">
-                </form>
-                <nav>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </nav>
-                <img src="#" alt="#">
-            </div>
-        </aside>
+
+        <aside class="modal"> 
+            <h2>User Log In</h2>
+            <form method="post">
+               <div class ="inputbox">
+                 <textarea placeholder="Write your questions here" cols="70" rows="10"></textarea> 
+               </div>  
+                  <br />
+
+                  <select id = "tag">
+                        <option value="photoshop">Photoshop</option>
+                        <option value="illustrator">Illustrator</option>
+                        <option value="webDesign">Web Design</option>
+                        <option value="career">Career Advice</option>
+                   </select>
+            </form>
+          <a class="buttonsubmit"> Submit now</a>
+         
+             
+                <a href="" class="close">close</a><!--Absolutely positioned closing button--> 
+       </aside>
+
+
 
 
         <!--[if lt IE 8]>
@@ -170,6 +176,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/ask_modal.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
