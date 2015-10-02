@@ -387,6 +387,10 @@ body {
   right: 0;
   top: 0;
 }
+.drop_down li {
+  width: 275;
+  border-bottom: 2px solid black;
+}
 /*==========================================*/
 .buttonsubmit {
   padding: 20px;
