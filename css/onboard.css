@@ -410,54 +410,6 @@ aside .grey_logo {
 .bottom ul li {
   display: inline-block;
 }
-
-/***********Tab Modal Injected**********/
-
-
-.inputbox{
-  border-radius:10px;
-  background:#eceeee;
-  border:#bdbcbc solid 1px;
-  display:block;
-  width: 320px;
-  height:40px;
-  margin:10px auto;
-  
-}
-
-.modal {
-   display:none;
-  position:fixed;
-  border-radius: 50px;
-  background:#eceeee;
-  text-align:center;
-  height: 580px;
-  width: 500px ;
-  z-index: 100;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  -moz-transform: translate(-50%,-50%);
-  -o-transform: translate(-50%,-50%);
-
-  padding:20px;
-  }
-
-.modal h2{
- color:orange;
- text-transform: uppercase;
-
-  padding:20px;
-  }
-
-.close{
-  background:white;
-  display: inline-block;
-  position: absolute;
-  right:15px;
-  top:15px;
-}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
