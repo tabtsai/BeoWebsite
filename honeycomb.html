@@ -11,7 +11,7 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/honeycomb.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -34,11 +34,14 @@
 	<main>
         <article>
         <div class = "main-content main_container">
-            <h2>The HoneyComb</h2>
+            <h1>The HoneyComb</h1>
             <p>Check out our collection of design courses and real world projects.</p>
     	    <nav class = "filter">
+                <ul class="toggle_nav">
+                    <li>Courses</li>
+                    <li>Projects</li>
+                </ul>
     	        <select id="SortSelect">
-                    <option value="">Sort</option>
                     <option value="myorder:asc">Newest</option>
                     <option value="myorder:desc">Oldest</option>
                     <option value="myname:asc">Alphabetical</option>
@@ -47,7 +50,7 @@
 
     		    <div class="cd-select cd-filters">
     				<select class="filter" name="selectThis" id="selectThis">
-    					<option value="">Topic</option>
+    					<option value="">All Topics</option>
     					<option value=".psd">Photoshop</option>
     					<option value=".ai">Illustrator</option>
     					<option value=".typeface">Typography</option>
@@ -68,7 +71,7 @@
                 <label>Search</label>
                 
                 <div class="cd-filter-content">
-                    <input type="search" placeholder="Try color-1...">
+                    <input class="search" type="search" placeholder="Try color-1...">
                 </div> 
             </nav>
         </div>
