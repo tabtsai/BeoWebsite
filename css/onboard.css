@@ -205,7 +205,9 @@ header {
         }*/
 }
 .welcome h1 {
-  margin-top: 100px;
+  margin-top: 68px;
+  padding-top: 35px;
+  color: #e77824;
 }
 .welcome img {
   width: 342px;
@@ -253,11 +255,15 @@ header {
   margin-left: 60px;
   text-align: center;
 }
+.term img {
+  width: 102px;
+  height: 47px;
+}
 #beo_upsidedown {
   font-size: 34px;
 }
 .define {
-  float: right;
+  float: left;
   /*width:67%;*/
   width: 50%;
 }
@@ -392,23 +398,38 @@ aside .grey_logo {
   margin: 0 auto;
   /*padding-bottom:30px;*/
 }
-.bottom {
+footer {
+  /* max-width: 1024px;*/
+  width: 100%;
+  margin: 0 auto;
+  background-color: #767676;
+}
+footer .bottom {
+  margin: 0 auto;
+  /*width:80.762%;*/
+  width: 827.0028px;
+  height: 68px;
+  text-decoration: none;
+  color: #eceeee;
+  background-color: #767676;
   font-family: "UniveCon";
   font-size: 13px;
-  background-color: #767676;
-  width: 80.762%;
-  margin: 0 auto;
   height: 50px;
 }
-.bottom p {
-  float: left;
+footer p {
   display: block;
+  float: left;
 }
-.bottom ul {
+footer ul {
   float: right;
 }
-.bottom ul li {
+footer ul li {
   display: inline-block;
+}
+footer ul a {
+  font-family: "UniveCon";
+  text-decoration: none;
+  color: #eceeee;
 }
 /***********Tab Modal Injected**********/
 .inputbox {

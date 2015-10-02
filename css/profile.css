@@ -526,11 +526,13 @@ footer ul li {
   display: inline-block;
 }
 footer ul a {
+  font-family: "UniveCon";
   text-decoration: none;
   color: #eceeee;
 }
-.in_progress,
+/*.in_progress,*/
 .progress_projects,
+.bookmarks,
 .completed_projects,
 .completed {
   display: none;

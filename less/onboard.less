@@ -258,7 +258,9 @@ header {
     margin:0 auto;
     text-align: center;
         h1 {
-            margin-top:100px;
+            margin-top:68px;
+            padding-top:35px;
+            color:#e77824;
         }
         img {
             width:342px;
@@ -313,6 +315,10 @@ header {
     width:34%;
     margin-left:60px;
     text-align: center;
+    img {
+      width:102px;
+      height:47px;
+    }
 }
 
 #beo_upsidedown {
@@ -320,7 +326,7 @@ header {
 }
 
 .define {
-    float:right;
+    float:left;
     /*width:67%;*/
     width:50%;
 }
@@ -449,23 +455,40 @@ aside {
         }
 }
 
-.bottom{
+footer {
+    
+   /* max-width: 1024px;*/
+    width:100%;
+    margin:0 auto;
+    background-color: #767676;
+}
+
+footer .bottom {
+    .main_container;
+    text-decoration: none;
+    color:#eceeee;
+    background-color:#767676;
     font-family:"UniveCon";
     font-size:13px;
-    background-color:#767676;
-    width:80.762%;
-    margin:0 auto;
-    height:50px;  
-    p {
-        float:left;
-        display: block;
-    }
-    ul {
-        float:right;
-        & li {
+    height:50px; 
+
+}
+
+footer p {
+    display:block;
+    float:left;
+}
+
+footer ul {
+    float:right;
+        li {
             display:inline-block;
         }
-    }
+        a{
+             font-family:"UniveCon";
+             text-decoration: none;
+             color:#eceeee;
+        }
 }
 
 /***********Tab Modal Injected**********/
