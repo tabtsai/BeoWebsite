@@ -158,7 +158,7 @@ p, figcaption {
 }
 
 h2 {
-    font-family:"UniveCon";
+    font-family:"UniveBla";
     font-size:37px;
     line-height: 1;
 }
@@ -235,16 +235,16 @@ header{
 }
 
 
-/*main {
-    top:68px;
-    width:827.0028px;
-    margin:0 auto 45px;
-}*/
 
 .main_left, .main_right {
-     height:595px;
+    /* height:595px;*/
      padding-bottom:10px;
     
+}
+#catalog_back {
+    width:20px;
+    height:20px;
+    padding-right:3px;
 }
 
 main {
@@ -255,6 +255,8 @@ main {
     margin-top:20px;
     margin-bottom:23px;
     display:block;
+    color:#edbb00;
+    text-decoration: none;
     }
     h2 {
     margin-bottom:14px;
@@ -307,9 +309,11 @@ hr {
  .additional_info li img {
     width:20px;
     height:20px;
+    float:left;
+    margin-right:3px;
  }
 
- .additional_info ul {
+/* .additional_info ul {
     padding:0;
         li {
     font-size: 10px;
@@ -319,20 +323,51 @@ hr {
             margin:0;
             display:inline;
         }
- }
+ }*/
 
-/* .additional_info */.left {
+.additional_info ul {
+    padding:0;
+        li {
+            margin-bottom:10px;
+        }
+}
+
+
+.additional_info .left {
+    float:left;
+    width:40%;
+        p {
+            float:left;
+            margin-top:2px;
+            font-family:"UniveBla";
+            width:56%;
+        }
+}
+
+.additional_info .right {
+    float:left;
+    width:60%;
+        p {
+            margin:0;
+        }
+}
+
+/* .additional_info */
+/*.left {
     float:left;
 
- }
+ }*/
 
-/*.additional_info */.right {
+/*.additional_info */
+/*.right {
     float:right;
     width:56%;
 
-}
+}*/
 
-.questions a {
+.questions {
+    padding-bottom: 23px;
+    a {
     background-color:#39a6e2;
     text-align: center;
     margin:0 auto;
@@ -343,6 +378,14 @@ hr {
     font-size: 14px;
     text-transform: uppercase;
     text-decoration: none;
+}
+        p {
+            width:80%;
+            margin:0 auto;
+            text-align: center;
+            font-size:14px;
+            padding-bottom:10px;
+        }
 }
 
 /*============================================*/
@@ -365,6 +408,7 @@ hr {
     p {
         margin:0;
         font-size: 14px;
+        float:left;
     }
 /*    a {
         margin:0;
