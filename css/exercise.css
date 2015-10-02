@@ -383,6 +383,7 @@ hr {
   list-style-type: disc;
 }
 footer {
+  /* max-width: 1024px;*/
   width: 100%;
   margin: 0 auto;
   background-color: #767676;
@@ -399,17 +400,18 @@ footer .bottom {
   font-size: 13px;
   height: 50px;
 }
-footer .bottom p {
+footer p {
   display: block;
   float: left;
 }
-footer .bottom ul {
+footer ul {
   float: right;
 }
-footer .bottom ul li {
+footer ul li {
   display: inline-block;
 }
-footer .bottom ul a {
+footer ul a {
+  font-family: "UniveCon";
   text-decoration: none;
   color: #eceeee;
 }
