@@ -115,7 +115,7 @@ figcaption {
   font-size: 10px;
 }
 h2 {
-  font-family: "UniveCon";
+  font-family: "UniveBla";
   font-size: 37px;
   line-height: 1;
 }
@@ -182,15 +182,15 @@ header {
   color: #E67725;
   text-decoration: none;
 }
-/*main {
-    top:68px;
-    width:827.0028px;
-    margin:0 auto 45px;
-}*/
 .main_left,
 .main_right {
-  height: 595px;
+  /* height:595px;*/
   padding-bottom: 10px;
+}
+#catalog_back {
+  width: 20px;
+  height: 20px;
+  padding-right: 3px;
 }
 main {
   top: 68px;
@@ -201,6 +201,8 @@ main a {
   margin-top: 20px;
   margin-bottom: 23px;
   display: block;
+  color: #edbb00;
+  text-decoration: none;
 }
 main h2 {
   margin-bottom: 14px;
@@ -241,26 +243,56 @@ hr {
 .additional_info li img {
   width: 20px;
   height: 20px;
+  float: left;
+  margin-right: 3px;
 }
+/* .additional_info ul {
+    padding:0;
+        li {
+    font-size: 10px;
+    margin-bottom:6px;
+        }
+        p {
+            margin:0;
+            display:inline;
+        }
+ }*/
 .additional_info ul {
   padding: 0;
 }
 .additional_info ul li {
-  font-size: 10px;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
-.additional_info ul p {
+.additional_info .left {
+  float: left;
+  width: 40%;
+}
+.additional_info .left p {
+  float: left;
+  margin-top: 2px;
+  font-family: "UniveBla";
+  width: 56%;
+}
+.additional_info .right {
+  float: left;
+  width: 60%;
+}
+.additional_info .right p {
   margin: 0;
-  display: inline;
 }
 /* .additional_info */
-.left {
-  float: left;
-}
+/*.left {
+    float:left;
+
+ }*/
 /*.additional_info */
-.right {
-  float: right;
-  width: 56%;
+/*.right {
+    float:right;
+    width:56%;
+
+}*/
+.questions {
+  padding-bottom: 23px;
 }
 .questions a {
   background-color: #39a6e2;
@@ -273,6 +305,13 @@ hr {
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
+}
+.questions p {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 10px;
 }
 /*============================================*/
 /*Right Video Section */
@@ -302,6 +341,7 @@ hr {
 .main_right p {
   margin: 0;
   font-size: 14px;
+  float: left;
 }
 .main_right .right2 {
   float: right;
