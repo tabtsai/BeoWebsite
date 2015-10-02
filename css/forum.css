@@ -383,12 +383,19 @@ body {
   position: relative;
 }
 .drop_down {
+  height: 100%;
   position: absolute;
   right: 0;
   top: 0;
+  width: 275px;
+  background-color: #E67725;
+}
+.drop_down ul {
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
 }
 .drop_down li {
-  width: 275;
   border-bottom: 2px solid black;
 }
 /*==========================================*/
