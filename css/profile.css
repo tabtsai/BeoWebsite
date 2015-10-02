@@ -526,6 +526,7 @@ footer ul li {
   display: inline-block;
 }
 footer ul a {
+  font-family: "UniveCon";
   text-decoration: none;
   color: #eceeee;
 }
