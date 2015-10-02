@@ -83,23 +83,23 @@ textarea {
 /*fonts*/
 @font-face {
   font-family: 'SerifRom';
-  src: url('fonts/SerifRom.eot');
-  src: url('fonts/SerifRom.eot') format('embedded-opentype'), url('fonts/SerifRom.woff2') format('woff2'), url('../fonts/SerifRom.woff') format('woff'), url('fonts/SerifRom.ttf') format('truetype'), url('fonts/SerifRom.svg#SerifRom') format('svg');
+  src: url('../fonts/SerifRom.eot');
+  src: url('../fonts/SerifRom.eot') format('embedded-opentype'), url('../fonts/SerifRom.woff2') format('woff2'), url('../fonts/SerifRom.woff') format('woff'), url('../fonts/SerifRom.ttf') format('truetype'), url('../fonts/SerifRom.svg#SerifRom') format('svg');
 }
 @font-face {
   font-family: 'SerifLigIta';
   src: url('../fonts/SerifLigIta.eot');
-  src: url('fonts/SerifLigIta.eot') format('embedded-opentype'), url('fonts/SerifLigIta.woff2') format('woff2'), url('../fonts/SerifLigIta.woff') format('woff'), url('fonts/SerifLigIta.ttf') format('truetype'), url('fonts/SerifLigIta.svg#SerifLigIta') format('svg');
+  src: url('../fonts/SerifLigIta.eot') format('embedded-opentype'), url('../fonts/SerifLigIta.woff2') format('woff2'), url('../fonts/SerifLigIta.woff') format('woff'), url('../fonts/SerifLigIta.ttf') format('truetype'), url('../fonts/SerifLigIta.svg#SerifLigIta') format('svg');
 }
 @font-face {
   font-family: 'UniveBla';
-  src: url('fonts/UniveBla.eot');
-  src: url('fonts/UniveBla.eot') format('embedded-opentype'), url('fonts/UniveBla.woff2') format('woff2'), url('../fonts/UniveBla.woff') format('woff'), url('fonts/UniveBla.ttf') format('truetype'), url('fonts/UniveBla.svg#UniveBla') format('svg');
+  src: url('../fonts/UniveBla.eot');
+  src: url('../fonts/UniveBla.eot') format('embedded-opentype'), url('../fonts/UniveBla.woff2') format('woff2'), url('../fonts/UniveBla.woff') format('woff'), url('../fonts/UniveBla.ttf') format('truetype'), url('../fonts/UniveBla.svg#UniveBla') format('svg');
 }
 @font-face {
   font-family: 'UniveCon';
-  src: url('fonts/UniveCon.eot');
-  src: url('fonts/UniveCon.eot') format('embedded-opentype'), url('fonts/UniveCon.woff2') format('woff2'), url('../fonts/UniveCon.woff') format('woff'), url('fonts/UniveCon.ttf') format('truetype'), url('fonts/UniveCon.svg#UniveCon') format('svg');
+  src: url('../fonts/UniveCon.eot');
+  src: url('../fonts/UniveCon.eot') format('embedded-opentype'), url('../fonts/UniveCon.woff2') format('woff2'), url('../fonts/UniveCon.woff') format('woff'), url('../fonts/UniveCon.ttf') format('truetype'), url('../fonts/UniveCon.svg#UniveCon') format('svg');
 }
 /*General*/
 /*h1 {
