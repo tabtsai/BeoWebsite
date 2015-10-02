@@ -243,7 +243,7 @@ header{
 }*/
 
 .main_left, .main_right {
-     height:595px;
+    /* height:595px;*/
      padding-bottom:10px;
     
 }
@@ -256,6 +256,8 @@ main {
     margin-top:20px;
     margin-bottom:23px;
     display:block;
+    color:#edbb00;
+    text-decoration: none;
     }
     h2 {
     margin-bottom:14px;
@@ -264,6 +266,13 @@ main {
     margin-bottom:30px;
     }
 }
+
+#catalog_back {
+    width:20px;
+    height:20px;
+    padding-right:3px;
+}
+
 .main_left h3{
     margin:0;
 }
@@ -281,6 +290,13 @@ main {
     border-radius: 10px;
     position:relative;
     padding:10px;
+        h4 {
+            margin:0;
+            padding-bottom:20px;
+        }
+        p {
+            padding-bottom:17px;
+        }
 }
 
 
@@ -303,6 +319,13 @@ hr {
 }
 
 /*Shortcut Section*/
+
+.keyboard_shortcuts {
+    padding-top:17.5px;
+    h4 {
+        padding:0;
+    }    
+}
 .keyboard_shortcuts #shortcut1  {
     width:30px;
     height:30px;
@@ -326,8 +349,9 @@ hr {
             p {
                 float:right;
                 display:inline;
-                width:50%;
+                width:60%;
                 margin:0;
+                padding:0 0 5px;
             }
         }
 
@@ -335,7 +359,9 @@ hr {
 
 
 
-.questions a {
+.questions {
+    padding-bottom: 23px;
+    a {
     background-color:#39a6e2;
     text-align: center;
     margin:0 auto;
@@ -346,6 +372,14 @@ hr {
     font-size: 14px;
     text-transform: uppercase;
     text-decoration: none;
+}
+        p {
+            width:80%;
+            margin:0 auto;
+            text-align: center;
+            font-size:14px;
+            padding-bottom:10px;
+        }
 }
 
 /*============================================*/
@@ -387,10 +421,16 @@ hr {
         text-decoration:none;
         text-transform: uppercase;
         color:#39a6e2;
-
     }
+        p {
+            float:left;
+        }
 }
 
+.main_right .right2 img {
+    width:26px;
+    height:24px;
+}
 .main_right .right2 img {
     width:26px;
     height:24px;
