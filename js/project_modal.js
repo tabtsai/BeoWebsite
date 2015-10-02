@@ -41,10 +41,10 @@ Slideshow
 	function gotoSlide( $index ){
 		currIndex = $index;
 		var target = "#slide"+currIndex;
-		$(".slideshow>li, nav ul li").removeClass("active");		
+		$(".slideshow>li, nav ul li").removeClass("activeslide");		
 		
-		$(target).addClass("active");
-		$("nav ul li").eq(currIndex).addClass("active");
+		$(target).addClass("activeslide");
+		$("nav ul li").eq(currIndex).addClass("activeslide");
 
 	}
 	
