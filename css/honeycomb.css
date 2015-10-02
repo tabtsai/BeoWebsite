@@ -207,15 +207,27 @@ main {
   position: relative;
   margin: 0 auto;
   /*width:80.762%;*/
-  padding-top: 100px;
+  padding-top: 68px;
   height: auto;
 }
 .main-content {
-  margin: 0 auto;
-  height: 140px;
+  position: relative;
+  margin: 0 auto ;
+  height: 200px;
+  padding-top: 20px;
 }
 .main-content p {
   width: 30%;
+}
+article header {
+  background: #fff;
+  max-width: 1024px;
+  min-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+article {
+  background: #767676;
 }
 nav select,
 nav > div,
@@ -224,10 +236,9 @@ nav .h4 {
   margin-right: 20px;
 }
 nav.filter {
-  margin: 20px;
-  height: 200px;
+  margin-bottom: 0;
 }
-.togglen_nav,
+.toggle_nav,
 .toggle_nav li {
   display: inline-block;
 }
@@ -262,6 +273,7 @@ section {
   height: 100%;
   position: relative;
   margin: 0 auto;
+  top: -16px;
 }
 .grid {
   position: relative;
@@ -299,7 +311,8 @@ section {
   width: 185px;
 }
 h6 {
-  font-size: 12px;
+  font-family: 'UniveBla';
+  font-size: 11px;
   margin: 0;
   color: #777;
   margin-bottom: 15px;
