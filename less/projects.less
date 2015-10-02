@@ -656,90 +656,6 @@ footer ul {
         }
 }
 
-/*=======================================*/
-
-
-.buttonsubmit{
-  padding:20px;
-  background:orange;
-  border-radius:20px;
-  display:inline-block;
-  width:200px;
-  color:white;
-  text-align:center;
-  text-transform:uppercase;
-  font-famfily: sans-serif;
-  font-size:25px;
-  text-decoration:none;
-    
-} 
-
-.modal h2{
-  font-family:sans-serif;
-  font-size:30px;
-  color:#E67824;
-  text-transform:uppercase;
-}
-
-.modal textarea{
-  resize:none;
-  outline:none;
-  border-radius:10px;
-  background:#fff;
-  border:#bdbcbc solid 3px;
-  display:block;
- 
-  margin:10px auto;
-  
-}
-
-
-
-.modal{
-  display:none;
-  position:absolute;
-  border-radius: 50px;
-  background:#eceeee;
-  text-align:center;
-  height: 400px;
-  width: 630px ;
-  z-index: 100;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  -moz-transform: translate(-50%,-50%);
-  -o-transform: translate(-50%,-50%);
-  padding:20px;
-  }
-
-.modal .close{
-  display: inline-block;
-  position: absolute;
-  right:30px;
-  top:30px;
-}
-
-/* FOR APPENDING ITEMS TO THE FORUM PAGE
-ul li{
-  display:block;
-  padding:20px;
-  text-align:left;
-  background:#eee;
-  margin:10px auto;
-}*/
-
-/*.tag {
-  margin:top: 10px;
-  display:block;
-  background: blue;
-  padding:10px 20px;
-  color:white;
-  width: 10%;
-  
-
-}*/
-
 
 
 .messages    /*.gallery_content*/ {
@@ -753,12 +669,6 @@ display:none;
 /*============================================*/
 /*Modal CSS*/
 
-
-.clearfix:after {
-    content:"";
-    display: table;
-    clear:both;
-}
 
 .close {
     width:28px;
@@ -946,24 +856,10 @@ figcaption p {
 
 
 
-  /* View Project Modal*/
-
-
-
-/*.button{
-  padding:20px 40px;
-  background:orange;
-  border-radius:20px;
-  display:inline-block;
-   color:white;
-  text-align:center;
-  text-transform:uppercase;
-  font-family: sans-serif;
-  font-size:25px;
-  text-decoration:none;
+  /* TAB View Project Modal*/
+#project_modal{
   cursor:pointer;
- 
-} */
+}
 .buttonnav{
   background:#999;
   position:absolute;
@@ -994,27 +890,7 @@ figcaption p {
   -o-transform: translateY(-50%);
   }
 
-/*.wrap h2{
-  font-family:sans-serif;
-  font-size:30px;
-  color:#E67824;
-  text-transform:uppercase;
-}*/
-/*
-.inputbox{
-  border-radius:10px;
-  background:#eceeee;
-  border:#bdbcbc solid 1px;
-  display:block;
-  width: 320px;
-  height:40px;
-  margin:10px auto;
-  
-}
-.wrap p{
-font-size:12px;
-margin-bottom: 20px;}
-*/
+
 .wrap{
    
     position:fixed;
@@ -1052,17 +928,7 @@ aside.overlay{ display:none;
   margin: 0 auto;
   }
 
-/*.close{
-  display: inline-block;
-  position: absolute;
-  right:30px;
-  top:30px;
-}
 
-.wrap ul{
-  list-style: none;
-}
-*/
 
 .slideshow{
   position: relative;
@@ -1077,17 +943,79 @@ aside.overlay{ display:none;
   transition: all 0.3s ease-out;  
 }
 
-/*.wrap h1{
-  font-size: 42px;
-  margin-bottom: 20px;
-}*/
-
-
-
 .slideshow li.activeslide{
   display: block;
 }
 
+/***********Other profile Modal Injected**********/
+
+#user_modal{
+  cursor:pointer;
+}
+.user_profile {
+  display: none;
+  position: fixed;
+  border-radius: 50px;
+  background: #eceeee;
+  text-align: center;
+  height: 580px;
+  width: 500px ;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  padding: 20px;
+}
+.user_profle h2 {
+  color: orange;
+  text-transform: uppercase;
+  padding: 20px;
+}
+.user_profile .close {
+  background: white;
+  display: inline-block;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+/***********UPLLOAD PROJECT Modal Injected**********/
+
+#upload_modal{
+  cursor:pointer;
+}
+.upload_project {
+  display: none;
+  position: fixed;
+  border-radius: 50px;
+  background: #eceeee;
+  text-align: center;
+  height: 580px;
+  width: 500px ;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  padding: 20px;
+}
+.upload_project h2 {
+  color: orange;
+  text-transform: uppercase;
+  padding: 20px;
+}
+.upload_project .close {
+  background: white;
+  display: inline-block;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
 
 
 /* ==========================================================================

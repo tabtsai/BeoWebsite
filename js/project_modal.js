@@ -29,10 +29,8 @@ Slideshow
   }
 
   function prev(){
-	  
-		var prevIndex = currIndex - 1;
-		
-		if (prevIndex < 0){
+	   var prevIndex = currIndex - 1;
+	   if (prevIndex < 0){
 			prevIndex = totalSlides - 1;
 		}
     gotoSlide(prevIndex);
@@ -41,10 +39,9 @@ Slideshow
 	function gotoSlide( $index ){
 		currIndex = $index;
 		var target = "#slide"+currIndex;
-		$(".slideshow>li, nav ul li").removeClass("activeslide");		
-		
+		$(".slideshow > li").removeClass("activeslide");		
 		$(target).addClass("activeslide");
-		$("nav ul li").eq(currIndex).addClass("activeslide");
+
 
 	}
 	
@@ -55,4 +52,28 @@ Slideshow
 	$("#prev").on("click", function(){
 		next();
 	});
-	
+
+
+/************
+User Profile Modal
+*************/	
+
+	$( "#user_modal" ).click(function() {
+  $('.user_profile').show( "slow" );
+});
+
+$( ".close" ).click(function() {
+  $('.user_profile').hide( "slow" );
+});
+
+/************
+Project Upload Modal
+*************/	
+
+ $( "#upload_modal" ).click(function() {
+  $('.upload_project').show( "slow" );
+});
+
+$( ".close" ).click(function() {
+  $('.upload_project').hide( "slow" );
+});
