@@ -384,10 +384,11 @@ body {
 }
 .drop_down {
   height: 100%;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   width: 275px;
+  z-index: 9999;
   background-color: #E67725;
 }
 .drop_down ul {
@@ -397,6 +398,10 @@ body {
 }
 .drop_down li {
   border-bottom: 2px solid black;
+}
+.drop_down a {
+  color: #fff;
+  text-decoration: none;
 }
 /*==========================================*/
 .buttonsubmit {

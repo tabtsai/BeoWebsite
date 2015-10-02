@@ -484,11 +484,12 @@ body {
 }
 
 .drop_down {
-height:100%;  
-position:absolute;
+height:100%; 
+position:fixed;
 right:0;
 top:0;
 width:275px;
+z-index:9999;
 background-color:#E67725;
   ul {
     padding:0;
@@ -497,6 +498,10 @@ background-color:#E67725;
   }
   li {
     border-bottom:2px solid black;
+  } 
+  a {
+    color:#fff;
+    text-decoration: none;
   }
 }
 
