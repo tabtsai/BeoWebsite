@@ -285,6 +285,9 @@ main h3 {
 .additional_info ul li {
   margin-bottom: 10px;
 }
+.additional_info ul p {
+  font-size: 9px;
+}
 .additional_info .left {
   float: left;
   width: 40%;
@@ -389,9 +392,6 @@ main h3 {
   width: 26px;
   height: 24px;
 }
-.progress {
-  margin-bottom: 35px;
-}
 .progress_line {
   width: 37px;
   height: 3px;
@@ -411,7 +411,7 @@ main h3 {
   position: relative;
 }
 .resources {
-  margin-top: 120px;
+  padding-top: 10px;
 }
 .resources li {
   float: left;
