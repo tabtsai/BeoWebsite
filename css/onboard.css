@@ -388,21 +388,21 @@ header {
   width: 818.16px;
   height: 398.402px;
 }
-aside {
+.beekeeper_aside {
   background-color: #e67824;
   padding-bottom: 30px;
 }
-aside .container4 {
+.beekeeper_aside .container4 {
   width: 315px;
   margin: 0 auto;
 }
-aside h2 {
+.beekeeper_aside h2 {
   padding: 63px 0 35px;
   text-align: center;
   color: #fff;
   margin: 0;
 }
-aside a {
+.beekeeper_aside a {
   display: block;
   text-decoration: none;
   text-transform: uppercase;
@@ -414,14 +414,14 @@ aside a {
   background-color: #edefef;
   text-align: center;
 }
-aside .beekeeper_l {
+.beekeeper_aside .beekeeper_l {
   padding-top: 27px;
   width: 320px;
   height: 320px;
   display: block;
   padding-bottom: 27px;
 }
-aside .grey_logo {
+.beekeeper_aside .grey_logo {
   display: block;
   width: 150px;
   height: 76px;
@@ -476,6 +476,41 @@ footer ul a {
   width: 320px;
   height: 40px;
   margin: 10px auto;
+  padding-left: 50px;
+}
+input[type="email"] {
+  border-radius: 10px;
+  background: #eceeee;
+  border: #bdbcbc solid 1px;
+  display: block;
+  width: 320px;
+  height: 40px;
+  margin: 10px auto;
+  padding-left: 50px;
+  background: url(../img/email_icon.svg) no-repeat left;
+  background-size: 25.7px 17.1px;
+  background-position: 16px;
+}
+input[type="password"] {
+  border-radius: 10px;
+  background: #eceeee;
+  border: #bdbcbc solid 1px;
+  display: block;
+  width: 320px;
+  height: 40px;
+  margin: 10px auto;
+  padding-left: 50px;
+  background: url(../img/password_icon.svg) no-repeat left;
+  background-size: 18.425px 21.467px;
+  background-position: 16px;
+}
+#email_icon {
+  width: 25.7px;
+  height: 17.1px;
+}
+#password_icon {
+  width: 18.425px;
+  height: 21.467px;
 }
 .modal {
   display: none;
@@ -492,12 +527,60 @@ footer ul a {
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
-  padding: 20px;
+  padding-top: 80px;
 }
-.modal h2 {
-  color: orange;
+.modal ul {
+  padding-bottom: 20px;
+}
+.modal li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.modal li:last-child {
+  margin-right: none;
+}
+.login_button {
+  /*   width:175px;
+    height:60px;*/
+  background-color: #e67824;
+  color: #fff;
   text-transform: uppercase;
-  padding: 20px;
+  text-decoration: none;
+  padding: 22px 46px;
+  display: inline-block;
+  border-radius: 100px;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+/*
+.modal {
+   display:none;
+  position:fixed;
+  border-radius: 50px;
+  background:#eceeee;
+  text-align:center;
+  height: 580px;
+  width: 500px ;
+  z-index: 100;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+
+  padding:20px;
+  }*/
+.modal h2 {
+  color: #e67824;
+  text-transform: uppercase;
+  padding-bottom: 55px;
+  margin: 0;
+}
+#facebook,
+#google_plus {
+  width: 65px;
+  height: 65px;
 }
 .close {
   background: white;
@@ -505,6 +588,8 @@ footer ul a {
   position: absolute;
   right: 15px;
   top: 15px;
+  width: 20px;
+  height: 20px;
 }
 /* ==========================================================================
    Helper classes
