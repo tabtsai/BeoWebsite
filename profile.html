@@ -66,10 +66,10 @@
 
             <article class="main_right">
                 <nav class="right_top_nav clearfix">
-                    <ul>
-                        <li class ="in_progress_nav active"><img src="img/pencil_profile.svg" alt="">In progress</li>
-                        <li class="completed_nav"><img src="img/checkmark_complete.svg" alt="">completed</li>
-                        <li class="bookmarks_nav"><img src="img/bookmark.svg" alt="">bookmarks</li>
+                    <ul id="mainmenu_tab" >
+                        <li class ="in_progress_nav active"><a href="#inProgress_tab"><img src="img/pencil_profile.svg" alt="">In progress</a></li>
+                        <li class="completed_nav"><a href="#completed_tab"><img src="img/checkmark_complete.svg" alt="">completed</a></li>
+                        <li class="bookmarks_nav"><a href="#bookmark_tab"><img src="img/bookmark.svg" alt="">bookmarks</a></li>
                     </ul>
                 </nav>
 
@@ -78,22 +78,26 @@
             <div class="right_content">
                 <ul>
 <!-- Page 1 of the progress page -->        
-                    <li class="in_progress">    
+                    <li id="inProgress_tab" class="in_progress">    
                     <!--SMALL NAV-->   
 
             <nav>
-              <ul class="courses_project_nav clearfix">
+              <ul id="nestmenu_1" class="courses_project_nav clearfix">
                   <li class ="courses_nav active2"> 
-                    <div class="square1">
-                    <p>Courses</p>
-                    </div>
+                    <a href="#course1">
+                        <div class="square1">
+                        <p>Courses</p>
+                        </div>
+                    </a>
                   <div class="left_triangle"></div>
                   </li>
                   <li class="projects_nav">
-                    <div class="square2"> 
-                    <p>Projects</p>
-                    </div>
-                 <div class="right_triangle"></div>  
+                       <a href="#project1">
+                            <div class="square2"> 
+                            <p>Projects</p>
+                            </div>
+                          <div class="right_triangle"></div>  
+                        </a>
                   </li>
                </ul>
             </nav>
@@ -101,7 +105,7 @@
                      <!-- Course Page -->                
                             <ul>   
                             <!-- this class resizes images and contains honeycomb cards --> 
-                                <li class="size_container">
+                                <li id = "course1" class="size_container">
                                      <!--COURSES-->
                                     <ul>
                                         <li>
@@ -116,7 +120,7 @@
                                                 <li><a href="#"></a></li>
                                             </ul> -->
                                         </li>
-                                        <li>
+                                        <li >
                                             <img src="img/honeycomb_card_progress2.svg" alt="#">
                                          <!--    <h4>Typography in Depth</h4>
                                             <p>After you've learned the basics of typography, there is much more to learn to become a knowledgeable and experienced designer.</p>
@@ -131,7 +135,7 @@
                                 </li>
                                 
                         <!--PROJECTS-->
-                                <li class= "progress_projects size_container">
+                                <li id = "course2"  class= "progress_projects size_container">
                                     <ul>
                                         <li>
                                             <img src="img/honeycomb_progress_card_projects.svg" alt="#">
@@ -146,20 +150,24 @@
 
 
                 <!--COMPLETED-->     
-                    <li class="completed">                                         
+                    <li id="completed_tab" class="completed">                                         
                   <!--SMALL NAV-->
             <nav>
-              <ul class="courses_project_nav clearfix">
+              <ul id ="nestmenu_2" class="courses_project_nav clearfix">
                   <li class ="courses_nav active2"> 
-                    <div class="square1">
-                    <p>Courses</p>
-                    </div>
+                      <a href="#course2">
+                        <div class="square1">
+                        <p>Courses</p>
+                        </div>
+                       </a>
                   <div class="left_triangle"></div>
                   </li>
                   <li class="projects_nav">
-                    <div class="square2"> 
-                    <p>Projects</p>
-                    </div>
+                    <a href="#project2">
+                        <div class="square2"> 
+                        <p>Projects</p>
+                        </div>
+                    </a>
                  <div class="right_triangle"></div>  
                   </li>
                </ul>
@@ -167,7 +175,7 @@
 
                             <ul>
                                 <!-- Completed Courses -->
-                                <li class="size_container">        
+                                <li id ="course2" class="size_container">        
                                      <!--COURSES-->
                                     <ul>
                                         <li>
@@ -194,7 +202,7 @@
                                     </ul>
                                 </li>
                                     <!--PROJECTS-->
-                                <li class="completed_projects size_container">
+                                <li id = "project2"  class="completed_projects size_container">
                                     <ul>
                                         <li>
                                             <img src="img/honeycomb_completed_card_projects.svg" alt="#">
@@ -217,7 +225,7 @@
 
                 <!--BOOKMARKS--> 
 
-                    <li class="bookmarks size_container">  
+                    <li id="bookmark_tab"  class="bookmarks size_container">  
                         <section>
                              <h3>You haven't booked marked anything yet. </h3>
                              <h3>Check ot all our courses to start bookmarking </h3>
@@ -240,3 +248,24 @@
             </ul>
         </div>
     </footer> 
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+       
+        <script src="js/vendor/jquery.tabify.js" type="text/javascript" charset="utf-8"></script>
+            <script type="text/javascript">
+            // <![CDATA[
+                
+            $(document).ready(function () {
+                $('#mainmenu_tab').tabify();
+                $('#nestmenu_1').tabify();
+                $('#nestmenu_2').tabify();
+            });
+                    
+            // ]]>
+        </script>
+
+    
+    </body>
+</html>
