@@ -145,11 +145,7 @@ textarea {
   box-sizing: border-box;
 }
 
-h1 {
-    font-family:"UniveBla";
-    font-size:37px;
-    line-height: 1;
-}
+
 a {
     font-family:"UniveBla";
 }
@@ -159,13 +155,20 @@ p, figcaption {
     font-size:10px;
 }
 
-h2 {
+h1 {
     font-family:"UniveBla";
-    font-size:37px;
+    font-size:27px;
     line-height: 1;
 }
 h3 {
+    font-family:"UniveCon";
+    font-size: 18px;
+    margin:0;
+}
+
+h2 {
     font-family:"UniveBla";
+    font-size:23px;
 }
 
 li {
@@ -173,8 +176,10 @@ li {
 }
 
 h4 {
-    font-size:13px;
-
+    font-family:"UniveCon";
+    font-size:14px;
+    margin:0;
+    padding:0;
 }
 
 .clearfix:after {
@@ -192,7 +197,8 @@ body, html {
 .main_container {
     margin:0 auto;
     /*width:80.762%;*/
-    width:827.0028px;
+  /*  width:827.0028px;*/
+    width:836.231px;
     height:68px;
 
 }
@@ -252,7 +258,8 @@ header{
 
 main {
     top:68px;
-    width:827.0028px;
+    /*width:827.0028px;*/
+    width:836.231px;
     margin:68px auto 45px;
     a {
     margin-top:20px;
@@ -261,16 +268,15 @@ main {
     color:#edbb00;
     text-decoration: none;
     }
-    h2 {
-    margin-bottom:14px;
+    h1 {
+    margin:0;
+    padding-bottom:7px;
     }
     h3 {
     margin-bottom:30px;
     }
 }
-.main_left h3{
-    margin:0;
-}
+
 
 
 .additional_info h4{
@@ -286,6 +292,20 @@ main {
     border-radius: 10px;
     position:relative;
     padding:10px;
+    p {
+        margin:0;
+    }
+    h2{
+    margin:0;
+    padding-top:5px;
+    }
+}
+
+#description {
+    padding-top:15px;
+    padding-bottom:20px;
+    width:207px;
+    border-bottom:1px solid #ecba1d;   
 }
 
 
@@ -297,18 +317,21 @@ main {
     right:0;
     width:16px;
     height:23px;
-    transform:translate(-76%,50%);
+    transform:translate(-105%,75%);
 }
 
 
-hr {
-    width:209px;
+/*hr {
+    width:208px;
     background-color: #ecba1d;
     margin:0 auto;
-}
+}*/
 
 /*Vocabulary Section*/
-
+.additional_info h4 {
+    margin:17px 0 17px;
+    text-transform: uppercase;
+}
 
  .additional_info li img {
     width:20px;
@@ -330,6 +353,7 @@ hr {
  }*/
 
 .additional_info ul {
+    margin:0;
     padding:0;
         li {
             margin-bottom:10px;
@@ -344,7 +368,8 @@ hr {
             float:left;
             margin-top:2px;
             font-family:"UniveBla";
-            width:56%;
+            /*width:56%;*/
+            width:67%;
         }
 }
 
@@ -370,15 +395,15 @@ hr {
 }*/
 
 .questions {
-    padding-bottom: 23px;
+    padding-top:15px;
+    text-align:center;
     a {
     background-color:#39a6e2;
-    text-align: center;
-    margin:0 auto;
+    display:inline-block;
     color:#fff;
-    padding:4px;
+    padding:10px 14px;
     border-radius: 25px;
-    width:80px;
+    /*width:80px;*/
     font-size: 14px;
     text-transform: uppercase;
     text-decoration: none;
@@ -486,7 +511,13 @@ hr {
     width:20%;
     /*display:inline-block;*/
     list-style-type: disc;
+    &:first-child {
+    margin-left:none;
+    };
+    a {
+        font-family:"SerifRom";
     }
+}
 
 
 footer {
