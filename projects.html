@@ -68,9 +68,9 @@
         <!-- main content -->
             <article class="main_right">
                 <nav class="right_top_nav clearfix">
-                    <ul>
-                        <li class="gallery_nav active"><img src="img/projects_nav_icon.svg" alt="">Gallery</li>
-                        <li class="messages_nav"><img src="img/projects_nav_icon_messages.svg" alt="">Messages
+                    <ul  id = "mainmenu_tab">
+                        <li class="gallery_nav active"><a href="#gallery_tab"><img src="img/projects_nav_icon.svg" alt="">Gallery</a></li>
+                        <li class="messages_nav"><a href="#messages_tab"><img src="img/projects_nav_icon_messages.svg" alt="">Messages</a>
                             <div></div><!--message alert-->  
                         </li>
                     </ul>
@@ -79,7 +79,7 @@
 <!--Gallery-->
         <nav class="content">
             <ul>    
-                <li class="gallery_content scroll">   
+                <li id = "gallery_tab"  class="gallery_content scroll">   
                     <ul class="project_images"><!--should these be lists or articles?-->
                         <li id = "upload_modal">
                             <img src="img/project1_image.svg" alt="">
@@ -293,7 +293,7 @@
                
 
 <!--Messages-->                
-                <li class="messages">
+                <li id = "messages_tab" class="messages">
                   <!--   <div></div>Message Alert -->
                     <section class="message_container clearfix">
                         <div class="top_left_section"><img src="img/projects_messages_image1.svg" alt=""></div>
@@ -317,19 +317,19 @@
                    <!--Feedback--> 
                     <section class="message_container">
                         <nav class="user_feedback">
-                            <ul>
+                            <ul id = "vertical_nav">
                                 <li class="active2">
-                                    <a href="">Nick Petit<span>Feedback on your "Happy Holidays Icons"</span></a>
+                                    <a id = "#feedback1" href="">Nick Petit<span>Feedback on your "Happy Holidays Icons"</span></a>
                                    <!--  <div class="square"></div> -->
                                 </li>
-                                <li><a href="">Joey Fatone<span>Feedback on your "Design Icon Project"</span></a></li>
-                                <li><a href="">Rick Louden<span>Your "Design Icon Project" for Beo</span></a></li>
-                                <li><a href="">Linda Aberhen<span>Beo Feedback on the "Design Icon Project"</span></a></li>
-                                <li><a href="">Julie Dunkes<span>Feedback on the "Design Icon Project"</span></a></li>
+                                <li><a id = "#feedback2"  href="">Joey Fatone<span>Feedback on your "Design Icon Project"</span></a></li>
+                                <li><a id = "#feedback3"  href="">Rick Louden<span>Your "Design Icon Project" for Beo</span></a></li>
+                                <li><a id = "#feedback4" href="">Linda Aberhen<span>Beo Feedback on the "Design Icon Project"</span></a></li>
+                                <li><a id = "#feedback5"  href="">Julie Dunkes<span>Feedback on the "Design Icon Project"</span></a></li>
                             </ul>
                         </nav>
                         <ul class="content_feedback scroll">
-                            <li class="active3">
+                            <li id = "feedback1" class="active3">
                                <!--  Maybe split these into 2 divs or use css to change to block? Or even a list of items? -->
                                 <h1>Feedback on your "Happy Holidays Icons"</h1>
                               
@@ -345,7 +345,7 @@
                                 <p>A couple of other icons that feel somehwat misplaced are the bow and the Star of David.  I think that if there is going to be an...</p>
                                 </div>
                             </li>  
-                            <li>
+                            <li id = "feedback2">
                                 <h1>Feedback on your "Design Icon Project</h1>
                                 <p>I'm Joey, an instructor here at Beo. I see you posted a piece of work for the "Desin an Icon" prjoect.  Below you'll find some critques I've made.</p>
                                 <p>I really love all of your different icons and think they are beautiful representations of the holiday season.  I think the snoman feels a little unsimilar to the other icons so I would try working on that one more.</p>
@@ -353,7 +353,7 @@
                                 <img src="#" alt="">
                                 <img src="#" alt="">
                             </li>   
-                            <li>
+                            <li id = "feedback3">
                                 <h1>Your "Design Icon Project" for Beo</h1>
                                 <p>I'm Rick, an instructor here at Beo. I see you posted a piece of work for the "Desin an Icon" prjoect.  Below you'll find some critques I've made.</p>
                                 <p>I really love all of your different icons and think they are beautiful representations of the holiday season.  I think the snoman feels a little unsimilar to the other icons so I would try working on that one more.</p>
@@ -361,7 +361,7 @@
                                 <img src="#" alt="">
                                 <img src="#" alt="">
                             </li> 
-                            <li>
+                            <li id = "feedback4">
                                 <h1>Beo Feedback on the "Design Icon Project"</h1>
                                 <p>I'm Linda, an instructor here at Beo. I see you posted a piece of work for the "Desin an Icon" prjoect.  Below you'll find some critques I've made.</p>
                                 <p>I really love all of your different icons and think they are beautiful representations of the holiday season.  I think the snoman feels a little unsimilar to the other icons so I would try working on that one more.</p>
@@ -369,7 +369,7 @@
                                 <img src="#" alt="">
                                 <img src="#" alt="">
                             </li> 
-                            <li>
+                            <li id = "feedback5">
                                 <h1>Feedback on the "Design Icon Project"</h1>
                                 <p>I'm Julie, an instructor here at Beo. I see you posted a piece of work for the "Desin an Icon" prjoect.  Below you'll find some critques I've made.</p>
                                 <p>I really love all of your different icons and think they are beautiful representations of the holiday season.  I think the snoman feels a little unsimilar to the other icons so I would try working on that one more.</p>
@@ -681,16 +681,18 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/project_modal.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+       <script src="js/project_modal.js"></script>
+        <script src="js/vendor/jquery.tabify.js" type="text/javascript" charset="utf-8"></script>
+            <script type="text/javascript">
+            // <![CDATA[
+                
+            $(document).ready(function () {
+                $('#mainmenu_tab').tabify();
+                $('#vertical_nav').tabify();
+           
+            });
+                    
+            // ]]>
         </script>
     </body>
 </html>
