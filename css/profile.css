@@ -114,8 +114,12 @@ figcaption {
   font-size: 13px;
 }
 h2 {
+  font-family: "UniveBla";
+  font-size: 26px;
+}
+h3 {
   font-family: "UniveCon";
-  font-size: 37px;
+  font-size: 27px;
 }
 .clearfix:after {
   content: "";
@@ -202,11 +206,14 @@ main {
     z-index: 200;
 }*/
 /*Profile Image and Achievements*/
+.main_left figure {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 14px;
+}
 .main_left figure img {
-  width: 120.218px;
   height: 110px;
   margin: 0 auto;
-  z-index: -1;
 }
 .main_left figcaption {
   margin-bottom: 25px;
@@ -216,10 +223,9 @@ main {
   width: 22px;
   height: 20px;
 }
-.main_left figcaption h3 {
-  font-size: 27px;
-  margin: 13px auto;
+.main_left figcaption h2 {
   color: #3f4040;
+  margin-bottom: 0;
 }
 .main_left ul {
   margin: 0 auto;
@@ -234,7 +240,7 @@ main {
 }
 .main_left ul li img {
   width: 70px;
-  height: 58px;
+  height: 70px;
 }
 /*Right Section*/
 .main_right {
