@@ -258,7 +258,9 @@ main {
     width:235px;
     list-style: none;
     background-color: #eceeee;
-    padding:10px;
+    padding-left:21px;
+    padding-top:15px;
+    padding-right:11px;
     &:last-child{
         margin-right:none;
     }
@@ -280,11 +282,12 @@ main {
 
 
 .main_left ul {
+  padding-left:21px;  
     li {
     float:left;
     width:50%;
     margin-bottom:25px;
-    font-size:12px;
+    font-size:14px;
     font-family:"SerifRom";
     list-style-image: url('../img/bullet_point.svg') no-repeat left 10px;
     }
@@ -316,8 +319,6 @@ Carrot Nav Menu*/
     text-transform: uppercase;
     cursor:pointer;
     color:#E9EBEA;
-    font-family:"UniveCond";
-    font-stretch:condensed;
     font-size:16px;
         &:first-child{    
         border-top-left-radius: 10px;
@@ -329,6 +330,9 @@ Carrot Nav Menu*/
                 width:25px;
                 height:25px;
                 margin-right:8px;
+            }
+            a {
+               font-family:"UniveCon";
             }
 }
 
@@ -389,6 +393,15 @@ Carrot Nav Menu*/
     width:190px;
     border:solid #BDBDBD;
     text-align:center;
+  }
+
+  #mainmenu_tab li {
+    padding-bottom:10px;
+    padding-top:10px;
+      a {
+        color:#eceeee;
+        text-decoration: none;
+      }
   }
 
 /*=====================================================*/
@@ -472,8 +485,8 @@ scrollbar*/
 
 /*project profile image*/
 .project_images .caption_contain .left img {
-        width:20px;
-        height:20px;
+        width:12px;
+        height:12px;
         display:inline;
     }
 
@@ -673,6 +686,10 @@ display:none;
 /*============================================*/
 /*Modal CSS*/
 
+/*stats are invisible before submitting projects*/
+#hidden {
+  display:none;
+}
 
 .close {
     width:28px;
