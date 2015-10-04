@@ -591,7 +591,7 @@
                     <p>Here is my submission for the Design an Icon project.  I wanted to do a space theme because I've always been interested in that area and I thought that by creating icons for it I could show my love for the extraterrestrail space world.</p>
                     <p> I wanted my icons to be very simple and basic, while also having a fun and almost doodle feeling to them.  I decided to go with the line art aesthetic for simplicity, and then added the blurry, purplish background for the that spacey vibe.  Lemme know what you guys think and if you have any suggestions!</p>
                 </section>
-                <section>
+                <section class="comment_container scroll">
                     <div class="comment_labels clearfix">
                         <h2>27 Comments</h2>
                      <ul> 
@@ -601,6 +601,8 @@
                         <li id="add_comment">+</li>
                     </ul>
                     </div>
+
+            <div class="comments_container scroll">
                 <article class="user clearfix">
                     <div class="comment_section">
                         <img src="img/forum_user6.svg" alt=""> 
@@ -635,8 +637,6 @@
                         <time>1 Week Ago</time>
                 </article>
             </section>
-            </div>
- 
              </li>
          </ul>
      </div>
@@ -710,11 +710,14 @@
 <!-- Upload Modal -->
 
             <aside class="upload_project"> 
-            <h2>Submit your project</h2>
+           
             <form>
+             <h2>Submit your project</h2>
+            <div class="left">
                <input id="title" type="text" placeholder="add a title"></input>
                 <textarea id="text_area" placeholder="write some info about your project"></textarea>
-                <input id="file_upload" type="text" placeholder="Drag and Drop here"></input>
+            </div>
+                <input id="file_upload" class="right clearfix" type="text" placeholder="Drag and Drop here"></input>
                 <button type="submit">Submit</button>
             </form>
             

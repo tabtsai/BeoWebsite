@@ -564,10 +564,10 @@ display:none;
   width: 28px;
   height: 28px;
 }
-left {
+.left {
   float: left;
 }
-right {
+.right {
   float: right;
 }
 /*body {
@@ -689,6 +689,10 @@ figcaption p time {
   text-align: center;
 }
 /*Comment Section*/
+.comment_container {
+  overflow-y: auto;
+  height: 700px;
+}
 .comment_section {
   float: left;
   width: 78%;
@@ -903,11 +907,13 @@ aside.overlay {
 .upload_project {
   display: none;
   position: fixed;
-  border-radius: 50px;
+  border-radius: 10px;
   background: #eceeee;
   text-align: center;
-  height: 580px;
-  width: 500px ;
+  /* height: 580px;
+  width: 5068px;*/
+  height: 453px;
+  width: 568px;
   z-index: 100;
   top: 50%;
   left: 50%;
@@ -917,10 +923,30 @@ aside.overlay {
   -o-transform: translate(-50%, -50%);
   padding: 20px;
 }
+#title,
+#text_area,
+#file_upload {
+  display: block;
+}
+#title {
+  width: 280px;
+  height: 39px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+#text_area {
+  width: 280px;
+  height: 220px;
+  border-radius: 15px;
+}
+#file_upload {
+  width: 232px;
+  height: 279px;
+  border-radius: 15px;
+}
 .upload_project h2 {
-  color: orange;
-  text-transform: uppercase;
-  padding: 20px;
+  text-align: left;
+  margin: 0;
 }
 .upload_project .close {
   background: white;
