@@ -401,11 +401,13 @@ body {
 .drop_down li {
   border-bottom: 1px solid #fff;
   padding-bottom: 11px;
-  padding-top: 22px;
+  padding-top: 15px;
 }
 .drop_down a {
   color: #fff;
   text-decoration: none;
+  font-size: 22px;
+  font-family: "UniveCon";
 }
 .social_media li {
   float: left;
