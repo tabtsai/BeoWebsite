@@ -518,10 +518,11 @@ input[type="password"] {
   border-radius: 50px;
   background: #eceeee;
   text-align: center;
-  height: 580px;
+  /* height: 580px;*/
   width: 500px ;
   z-index: 100;
-  top: 50%;
+  /*top:50%;*/
+  top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -530,7 +531,7 @@ input[type="password"] {
   padding-top: 80px;
 }
 .modal ul {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .modal li {
   display: inline-block;
