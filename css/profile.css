@@ -278,11 +278,10 @@ main {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  cursor: pointer;
+  /* cursor:pointer;*/
   color: #E9EBEA;
-  font-family: "universe-condensed";
-  font-stretch: condensed;
   font-size: 16px;
+  padding: 9.5px;
 }
 .main_right .right_top_nav li:first-child {
   border-top-left-radius: 10px;
@@ -294,6 +293,13 @@ main {
   width: 25px;
   height: 25px;
   margin-right: 8px;
+}
+.main_right .right_top_nav li a {
+  padding-left: 9px;
+  font-size: 16px;
+  color: #eceeee;
+  text-decoration: none;
+  font-family: "UniveCon";
 }
 /* Required for Down Triangle */
 .main_right .right_top_nav .active {
@@ -380,8 +386,8 @@ main {
 .right_content .courses_project_nav {
   list-style: none;
   padding: 0;
-  width: 220px;
-  margin: 20px auto 35px;
+  width: 180px;
+  margin: 5px auto 35px;
 }
 .right_content .courses_project_nav ul {
   margin: 0 auto;
@@ -393,16 +399,24 @@ main {
   height: 32px;
   cursor: pointer;
 }
+.right_content .courses_project_nav li a {
+  text-decoration: none;
+}
+.right_content .courses_project_nav li p {
+  font-family: "UniveBla";
+  text-transform: uppercase;
+  color: #bdbcbc;
+  font-size: 12px;
+}
 .square1 {
-  width: 110px;
+  width: 100px;
   border-top: solid #E67725;
   border-bottom: solid #E67725;
   height: 35px;
-  top: 30px;
   text-align: center;
 }
 .square2 {
-  width: 110px;
+  width: 100px;
   border-top: solid #E67725;
   border-left: solid #E67725;
   border-bottom: solid #E67725;
@@ -423,7 +437,7 @@ main {
   display: block;
   position: absolute;
   top: -30px;
-  right: -8px;
+  right: 2px;
   /*width changes the thickness of the shape*/
   width: 21px;
   height: 21px;
