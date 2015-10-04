@@ -234,7 +234,6 @@ main {
   float: right;
   width: 580px;
   background-color: #eceeee;
-  /* overflow:scroll;*/
 }
 .main_right ul {
   list-style: none;
@@ -328,11 +327,7 @@ Carrot Nav Menu*/
 }
 /*=====================================================*/
 /*right gallery section*/
-/*.content {
-    overflow: scroll;
-}*/
 .gallery_content {
-  /*overflow: scroll;*/
   overflow-y: auto;
   width: 523px;
   margin: 0 auto;
@@ -607,7 +602,8 @@ right {
 }
 .aside_header_container {
   width: 90%;
-  margin: 0 auto;
+  /*margin:0 auto;*/
+  margin-left: 0;
 }
 #top_profile_img {
   width: 77px;
@@ -646,7 +642,8 @@ figcaption p time {
   width: 50%;
 }
 .stats {
-  padding-top: 10px;
+  padding-top: 5px;
+  padding-left: 22px;
 }
 .stats img {
   width: 14px;
@@ -720,6 +717,10 @@ figcaption p time {
   margin-bottom: 20px;
   border-top: 1px solid black;
 }
+.project_comments {
+  height: 500px;
+  overflow-y: auto;
+}
 /* TAB View Project Modal*/
 #project_modal {
   cursor: pointer;
@@ -777,7 +778,8 @@ aside.overlay {
   border-radius: 30px;
   background: #eceeee;
   text-align: left;
-  min-height: 780px;
+  /*min-height: 780px;*/
+  min-height: 685px;
   min-width: 670px;
   width: 50%;
   z-index: 100;
@@ -817,10 +819,75 @@ aside.overlay {
   -o-transform: translate(-50%, -50%);
   padding: 20px;
 }
-.user_profle h2 {
+/*.user_profle h2 {
   color: orange;
   text-transform: uppercase;
   padding: 20px;
+}*/
+.other_user_profile {
+  margin-top: 45px;
+  float: left;
+  border-radius: 10px;
+}
+/*Left Section*/
+/* margin-top:45px;*/
+.other_user_profile {
+  float: left;
+  width: 235px;
+  list-style: none;
+  background-color: #eceeee;
+  padding: 10px;
+}
+.other_user_profile:last-child {
+  margin-right: none;
+}
+/*Profile Image and Achievements*/
+.other_user_profile figure {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 14px;
+}
+.other_user_profile figure img {
+  height: 110px;
+  margin: 0 auto;
+}
+.other_user_profile figcaption {
+  margin-bottom: 25px;
+  color: #b3b3b3;
+}
+.other_user_profile figcaption img {
+  width: 22px;
+  height: 20px;
+}
+.other_user_profile figcaption h2 {
+  color: #3f4040;
+  margin-bottom: 0;
+}
+.other_user_profile ul {
+  margin: 0 auto;
+  padding: 0;
+}
+.other_user_profile ul li {
+  /*margin:0 auto; */
+  float: left;
+  width: 33.3333%;
+  list-style: none;
+  margin-bottom: 20px;
+}
+.other_user_profile ul li img {
+  width: 70px;
+  height: 70px;
+}
+.user_profile .honeycomb_progress {
+  float: right;
+  width: 325px;
+}
+.user_profile .honeycomb_progress li {
+  display: inline-block;
+}
+.user_profile .honeycomb_progress img {
+  width: 75px;
+  height: 75px;
 }
 .user_profile .close {
   background: white;

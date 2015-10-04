@@ -520,6 +520,8 @@
                         <li id="add_comment">+</li>
                     </ul>
                     </div>
+
+            <div class="project_comments scroll">
                 <article class="user clearfix">
                     <div class="comment_section">
                         <img src="img/forum_user6.svg" alt=""> 
@@ -553,6 +555,7 @@
                     </div>
                         <time>1 Week Ago</time>
                 </article>
+            </div>
             </section>
             </div>
  
@@ -644,8 +647,55 @@
       
 </aside>   
 
-    <aside class="user_profile"> 
-            <h2>User Profile</h2>
+<!-- =============================================== -->
+<!-- Other User Profile -->
+
+    <aside class="user_profile clearfix"> 
+
+           <section class="other_user_profile"> 
+                <figure class="clearfix"> <!-- figure?  -->
+                    <img src="img/profile_picture_honeycomb.svg" alt="#">
+                    <figcaption>
+                        <h2>SportsMan</h2>
+                        <img src="img/achievements.svg">
+                       ACHIEVEMENTS
+                    </figcaption>
+                </figure>
+               
+
+                <ul>
+                    <li>
+                        <img src="img/lessons_badge.svg">
+                    </li>
+                    <li>
+                        <img src="img/layer_master_badge.svg">
+                    </li>
+                    <li>
+                        <img src="img/pen_tool_badge.svg">
+                    </li>
+                    <li>
+                        <img src="img/first_project_badge.svg">
+                    </li>
+                </ul>
+                 <p class="close">close</p>
+            </section>
+
+               <!-- Course Page -->                
+                          
+                            <!-- this class resizes images and contains honeycomb cards --> 
+                             
+                                     <!--COURSES-->
+                                <section class="honeycomb_progress">
+                                    <ul>
+                                        <li>
+                                            <img src="img/honeycomb_card_progress1.svg" alt="#">
+                                        </li>
+                                        <li >
+                                            <img src="img/honeycomb_card_progress2.svg" alt="#">
+                                        </li>
+                                </section>
+                                    </ul>
+           <!--  <h2>User Profile</h2>
             
                  <a class="signup" href="profile.html">Log in</a>
                  <h3>Log in with</h3>
@@ -653,18 +703,28 @@
                     <li><img src="#" alt=""></li>
                     <li><img src="#" alt=""></li>
                 </ul>
-                <p class="close">close</p><!--Absolutely positioned closing button--> 
+                <p class="close">close</p>Absolutely positioned closing button  -->
         </aside>
 
+<!-- =============================================== -->
+<!-- Upload Modal -->
+
             <aside class="upload_project"> 
-            <h2>Upload Modal</h2>
+            <h2>Submit your project</h2>
+            <form>
+               <input id="title" type="text" placeholder="add a title"></input>
+                <textarea id="text_area" placeholder="write some info about your project"></textarea>
+                <input id="file_upload" type="text" placeholder="Drag and Drop here"></input>
+                <button type="submit">Submit</button>
+            </form>
             
-                 <a class="signup" href="profile.html">Log in</a>
+            
+                 <!-- <a class="signup" href="profile.html">Log in</a>
                  <h3>Log in with</h3>
                  <ul>
                     <li><img src="#" alt=""></li>
                     <li><img src="#" alt=""></li>
-                </ul>
+                </ul> -->
                 <p class="close">close</p><!--Absolutely positioned closing button--> 
         </aside>
 
