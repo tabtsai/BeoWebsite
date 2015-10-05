@@ -268,7 +268,7 @@ select {
 /**honeycomb**/
 section {
   background: #BEBDBD;
-  background-image: url('../img/testpng.png');
+  background-image: url('../img/hexsvg.svg');
   background-repeat: repeat-y;
   background-size:1027.005px;
   
@@ -299,11 +299,26 @@ section {
   padding-bottom: 210px;
   overflow: hidden;
   float: left;
-  margin-top: -151px;
+  margin-top: -149px;
   margin-right: 205px;
   margin-bottom: 61px;
-  margin-left: -38px;
+  margin-left: -40px;
 }
+
+.grid-item:nth-child(1),
+.grid-item:nth-child(2) {
+  margin-top: 12px;
+}
+.grid-item:nth-child(4n+3) {
+  margin-left: 163px;
+}
+.grid-item:nth-child(4n+4) {
+  margin-right: 0;
+}
+.grid-item:nth-child(4n+3) {
+  clear: left;
+}
+
 .grid-item > div {
   top: 55px;
   position: absolute;
@@ -354,41 +369,29 @@ img.proceed {
   width: 36.591px;
   height: 33.759px;
 }
-.grid-item:nth-child(1),
-.grid-item:nth-child(2) {
-  margin-top: 12px;
-}
-.grid-item:nth-child(4n+3) {
-  margin-left: 164px;
-}
-.grid-item:nth-child(4n+4) {
-  margin-right: 0;
-}
-.grid-item:nth-child(4n+3) {
-  clear: left;
-}
+
 .grid li.easy {
   background-image: url("../img/beginnerhex.svg");
   background-size: cover;
-  width: 234px;
+  width: 236px;
   height: 208px;
 }
 .grid li.med {
   background-image: url("../img/intermediatehex.svg");
   background-size: cover;
-  width: 234px;
+  width: 236px;
   height: 208px;
 }
 .grid li.hard {
   background-image: url("../img/difficulthex.svg");
   background-size: cover;
-  width: 234px;
+  width: 236px;
   height: 208px;
 }
 .grid li.more {
   background-image: url("../img/morehex.svg");
   background-size: cover;
-  width: 234px;
+  width: 236px;
   height: 208px;
 }
 /**honeycomb**/
