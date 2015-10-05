@@ -92,15 +92,25 @@ textarea {
   src: url('../fonts/SerifLigIta2.eot');
   src: url('../fonts/SerifLigIta2.eot') format('embedded-opentype'), url('../fonts/SerifLigIta2.woff2') format('woff2'), url('../fonts/SerifLigIta2.woff') format('woff'), url('../fonts/SerifLigIta2.ttf') format('truetype'), url('../fonts/SerifLigIta2.svg#SerifLigIta2') format('svg');
 }
-@font-face {
-  font-family: 'UniveBla';
-  src: url('../fonts/UniveBla.eot');
-  src: url('../fonts/UniveBla.eot') format('embedded-opentype'), url('../fonts/UniveBla.woff2') format('woff2'), url('../fonts/UniveBla.woff') format('woff'), url('../fonts/UniveBla.ttf') format('truetype'), url('../fonts/UniveBla.svg#UniveBla') format('svg');
+/*@font-face {
+    font-family: 'UniveBla';
+    src: url('../fonts/UniveBla.eot');
+    src: url('../fonts/UniveBla.eot') format('embedded-opentype'),
+         url('../fonts/UniveBla.woff2') format('woff2'),
+         url('../fonts/UniveBla.woff') format('woff'),
+         url('../fonts/UniveBla.ttf') format('truetype'),
+         url('../fonts/UniveBla.svg#UniveBla') format('svg');
 }
+*/
 @font-face {
   font-family: 'UniveCon';
   src: url('../fonts/UniveCon.eot');
   src: url('../fonts/UniveCon.eot') format('embedded-opentype'), url('../fonts/UniveCon.woff2') format('woff2'), url('../fonts/UniveCon.woff') format('woff'), url('../fonts/UniveCon.ttf') format('truetype'), url('../fonts/UniveCon.svg#UniveCon') format('svg');
+}
+@font-face {
+  font-family: 'UniveBla';
+  src: url('../fonts/UniversLTStdBlack.eot');
+  src: url('../fonts/UniversLTStdBlack.eot') format('embedded-opentype'), url('../fonts/UniversLTStdBlack.woff2') format('woff2'), url('../fonts/UniversLTStdBlack.woff') format('woff'), url('../fonts/UniversLTStdBlack.ttf') format('truetype'), url('../fonts/UniversLTStdBlack.svg#UniversLTStdBlack') format('svg');
 }
 .seriR {
   font-family: 'SerifLigIta';
