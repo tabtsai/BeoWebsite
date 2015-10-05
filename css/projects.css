@@ -658,6 +658,10 @@ figcaption p time {
   float: left;
   padding-right: 10px;
 }
+.list_comments {
+  overflow-y: auto;
+  height: 200px;
+}
 /*Labels */
 .comment_labels {
   margin-top: 60px;
@@ -828,22 +832,23 @@ aside.overlay {
   text-transform: uppercase;
   padding: 20px;
 }*/
-.other_user_profile {
-  margin-top: 45px;
-  float: left;
-  border-radius: 10px;
-}
 /*Left Section*/
 /* margin-top:45px;*/
+/*.other_user_profile {
+    float:left;
+    width:50%;
+    list-style: none;
+    background-color: #eceeee;
+    padding:10px;
+    margin:0 auto;
+    border:2px solid #e67824;
+    &:last-child{
+        margin-right:none;
+    }
+}*/
 .other_user_profile {
-  float: left;
-  width: 235px;
-  list-style: none;
-  background-color: #eceeee;
-  padding: 10px;
-}
-.other_user_profile:last-child {
-  margin-right: none;
+  width: 70%;
+  margin: 0 auto;
 }
 /*Profile Image and Achievements*/
 .other_user_profile figure {
@@ -858,6 +863,7 @@ aside.overlay {
 .other_user_profile figcaption {
   margin-bottom: 25px;
   color: #b3b3b3;
+  width: 100%;
 }
 .other_user_profile figcaption img {
   width: 22px;
@@ -874,7 +880,8 @@ aside.overlay {
 .other_user_profile ul li {
   /*margin:0 auto; */
   float: left;
-  width: 33.3333%;
+  /*    width:33.3333%;*/
+  width: 25%;
   list-style: none;
   margin-bottom: 20px;
 }
@@ -883,15 +890,22 @@ aside.overlay {
   height: 70px;
 }
 .user_profile .honeycomb_progress {
-  float: right;
-  width: 325px;
+  width: 100%;
+  height: 200px;
+  overflow-y: auto;
+}
+.user_profile .honeycomb_progress ul {
+  height: 415px;
 }
 .user_profile .honeycomb_progress li {
-  display: inline-block;
+  float: left;
+  margin-bottom: 16px;
+  width: 50%;
+  list-style: none;
 }
 .user_profile .honeycomb_progress img {
-  width: 75px;
-  height: 75px;
+  width: 152.181px;
+  height: 114.136px;
 }
 .user_profile .close {
   background: white;
@@ -933,16 +947,32 @@ aside.overlay {
   height: 39px;
   border-radius: 15px;
   margin-bottom: 20px;
+  border: none;
 }
 #text_area {
   width: 280px;
   height: 220px;
   border-radius: 15px;
+  border: none;
 }
 #file_upload {
   width: 232px;
   height: 279px;
   border-radius: 15px;
+  border: none;
+}
+#submit_file {
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+  border-radius: 30px;
+  background-color: #39a5e1;
+  color: #fff;
+  padding: 15px 16px;
+  text-transform: uppercase;
+  border: none;
+  font-family: "UniveBla";
+  font-size: 14px;
 }
 .upload_project h2 {
   text-align: left;

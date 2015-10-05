@@ -442,6 +442,7 @@
                             <li id="add_comment">+</li>
                         </ul>
                         </div>
+                    <div class="list_comments scroll">
                         <article class="user clearfix">
                             <div class="comment_section">
                                 <img src="img/forum_user6.svg" alt=""> 
@@ -476,6 +477,7 @@
                                 <time>1 Week Ago</time>
                         </article>
                     </section>
+
                 </div>
 
              </li>
@@ -654,7 +656,7 @@
 
            <section class="other_user_profile"> 
                 <figure class="clearfix"> <!-- figure?  -->
-                    <img src="img/profile_picture_honeycomb.svg" alt="#">
+                    <img src="img/modal_profile.svg" alt="#">
                     <figcaption>
                         <h2>SportsMan</h2>
                         <img src="img/achievements.svg">
@@ -663,7 +665,7 @@
                 </figure>
                
 
-                <ul>
+                <ul class="clearfix">
                     <li>
                         <img src="img/lessons_badge.svg">
                     </li>
@@ -677,7 +679,7 @@
                         <img src="img/first_project_badge.svg">
                     </li>
                 </ul>
-                 <p class="close">close</p>
+                <!--  <p class="close">close</p> -->
             </section>
 
                <!-- Course Page -->                
@@ -685,15 +687,20 @@
                             <!-- this class resizes images and contains honeycomb cards --> 
                              
                                      <!--COURSES-->
-                                <section class="honeycomb_progress">
+                                <section class="honeycomb_progress scroll">
+                                    <h2>Finished Projects</h2>
                                     <ul>
                                         <li>
-                                            <img src="img/honeycomb_card_progress1.svg" alt="#">
+                                            <img src="img/project5_image.svg" alt="#">
                                         </li>
                                         <li >
-                                            <img src="img/honeycomb_card_progress2.svg" alt="#">
+                                            <img src="img/project6_image.svg" alt="#">
+                                        </li>
+                                        <li>
+                                            <img src="img/project7_image.svg">
                                         </li>
                                 </section>
+                                 <p class="close">close</p>
                                     </ul>
            <!--  <h2>User Profile</h2>
             
@@ -718,7 +725,7 @@
                 <textarea id="text_area" placeholder="write some info about your project"></textarea>
             </div>
                 <input id="file_upload" class="right clearfix" type="text" placeholder="Drag and Drop here"></input>
-                <button type="submit">Submit</button>
+                <button id="submit_file" type="submit">Submit</button>
             </form>
             
             
