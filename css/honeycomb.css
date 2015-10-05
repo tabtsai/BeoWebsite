@@ -221,14 +221,14 @@ main {
 }
 article header {
   background: #fff;
-  max-width: 1024px;
+  max-width: 100%;
   min-width: 900px;
   margin: 0 auto;
   position: relative;
   z-index: 100;
 }
 article {
-  background: #767676;
+  background: #BEBDBD;
 }
 nav select,
 nav > div,
@@ -267,9 +267,13 @@ select {
 }
 /**honeycomb**/
 section {
-  background: #bdbcbc;
-  background-image: url('../img/newtest.png');
-  width: 1024px;
+  background: #BEBDBD;
+  background-image: url('../img/testpng.png');
+  background-repeat: repeat-y;
+  background-size:1027.005px;
+  
+    background-position: center top; 
+  width: 100%;
   min-height: 1419px;
   height: 100%;
   position: relative;
@@ -295,10 +299,10 @@ section {
   padding-bottom: 210px;
   overflow: hidden;
   float: left;
-  margin-top: -149px;
-  margin-right: 204px;
+  margin-top: -151px;
+  margin-right: 205px;
   margin-bottom: 61px;
-  margin-left: -35px;
+  margin-left: -38px;
 }
 .grid-item > div {
   top: 55px;
@@ -352,10 +356,10 @@ img.proceed {
 }
 .grid-item:nth-child(1),
 .grid-item:nth-child(2) {
-  margin-top: 13px;
+  margin-top: 12px;
 }
 .grid-item:nth-child(4n+3) {
-  margin-left: 166px;
+  margin-left: 164px;
 }
 .grid-item:nth-child(4n+4) {
   margin-right: 0;
