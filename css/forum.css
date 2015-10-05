@@ -373,11 +373,16 @@ footer ul {
 }
 footer ul li {
   display: inline-block;
+  margin-right: 23px;
+}
+footer ul li:last-child {
+  margin-right: 0;
 }
 footer ul a {
   font-family: "UniveCon";
   text-decoration: none;
   color: #eceeee;
+  text-transform: uppercase;
 }
 body {
   position: relative;

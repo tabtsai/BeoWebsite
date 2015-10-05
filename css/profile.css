@@ -119,7 +119,7 @@ h2 {
 }
 h3 {
   font-family: "UniveCon";
-  font-size: 27px;
+  font-size: 20px;
 }
 .clearfix:after {
   content: "";
@@ -544,19 +544,21 @@ footer ul {
 }
 footer ul li {
   display: inline-block;
+  margin-right: 23px;
+}
+footer ul li:last-child {
+  margin-right: 0;
 }
 footer ul a {
   font-family: "UniveCon";
   text-decoration: none;
   color: #eceeee;
+  text-transform: uppercase;
 }
-/*.in_progress,*/
-.progress_projects,
-.bookmarks,
-.completed_projects,
-.completed {
-  display: none;
+/*.in_progress, .progress_projects, .bookmarks, .completed_projects , .completed{
+    display:none;
 }
+*/
 /* ==========================================================================
    Helper classes
    ========================================================================== */

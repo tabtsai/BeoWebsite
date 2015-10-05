@@ -402,6 +402,9 @@ main h3 {
   left: -50%;
   transform: translate(25%, -50%);
 }
+.yellow {
+  background-color: #ecba1d;
+}
 .main_right .progress ul {
   width: 110%;
 }
