@@ -637,8 +637,9 @@ body {
   font-size: 22px;
   font-family: "UniveCon";
 }
-#top .header_nav #drop :hover .drop_down {
-  right: 0;
+/*#top .header_nav */
+#drop:hover .drop_down {
+  right: 0px;
 }
 .social_media li {
   float: left;

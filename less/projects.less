@@ -308,6 +308,33 @@ Carrot Nav Menu*/
     border-right:solid #e67824;
     border-bottom:solid #e67824;*/
 }
+/*  .active:before, .active:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom: 0;
+    
+  }
+
+.active:before {
+    bottom: -23px;
+    left: 124px;
+
+
+    border-top-color: #e67824;
+    border-width: 22px;
+  }
+
+  .active:after {
+    bottom: -19px;
+    left: 127px;
+    border-top-color: #CBCBCB;
+    border-width: 19px;
+  }*/
+
   .active:before, .active:after {
     content: "";
     position: absolute;
@@ -334,6 +361,10 @@ Carrot Nav Menu*/
     border-top-color: #CBCBCB;
     border-width: 19px;
   }
+
+
+
+
 
 .gallery_nav {
 
@@ -508,12 +539,12 @@ scrollbar*/
             padding:2px;
             color:#3A3C3B;
         }
-        li {
+   /*     li {
             width:155px;
             height:55px;
             margin:0 auto 5px;
             background-color: #BDBBBC;
-        }
+        }*/
         span {
             display:block;
             font-size:12px;
@@ -524,8 +555,9 @@ scrollbar*/
 feedback navigation*/
 
 .user_feedback li {
+  display:block;
     width: 155px;
-    background: #FFFFFF;
+    background: #BDBBBC;
    /* border: 1px solid #CAD5E0;*/
     padding-left:10px;
     position: relative;
@@ -534,10 +566,10 @@ feedback navigation*/
 }
 
 
-
-.active2:after {
+/*this is the arrow*/
+.user_feedback li.active2:after {
 content: '';
-display: block;
+/*display: block;*/
 position: absolute;
 top: 12px;
 left:144px;
@@ -550,7 +582,9 @@ height: 25px;
   -webkit-transform:rotate(135deg);
 }
 
-
+.user_feedback li.active2{
+background-color:#fff;
+}
 
 /*=============================================*/
 
@@ -563,12 +597,12 @@ height: 25px;
   /*  height:500px;*/
     li {
         margin-left:15px;
-        display:none;
+        /*display:none;*/
     }
 }
 
-
-.content_feedback .active3 {
+/*this is the content*/
+.content_feedback li.active3 {
     display:block;
     padding-left:25px;
 }
@@ -692,12 +726,11 @@ display:none;
     width:610px;
     position:relative;
     padding-top:25px; 
- 
 }
 
 .close {
     position:absolute;
-    top:0;
+    top:20px;
     right:0;
 }
 

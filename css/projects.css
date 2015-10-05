@@ -493,6 +493,32 @@ Carrot Nav Menu*/
     border-right:solid #e67824;
     border-bottom:solid #e67824;*/
 }
+/*  .active:before, .active:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom: 0;
+    
+  }
+
+.active:before {
+    bottom: -23px;
+    left: 124px;
+
+
+    border-top-color: #e67824;
+    border-width: 22px;
+  }
+
+  .active:after {
+    bottom: -19px;
+    left: 127px;
+    border-top-color: #CBCBCB;
+    border-width: 19px;
+  }*/
 .active:before,
 .active:after {
   content: "";
@@ -654,18 +680,18 @@ scrollbar*/
 }
 .user_feedback {
   float: left;
+  /*     li {
+            width:155px;
+            height:55px;
+            margin:0 auto 5px;
+            background-color: #BDBBBC;
+        }*/
 }
 .user_feedback a {
   font-size: 10px;
   text-decoration: none;
   padding: 2px;
   color: #3A3C3B;
-}
-.user_feedback li {
-  width: 155px;
-  height: 55px;
-  margin: 0 auto 5px;
-  background-color: #BDBBBC;
 }
 .user_feedback span {
   display: block;
@@ -674,17 +700,19 @@ scrollbar*/
 /*=====================================
 feedback navigation*/
 .user_feedback li {
+  display: block;
   width: 155px;
-  background: #FFFFFF;
+  background: #BDBBBC;
   /* border: 1px solid #CAD5E0;*/
   padding-left: 10px;
   position: relative;
   min-height: 55px;
   /*border:1px solid #CAD5E0; */
 }
-.active2:after {
+/*this is the arrow*/
+.user_feedback li.active2:after {
   content: '';
-  display: block;
+  /*display: block;*/
   position: absolute;
   top: 12px;
   left: 144px;
@@ -695,6 +723,9 @@ feedback navigation*/
   border-top: 6px solid #eceeee;
   -moz-transform: rotate(-135deg);
   -webkit-transform: rotate(135deg);
+}
+.user_feedback li.active2 {
+  background-color: #fff;
 }
 /*=============================================*/
 .content_feedback {
@@ -707,9 +738,10 @@ feedback navigation*/
 }
 .content_feedback li {
   margin-left: 15px;
-  display: none;
+  /*display:none;*/
 }
-.content_feedback .active3 {
+/*this is the content*/
+.content_feedback li.active3 {
   display: block;
   padding-left: 25px;
 }
@@ -821,7 +853,7 @@ display:none;
 }
 .close {
   position: absolute;
-  top: 0;
+  top: 20px;
   right: 0;
 }
 .aside_header_container {
