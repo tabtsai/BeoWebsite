@@ -590,12 +590,12 @@ main {
 }
 /*=====================================*/
 /*This is for the second navigation right and left carrots */
-/*.in_progress*/
-.main_right .right_content nav .active2 {
+/*.in_progress active 2*/
+.main_right .right_content nav .active {
   background-color: #e67824;
   color: #eceeee;
 }
-.main_right .right_content nav .active2 div:after {
+.main_right .right_content nav .active div:after {
   background-color: #e67824;
 }
 .right_content nav .courses_project_nav li div p {
