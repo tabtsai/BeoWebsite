@@ -387,12 +387,17 @@ footer ul a {
 body {
   position: relative;
 }
+/*===========================================*/
+/*Drop Down Menu*/
 .drop_down {
   height: 100%;
   text-align: center;
   padding-top: 60px;
+  /*position:absolute;*/
   position: fixed;
-  right: 0;
+  /*right:0;*/
+  right: -275px;
+  transition: all 0.3s ease-out;
   top: 0;
   width: 275px;
   z-index: 9999;
@@ -413,6 +418,9 @@ body {
   text-decoration: none;
   font-size: 22px;
   font-family: "UniveCon";
+}
+#top .header_nav #drop :hover .drop_down {
+  right: 0;
 }
 .social_media li {
   float: left;
