@@ -270,9 +270,8 @@ section {
   background: #BEBDBD;
   background-image: url('../img/testpng.png');
   background-repeat: repeat-y;
-  background-size:1027.005px;
-  
-    background-position: center top; 
+  background-size: 1027.005px;
+  background-position: center top;
   width: 100%;
   min-height: 1419px;
   height: 100%;
