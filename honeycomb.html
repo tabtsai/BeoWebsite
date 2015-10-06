@@ -39,10 +39,26 @@
             <h1>The HoneyComb</h1>
             <p>Check out our collection of design courses and real world projects.</p>
     	    <nav class = "filter">
-                <ul class="toggle_nav">
-                    <li>Courses</li>
-                    <li>Projects</li>
-                </ul>
+                
+                  <ul id="nestmenu_1" class="courses_project_nav clearfix">
+                      <li class ="courses_nav active"> 
+                        <a href="#course1">
+                            <div class="square1">
+                            <p>Courses</p>
+                            </div>
+                        </a>
+                      <div class="left_triangle"></div>
+                      </li>
+                      <li class="projects_nav">
+                           <a href="#project1">
+                                <div class="square2"> 
+                                <p>Projects</p>
+                                </div>
+                              <div class="right_triangle"></div>  
+                            </a>
+                      </li>
+                   </ul>
+            
     	        <select id="SortSelect">
                     <option value="myorder:asc">Newest</option>
                     <option value="myorder:desc">Oldest</option>
@@ -70,11 +86,11 @@
     				</select>
     			</div> 
 
-                <label>Search</label>
+                <!-- <label>Search</label>
                 
                 <div class="cd-filter-content">
                     <input class="search" type="search" placeholder="Try color-1...">
-                </div> 
+                </div>  -->
             </nav>
         </div>
         </header>

@@ -561,3 +561,125 @@ aside.overlay {
   margin: 50px auto;
   z-index: 100;
 }
+
+
+/*=====================================*/
+/*Project Course small nav*/ 
+
+
+nav.filter ul{ display:inline-block;
+
+}
+ nav.filter li.active {
+    background-color:#e67824;
+    color:#eceeee;
+        div {
+        &:after {
+            background-color:#e67824;
+        }
+    }
+}
+
+nav .courses_project_nav li div p{
+  margin-top:5px;
+}
+
+nav.filter .courses_project_nav {
+  list-style:none;
+  padding:0;
+  width:180px;
+  margin:5px auto 35px;
+    ul {
+        margin:0 auto;
+    }
+}
+
+nav .courses_project_nav li {
+  float:left;
+  width:50%;
+  color:#bdbcbc;
+  height:32px;
+  cursor:pointer;
+    a {
+      text-decoration: none;
+    }
+    p {
+      font-family:"UniveBla";
+      text-transform: uppercase;
+      color:#bdbcbc;
+      font-size:12px;
+    }
+}
+
+.square1 {
+  width:100px;
+  border-top: solid #E67725;
+  border-bottom:solid #E67725;
+  height:35px;
+  text-align:center;
+}
+
+.square2 {
+  width:100px;
+  border-top: solid #E67725;
+  border-left: solid #E67725;
+  border-bottom:solid #E67725;
+  height:35px;
+  text-align:center;
+  position:relative;
+}
+
+
+.right_triangle {
+    margin-left: 15px;
+    width: 100px;
+    border: 0px solid #E67725;
+    padding: 4px;
+    position: relative;
+    min-height: 40px;
+}
+
+.right_triangle:after {
+content: '';
+display: block;
+position: absolute;
+top:-30px;
+right:2px;
+  /*width changes the thickness of the shape*/
+width: 21px; 
+height: 21px; 
+ /* this is what color you want to change when active*/
+    border-right:4px solid #E67725;
+    border-bottom:4px solid #E67725;
+ -moz-transform:rotate(-45deg);
+  -webkit-transform:rotate(-45deg);
+}
+
+
+
+.left_triangle {
+    margin-left: -15px;
+    width: 100px;
+    border: 0px solid #E67725;
+    padding: 4px;
+    position: relative;
+    min-height: 40px;
+}
+
+.left_triangle:after {
+content: '';
+display: block;
+position: absolute;
+top:-30px;
+right:72px;
+  /*width changes the thickness of the shape*/
+width: 21px; 
+height: 21px; 
+    
+    border-right:4px solid #E67725;
+    border-bottom:4px solid #E67725;
+ -moz-transform:rotate(-45deg);
+  -webkit-transform:rotate(135deg);
+}
+
+/*=====================================*/
