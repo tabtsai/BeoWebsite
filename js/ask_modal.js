@@ -9,6 +9,13 @@ $( ".close" ).click(function() {
    $('.modal').hide( "slow" );
 });
 
+$(document).keyup(function(e) {
+     if (e.keyCode == 27) { 
+	$('.modal').hide( "slow" );
+
+    }
+});
+
 
 $('.buttonsubmit').click(function(){
 	var value = $("textarea").val();

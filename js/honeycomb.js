@@ -57,32 +57,19 @@ jQuery(document).ready(function($){
 				$filteredItems.eq(i).addClass('position4');
 			}
 
-			// $filteredItems.eq(2).addClass('position3');
-			// $filteredItems.eq(3).addClass('position4');
-			// $filteredItems.eq(6).addClass('position3');
-			// $filteredItems.eq(7).addClass('position4');
-			// $filteredItems.eq(10).addClass('position3');
-			// $filteredItems.eq(11).addClass('position4');
-
-
-
-
-
-			// $filteredItems.(li:nth(4n+3)).addClass('position3');
-		
-		
-
-
 			console.log($filteredItems);
 
-		    },
-	    	onMixStart: function(){
-	    		$('.cd-fail-message').fadeOut(200);
+		    }
 
-	    	},
-	      	onMixFail: function(){
-	      		$('.cd-fail-message').fadeIn(200);
-	    	}
+		    // ,
+
+	    	// onMixStart: function(){
+	    	// 	$('.cd-fail-message').fadeOut(200);
+
+	    	// },
+	     //  	onMixFail: function(){
+	     //  		$('.cd-fail-message').fadeIn(200);
+	    	// }
 
 	   
 	    }
