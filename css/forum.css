@@ -383,6 +383,7 @@ html {
   cursor: pointer;
   z-index: 1000;
   position: fixed;
+  height: 68px;
 }
 #top .header_logo {
   float: left;
@@ -410,6 +411,10 @@ html {
 #top .header_nav a {
   color: #E67725;
   text-decoration: none;
+}
+#border {
+  border-bottom: 5px solid;
+  padding: 12px;
 }
 /*Main Section*/
 /*Header Filter Section
