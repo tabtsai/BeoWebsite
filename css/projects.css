@@ -695,10 +695,12 @@ scrollbar*/
   text-decoration: none;
   padding: 2px;
   color: #3A3C3B;
+  display: block;
 }
 .user_feedback span {
   display: block;
   font-size: 12px;
+  width: 126px;
 }
 /*=====================================
 feedback navigation*/
@@ -709,8 +711,8 @@ feedback navigation*/
   /* border: 1px solid #CAD5E0;*/
   padding-left: 10px;
   position: relative;
-  min-height: 55px;
-  /*border:1px solid #CAD5E0; */
+  height: 55px;
+  margin-bottom: 6px;
 }
 /*.user_feedback li*/
 /*this is the arrow*/
@@ -751,6 +753,7 @@ feedback navigation*/
 }
 .content_feedback li {
   display: none;
+  padding-left: 25px;
 }
 .content_feedback div {
   /*    padding-left:5px;*/
@@ -996,19 +999,21 @@ figcaption p time {
   cursor: pointer;
 }
 .buttonnav {
-  /*  background:#999;
-  position:absolute;
-  display:block;
-  padding:20px;
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 70px;
+}
+/*  padding:20px;
   font-size:15px;
   text-align:center;
   text-transform:uppercase;
-  text-decoration:none;*/
-  cursor: pointer;
-}
+  text-decoration:none;
+  cursor:pointer;
+  background:#999;*/
 #next {
   top: 50%;
-  right: 10px;
+  right: 150px;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -1016,7 +1021,7 @@ figcaption p time {
 }
 #prev {
   top: 50%;
-  left: 10px;
+  left: 150px;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
