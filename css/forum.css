@@ -400,6 +400,7 @@ html {
 }
 #top .header_nav li:last-child {
   margin-right: 0;
+  font-family: "UniveBla";
 }
 #top .header_nav img {
   width: 39px;
@@ -637,8 +638,7 @@ body {
   font-size: 22px;
   font-family: "UniveCon";
 }
-/*#top .header_nav */
-#drop:hover .drop_down {
+.shift {
   right: 0px;
 }
 .social_media li {
