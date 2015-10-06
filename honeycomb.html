@@ -39,33 +39,37 @@
             <h1>The HoneyComb</h1>
             <p>Check out our collection of design courses and real world projects.</p>
     	    <nav class = "filter">
-                
-                  <ul id="nestmenu_1" class="courses_project_nav clearfix">
-                      <li class ="courses_nav active"> 
-                        <a href="#course1">
-                            <div class="square1">
-                            <p>Courses</p>
-                            </div>
-                        </a>
-                      <div class="left_triangle"></div>
-                      </li>
-                      <li class="projects_nav">
-                           <a href="#project1">
-                                <div class="square2"> 
-                                <p>Projects</p>
-                                </div>
-                              <div class="right_triangle"></div>  
-                            </a>
-                      </li>
-                   </ul>
+                <ul>
+                    <li>
+                          <ul id="nestmenu_1" class="courses_project_nav clearfix">
+                              <li class ="courses_nav active"> 
+                                <a href="#course1">
+                                    <div class="square1">
+                                    <p>Courses</p>
+                                    </div>
+                                </a>
+                              <div class="left_triangle"></div>
+                              </li>
+                              <li class="projects_nav">
+                                   <a href="#project1">
+                                        <div class="square2"> 
+                                        <p>Projects</p>
+                                        </div>
+                                      <div class="right_triangle"></div>  
+                                    </a>
+                              </li>
+                           </ul>
+                       </li>
             
-    	        <select id="SortSelect">
-                    <option value="myorder:asc">Newest</option>
-                    <option value="myorder:desc">Oldest</option>
-                    <option value="myname:asc">Alphabetical</option>
-                </select>
+            	       <li>
+                             <select id="SortSelect">
+                                <option value="myorder:asc">Newest</option>
+                                <option value="myorder:desc">Oldest</option>
+                                <option value="myname:asc">Alphabetical</option>
+                            </select>
+                        </li>
 
-
+                 <li>
     		    <div class="cd-select cd-filters">
     				<select class="filter" name="selectThis" id="selectThis">
     					<option value="">All Topics</option>
@@ -75,7 +79,9 @@
     					<option value=".design">Design</option>
     				</select>
     			</div> 
-    		
+    		     </li>
+
+                 <li>
     			<div class="cd-select cd-filters">
     				<select class="filter" name="selectThis" id="selectThis">
     					<option value="">Difficulty</option>
@@ -85,7 +91,18 @@
 
     				</select>
     			</div> 
+                 </li>
 
+                 <li>
+                    <div class="whole_container clearfix">
+                    <div class="search left">
+                        <img class="left" id="search_icon" src="img/forum_search_icon.svg" alt="search icon">
+                        <form class="search_bar left">
+                               <input type="text" name="search" placeholder="">
+                        </form>
+                    </div>
+
+                    
                 <!-- <label>Search</label>
                 
                 <div class="cd-filter-content">
@@ -244,9 +261,9 @@
 
 	</main> <!-- main-content -->
 
-     <footer>
+      <footer>
           <div class= "bottom">  
-            <p>Beo 2014</p>
+            <p>&#169; Beo 2014</p>
             <ul>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Terms of Use</a></li>

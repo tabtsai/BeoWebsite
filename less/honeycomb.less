@@ -196,8 +196,8 @@ main {
 .main-content {
   position: relative;
   margin: 0 auto ;
-  height: 200px;
-  padding-top: 20px;
+  height: 235px;
+  padding-top: 40px;
 }
 .main-content p {
   width: 30%;
@@ -219,21 +219,208 @@ nav .h4 {
   display: inline-block;
   margin-right: 20px;
 }
-nav.filter {
-  margin-bottom: 0;
+
+nav.filter{
+  margin-top:20px;
 }
 .toggle_nav,
 .toggle_nav li {
   display: inline-block;
 }
 select {
+  position:relative;
+  bottom:10px;
   text-align: right;
   border-style: none;
   color: #BDBBBC;
 }
-.search {
-  width: 100px;
+
+
+/*=====================================*/
+/*Project Course small nav*/ 
+
+
+nav.filter li{display:inline-block;}
+
+nav.filter ul{padding: 0;
+              margin-left:15px;}
+
+ nav.filter li.active {
+    background-color:#e67824;
+    color:#eceeee;
+        p {color:#fff;
+        }
+        div {
+        &:after {
+            background-color:#e67824;
+        
+            }
+        }
+
 }
+
+
+nav.filter .courses_project_nav {
+  list-style:none;
+  padding:0;
+  width: 186px;
+  margin: 0px 30px 0px 0px;
+    ul {
+        margin:0 auto;
+    }
+}
+
+nav .courses_project_nav li {
+  float:left;
+  width:50%;
+  color:#bdbcbc;
+  height:32px;
+  cursor:pointer;
+    a {
+      text-decoration: none;
+    }
+    p {
+      font-family:"UniveBla";
+      text-transform: uppercase;
+      color:#bdbcbc;
+      font-size:12px;
+    bottom: 3px;
+    position: relative;
+    }
+}
+
+.square1 {
+  width:100px;
+  border-top: solid #E67725;
+  border-bottom:solid #E67725;
+  height:35px;
+  padding-left: 18px;
+  padding-bottom:2px;
+  text-align:center;
+}
+
+.square2 {
+  width:100px;
+  border-top: solid #E67725;
+  border-left: solid #E67725;
+  border-bottom:solid #E67725;
+  height:35px;
+  padding-left: 13px;
+    padding-bottom:2px;
+  text-align:center;
+  position:relative;
+}
+
+
+.right_triangle {
+    margin-left: 15px;
+    width: 100px;
+    border: 0px solid #E67725;
+    padding: 4px;
+    position: relative;
+    min-height: 40px;
+}
+
+.right_triangle:after {
+content: '';
+display: block;
+position: absolute;
+top:-30px;
+right:2px;
+  /*width changes the thickness of the shape*/
+width: 21px; 
+height: 21px; 
+ /* this is what color you want to change when active*/
+    border-right:4px solid #E67725;
+    border-bottom:4px solid #E67725;
+ -moz-transform:rotate(-45deg);
+  -webkit-transform:rotate(-45deg);
+}
+
+
+
+.left_triangle {
+    margin-left: -15px;
+    width: 100px;
+    border: 0px solid #E67725;
+    padding: 4px;
+    position: relative;
+    min-height: 40px;
+}
+
+.left_triangle:after {
+content: '';
+display: block;
+position: absolute;
+top:-30px;
+right:72px;
+  /*width changes the thickness of the shape*/
+width: 21px; 
+height: 21px; 
+    
+    border-right:4px solid #E67725;
+    border-bottom:4px solid #E67725;
+ -moz-transform:rotate(-45deg);
+  -webkit-transform:rotate(135deg);
+}
+
+/*===search bar=========================*/
+
+.left {
+    float:left;
+}
+
+
+#search_icon {
+    width:49px;
+    height:43px;
+    position:absolute;  
+}
+
+ div {
+    position:relative;
+}
+
+
+#ask_icon {
+    width:68px;
+    height:62px;
+}
+
+input[type="text"] {
+    width: 185px;
+    height: 43px;
+    border: solid #fff;
+    padding-left: 40px;
+    margin-left: 13px;
+    outline-style:none;
+    background:#EDEFEE;
+    box-shadow:none;
+    border-color:transparent;
+}
+
+.search_bar::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 185px;
+    width: 31px;
+    height: 31px;
+    background:#EDEFEE;
+    border-left: 6px solid #fff;
+    border-top: 6px solid #fff;
+    transform: rotate(135deg);
+}
+
+
+
+/*===search bar=========================*/
+
+
+
+
+
 /**filter**/
 .gallery li {
   display: none;
@@ -254,10 +441,9 @@ section {
   background-image: url('../img/hexsvg.svg');
   background-repeat: repeat-y;
   background-size:1027.005px;
-  
-    background-position: center top; 
+  background-position: center top; 
   width: 100%;
-  min-height: 1419px;
+  min-height: 1200px;
   height: 100%;
   position: relative;
   margin: 0 auto;
@@ -389,38 +575,51 @@ img.proceed {
   height: 209px;
 }
 /**honeycomb**/
+/*Footer*/
 footer {
-  /* max-width: 1024px;*/
-  width: 100%;
-  margin: 0 auto;
-  background-color: #767676;
+    
+   /* max-width: 1024px;*/
+    width:100%;
+    margin:0 auto;
+    background-color: #767676;
 }
+
 footer .bottom {
-  margin: 0 auto;
-  /*width:80.762%;*/
-  width: 827.0028px;
-  /* height:68px;*/
-  text-decoration: none;
-  color: #eceeee;
-  background-color: #767676;
-  font-family: "UniveCon";
-  font-size: 13px;
-  height: 50px;
+    .main_container;
+    text-decoration: none;
+    color:#eceeee;
+    background-color:#767676;
+    font-family:"SerifRom";
+    height:50px; 
+  
+
 }
+
 footer p {
-  display: block;
-  float: left;
+    margin-top:23px;
+    display:inline-block;
+    float:left; 
+    font-size:11px;
+   
 }
-footer ul {
-  float: right;
+
+footer div.bottom ul {
+    float:right;
+        li {
+            display:inline-block;
+            margin-right:23px;
+              &:last-child {
+                margin-right:0;
+              }
+        }
+        a{  font-size:11px;
+              font-family:"SerifRom";
+             text-decoration: none;
+             color:#eceeee;
+             text-transform:capitalize;
+        }
 }
-footer ul li {
-  display: inline-block;
-}
-footer ul a {
-  text-decoration: none;
-  color: #eceeee;
-}
+
 /* Course Preview Modal*/
 #project_modal {
   cursor: pointer;
@@ -563,123 +762,3 @@ aside.overlay {
 }
 
 
-/*=====================================*/
-/*Project Course small nav*/ 
-
-
-nav.filter ul{ display:inline-block;
-
-}
- nav.filter li.active {
-    background-color:#e67824;
-    color:#eceeee;
-        div {
-        &:after {
-            background-color:#e67824;
-        }
-    }
-}
-
-nav .courses_project_nav li div p{
-  margin-top:5px;
-}
-
-nav.filter .courses_project_nav {
-  list-style:none;
-  padding:0;
-  width:180px;
-  margin:5px auto 35px;
-    ul {
-        margin:0 auto;
-    }
-}
-
-nav .courses_project_nav li {
-  float:left;
-  width:50%;
-  color:#bdbcbc;
-  height:32px;
-  cursor:pointer;
-    a {
-      text-decoration: none;
-    }
-    p {
-      font-family:"UniveBla";
-      text-transform: uppercase;
-      color:#bdbcbc;
-      font-size:12px;
-    }
-}
-
-.square1 {
-  width:100px;
-  border-top: solid #E67725;
-  border-bottom:solid #E67725;
-  height:35px;
-  text-align:center;
-}
-
-.square2 {
-  width:100px;
-  border-top: solid #E67725;
-  border-left: solid #E67725;
-  border-bottom:solid #E67725;
-  height:35px;
-  text-align:center;
-  position:relative;
-}
-
-
-.right_triangle {
-    margin-left: 15px;
-    width: 100px;
-    border: 0px solid #E67725;
-    padding: 4px;
-    position: relative;
-    min-height: 40px;
-}
-
-.right_triangle:after {
-content: '';
-display: block;
-position: absolute;
-top:-30px;
-right:2px;
-  /*width changes the thickness of the shape*/
-width: 21px; 
-height: 21px; 
- /* this is what color you want to change when active*/
-    border-right:4px solid #E67725;
-    border-bottom:4px solid #E67725;
- -moz-transform:rotate(-45deg);
-  -webkit-transform:rotate(-45deg);
-}
-
-
-
-.left_triangle {
-    margin-left: -15px;
-    width: 100px;
-    border: 0px solid #E67725;
-    padding: 4px;
-    position: relative;
-    min-height: 40px;
-}
-
-.left_triangle:after {
-content: '';
-display: block;
-position: absolute;
-top:-30px;
-right:72px;
-  /*width changes the thickness of the shape*/
-width: 21px; 
-height: 21px; 
-    
-    border-right:4px solid #E67725;
-    border-bottom:4px solid #E67725;
- -moz-transform:rotate(-45deg);
-  -webkit-transform:rotate(135deg);
-}
-
-/*=====================================*/
