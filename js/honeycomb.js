@@ -3,7 +3,7 @@ jQuery(document).ready(function($){
 
   var $sortSelect = $('#SortSelect')
    $sortSelect.on('change', function(){
-    $('.gallery ul').mixItUp('sort', this.value);
+    $('.gallery').mixItUp('sort', this.value);
   });
 
 	/************************************
@@ -21,17 +21,70 @@ jQuery(document).ready(function($){
 	*************************************/
 
 	buttonFilter.init();
-	$('.gallery ul').mixItUp({
+	$('.gallery').mixItUp({
 	    controls: {
 	    	enable: false
 	    },
+	    layout: {
+		display: 'block'
+		},
+		animation: {
+		enable: false		
+		},
 	    callbacks: {
+
+	    	onMixEnd: function(){
+			$(this).mixItUp('setOptions', {
+				animation: {
+				enable: false,
+				duration: 500,
+				effects: 'fade'	
+				},
+			});	
+
+			$('ul li.mix').removeClass('top-position1 top-position2 position3 position4');
+			
+			var $filteredItems = $('li.mix').filter(function() {
+    		return $(this).css("display") === 'block'});
+
+    		$filteredItems.eq(0).addClass('top-position1');
+			$filteredItems.eq(1).addClass('top-position2');
+
+			for (i=2; i<$filteredItems.length; i+=4){
+				$filteredItems.eq(i).addClass('position3');
+			}
+			for (i=3; i<$filteredItems.length; i+=4){
+				$filteredItems.eq(i).addClass('position4');
+			}
+
+			// $filteredItems.eq(2).addClass('position3');
+			// $filteredItems.eq(3).addClass('position4');
+			// $filteredItems.eq(6).addClass('position3');
+			// $filteredItems.eq(7).addClass('position4');
+			// $filteredItems.eq(10).addClass('position3');
+			// $filteredItems.eq(11).addClass('position4');
+
+
+
+
+
+			// $filteredItems.(li:nth(4n+3)).addClass('position3');
+		
+		
+
+
+			console.log($filteredItems);
+
+		    },
 	    	onMixStart: function(){
 	    		$('.cd-fail-message').fadeOut(200);
+
 	    	},
 	      	onMixFail: function(){
 	      		$('.cd-fail-message').fadeIn(200);
 	    	}
+
+	   
 	    }
 	});
 
@@ -65,10 +118,10 @@ jQuery(document).ready(function($){
 		          		$matching = $matching.not(this);
 		        	}
 	      		});
-	      		$('.gallery ul').mixItUp('filter', $matching);
+	      		$('.gallery').mixItUp('filter', $matching);
 	    	} else {
 	      		// resets the filter to show all item if input is empty
-	      		$('.gallery ul').mixItUp('filter', 'all');
+	      		$('.gallery').mixItUp('filter', 'all');
 	    	}
 	  	}, 200 );
 	});
@@ -90,7 +143,7 @@ var buttonFilter = {
     	var self = this; // As a best practice, in each method we will asign "this" to the variable "self" so that it remains scope-agnostic. We will use it to refer to the parent "buttonFilter" object so that we can share methods and properties between all parts of the object.
     
     	self.$filters = $('.main-content');
-    	self.$container = $('.gallery ul');
+    	self.$container = $('.gallery');
     
 	    self.$filters.find('.cd-filters').each(function(){
 	      	var $this = $(this);
@@ -163,3 +216,4 @@ var buttonFilter = {
 
 
 };
+

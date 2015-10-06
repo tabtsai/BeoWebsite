@@ -85,26 +85,9 @@ textarea {
   display: table;
   clear: both;
 }
-@font-face {
-  font-family: 'SerifRom';
-  src: url('fonts/SerifRom.eot');
-  src: url('fonts/SerifRom.eot') format('embedded-opentype'), url('fonts/SerifRom.woff2') format('woff2'), url('../fonts/SerifRom.woff') format('woff'), url('fonts/SerifRom.ttf') format('truetype'), url('fonts/SerifRom.svg#SerifRom') format('svg');
-}
-@font-face {
-  font-family: 'SerifLigIta';
-  src: url('../fonts/SerifLigIta.eot');
-  src: url('fonts/SerifLigIta.eot') format('embedded-opentype'), url('fonts/SerifLigIta.woff2') format('woff2'), url('../fonts/SerifLigIta.woff') format('woff'), url('fonts/SerifLigIta.ttf') format('truetype'), url('fonts/SerifLigIta.svg#SerifLigIta') format('svg');
-}
-@font-face {
-  font-family: 'UniveBla';
-  src: url('fonts/UniveBla.eot');
-  src: url('fonts/UniveBla.eot') format('embedded-opentype'), url('fonts/UniveBla.woff2') format('woff2'), url('../fonts/UniveBla.woff') format('woff'), url('fonts/UniveBla.ttf') format('truetype'), url('fonts/UniveBla.svg#UniveBla') format('svg');
-}
-@font-face {
-  font-family: 'UniveCon';
-  src: url('fonts/UniveCon.eot');
-  src: url('fonts/UniveCon.eot') format('embedded-opentype'), url('fonts/UniveCon.woff2') format('woff2'), url('../fonts/UniveCon.woff') format('woff'), url('fonts/UniveCon.ttf') format('truetype'), url('fonts/UniveCon.svg#UniveCon') format('svg');
-}
+
+@import "fonts.less";
+
 /*General*/
 * {
   box-sizing: border-box;
@@ -299,24 +282,34 @@ section {
   padding-bottom: 210px;
   overflow: hidden;
   float: left;
-  margin-top: -149px;
-  margin-right: 205px;
+    margin-top: -150px;
+  margin-right: 209px;
   margin-bottom: 61px;
   margin-left: -40px;
 }
 
-.grid-item:nth-child(1),
-.grid-item:nth-child(2) {
-  margin-top: 12px;
+.top-position1, .top-position2{
+  margin-top: 13px !important;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
-.grid-item:nth-child(4n+3) {
-  margin-left: 163px;
+
+.position3{
+  margin-left:163px  !important;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
-.grid-item:nth-child(4n+4) {
-  margin-right: 0;
-}
-.grid-item:nth-child(4n+3) {
-  clear: left;
+
+.position4{
+  margin-right:0  !important;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .grid-item > div {
@@ -373,26 +366,27 @@ img.proceed {
 .grid li.easy {
   background-image: url("../img/beginnerhex.svg");
   background-size: cover;
-  width: 236px;
-  height: 208px;
+  width: 235px;
+  height: 209px;
 }
 .grid li.med {
   background-image: url("../img/intermediatehex.svg");
   background-size: cover;
-  width: 236px;
-  height: 208px;
+  width: 235px;
+  height: 209px;
 }
 .grid li.hard {
   background-image: url("../img/difficulthex.svg");
   background-size: cover;
-  width: 236px;
-  height: 208px;
+  width: 235px;
+  height: 209px;
 }
+
 .grid li.more {
   background-image: url("../img/morehex.svg");
   background-size: cover;
-  width: 236px;
-  height: 208px;
+   width: 235px;
+  height: 209px;
 }
 /**honeycomb**/
 footer {
