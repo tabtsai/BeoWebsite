@@ -1110,6 +1110,7 @@ aside.overlay {
 .other_user_profile {
   width: 70%;
   margin: 0 auto;
+  border-bottom: 1px solid #e67824;
 }
 /*Profile Image and Achievements*/
 .other_user_profile figure {
@@ -1151,12 +1152,14 @@ aside.overlay {
   height: 70px;
 }
 .user_profile .honeycomb_progress {
-  width: 100%;
+  width: 70%;
+  margin: 0 auto;
   height: 200px;
   overflow-y: auto;
 }
 .user_profile .honeycomb_progress ul {
   height: 415px;
+  padding: 0;
 }
 .user_profile .honeycomb_progress li {
   float: left;
