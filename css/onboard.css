@@ -740,7 +740,7 @@ input[type="password"] {
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
-  padding-top: 80px;
+  padding-top: 68px;
 }
 .modal ul {
   margin-bottom: 20px;
@@ -760,17 +760,17 @@ input[type="password"] {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 22px 46px;
+  padding: 15px 45px;
   display: inline-block;
   border-radius: 100px;
   margin-top: 45px;
   margin-bottom: 45px;
+  font-size: 22px;
 }
 .modal h2 {
   color: #e67824;
   text-transform: uppercase;
-  padding-bottom: 55px;
-  margin: 0;
+  margin-bottom: 40px;
 }
 #facebook,
 #google_plus {
