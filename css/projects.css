@@ -995,14 +995,14 @@ figcaption p time {
   cursor: pointer;
 }
 .buttonnav {
-  background: #999;
-  position: absolute;
-  display: block;
-  padding: 20px;
-  font-size: 15px;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
+  /*  background:#999;
+  position:absolute;
+  display:block;
+  padding:20px;
+  font-size:15px;
+  text-align:center;
+  text-transform:uppercase;
+  text-decoration:none;*/
   cursor: pointer;
 }
 #next {
