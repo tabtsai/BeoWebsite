@@ -527,8 +527,8 @@ main {
     border-right:solid #e67824;
     border-bottom:solid #e67824;*/
 }
-.active:before,
-.active:after {
+#mainmenu_tab .active:before,
+#mainmenu_tab .active:after {
   content: "";
   position: absolute;
   width: 0;
@@ -537,14 +537,14 @@ main {
   border-color: transparent;
   border-bottom: 0;
 }
-.active:before {
+#mainmenu_tab .active:before {
   bottom: -23px;
   left: 76px;
   /* If 1px darken stroke slightly */
   border-top-color: #e67824;
   border-width: 22px;
 }
-.active:after {
+#mainmenu_tab .active:after {
   bottom: -19px;
   left: 79px;
   border-top-color: #CBCBCB;
