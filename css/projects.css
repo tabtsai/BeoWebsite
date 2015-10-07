@@ -444,8 +444,8 @@ main {
 .main_left ul li {
   float: left;
   width: 50%;
-  margin-bottom: 25px;
-  font-size: 14px;
+  margin-bottom: 13px;
+  font-size: 13px;
   font-family: "SerifRom";
   list-style-image: url('../img/bullet_point.svg') no-repeat left 10px;
 }
@@ -654,6 +654,7 @@ scrollbar*/
 .top_right_section time {
   padding-bottom: 5px;
   display: block;
+  font-family: "UniveCon";
 }
 .top_right_section p {
   margin-top: 0;
@@ -673,6 +674,7 @@ scrollbar*/
   padding: 2px;
   color: #3A3C3B;
   display: block;
+  line-height: 1.5;
 }
 .user_feedback span {
   display: block;
@@ -731,6 +733,9 @@ feedback navigation*/
 .content_feedback li {
   display: none;
   padding-left: 25px;
+}
+.content_feedback li h1 {
+  font-size: 18px;
 }
 .content_feedback div {
   /*    padding-left:5px;*/
@@ -803,6 +808,7 @@ display:none;
 .close {
   width: 28px;
   height: 28px;
+  cursor: pointer;
 }
 .left {
   float: left;
@@ -839,6 +845,7 @@ display:none;
   position: absolute;
   top: 20px;
   right: 0;
+  cursor: pointer;
 }
 .aside_header_container {
   width: 90%;
@@ -992,6 +999,7 @@ figcaption p time {
 #next {
   top: 50%;
   right: 15%;
+  cursor: pointer;
   position: absolute;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
@@ -1001,6 +1009,7 @@ figcaption p time {
 #prev {
   top: 50%;
   left: 15%;
+  cursor: pointer;
   position: absolute;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
@@ -1161,6 +1170,7 @@ aside.overlay {
   background-color: #ECEEEE;
   display: inline-block;
   position: absolute;
+  cursor: pointer;
   right: 20px;
   top: 20px;
 }
@@ -1265,6 +1275,7 @@ form div.dz-message h2 {
   position: absolute;
   right: 20px;
   top: 20px;
+  cursor: pointer;
 }
 /*====================================================*/
 /*Drop Down Menu*/
