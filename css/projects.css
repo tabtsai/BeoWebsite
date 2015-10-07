@@ -1015,7 +1015,8 @@ figcaption p time {
   background:#999;*/
 #next {
   top: 50%;
-  right: 150px;
+  right: 15%;
+  position: absolute;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -1023,7 +1024,8 @@ figcaption p time {
 }
 #prev {
   top: 50%;
-  left: 150px;
+  left: 15%;
+  position: absolute;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);

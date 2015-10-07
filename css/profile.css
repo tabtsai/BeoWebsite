@@ -461,6 +461,9 @@ main {
   width: 70px;
   height: 70px;
 }
+.main_left ul li p {
+  font-family: "UniveBla";
+}
 /*Right Section*/
 .main_right {
   float: right;
@@ -605,7 +608,7 @@ main {
 .right_content .courses_project_nav {
   list-style: none;
   padding: 0;
-  width: 180px;
+  width: 195px;
   margin: 5px auto 35px;
 }
 .right_content .courses_project_nav ul {
@@ -642,6 +645,9 @@ main {
   height: 35px;
   text-align: center;
   position: relative;
+}
+.square2 p {
+  padding-right: 5px;
 }
 .right_triangle {
   margin-left: 15px;
