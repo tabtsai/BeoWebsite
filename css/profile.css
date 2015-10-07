@@ -456,13 +456,29 @@ main {
   width: 33.3333%;
   list-style: none;
   margin-bottom: 20px;
+  text-align: center;
 }
 .main_left ul li img {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
 }
 .main_left ul li p {
   font-family: "UniveBla";
+  text-align: center;
+  font-size: 7px;
+  text-transform: uppercase;
+}
+#green {
+  color: #8BC53F;
+}
+#orange {
+  color: #E67824;
+}
+#blue {
+  color: #39A5E1;
+}
+#yellow {
+  color: #EAB81D;
 }
 /*Right Section*/
 .main_right {
