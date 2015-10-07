@@ -650,6 +650,66 @@ footer ul a {
   color: #eceeee;
   text-transform: uppercase;
 }
+/* Course Preview Modal*/
+#congrats_modal {
+  cursor: pointer;
+}
+.wrap h2 {
+  font-family: sans-serif;
+  font-size: 30px;
+  color: #E67824;
+  text-transform: uppercase;
+}
+.wrap p {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.wrap {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  width: 900px ;
+  z-index: 999;
+}
+aside.overlay {
+  display: none;
+  background: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 950;
+}
+.overlay_container {
+  position: relative;
+  border-radius: 30px;
+  background: #eceeee;
+  text-align: left;
+  min-height: 600px;
+  min-width: 670px;
+  width: 50%;
+  z-index: 100;
+  padding: ;
+  margin: 0 auto;
+}
+.close {
+  display: inline-block;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+.wrap ul {
+  list-style: none;
+}
+.wrap h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
