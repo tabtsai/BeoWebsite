@@ -352,6 +352,7 @@ main {
               color:#eceeee;
               text-decoration: none;
               font-family:"UniveCon";
+              display:block;
             }
 }
 
@@ -362,9 +363,6 @@ main {
  .main_right .right_top_nav .active {
     color:#e67824;
     border:solid #e67824;
-    /*border-left:solid #e67824;
-    border-right:solid #e67824;
-    border-bottom:solid #e67824;*/
 }
 #mainmenu_tab{
   .active:before, .active:after {
@@ -374,8 +372,7 @@ main {
     height: 0;
     border-style: solid;
     border-color: transparent;
-    border-bottom: 0;
-    
+    border-bottom: 0;  
   }
 
 .active:before {
@@ -392,6 +389,10 @@ main {
     left: 79px;
     border-top-color: #CBCBCB;
     border-width: 19px;
+  }
+
+  .active a{
+     color:#e67824;
   }
 }
 .in_progress_nav {
@@ -443,16 +444,19 @@ main {
 /*.in_progress active 2*/ 
 .main_right .right_content nav .active {
     background-color:#e67824;
-    color:#eceeee;
         div {
         &:after {
             background-color:#e67824;
         }
+        p{ 
+           color:#eceeee;
+        }
+        
     }
 }
 
 .right_content nav .courses_project_nav li div p{
-  margin-top:5px;
+  margin-top:7px;
 }
 
 .right_content .courses_project_nav {
@@ -473,6 +477,7 @@ main {
   cursor:pointer;
     a {
       text-decoration: none;
+      display:block;
     }
     p {
       font-family:"UniveBla";
@@ -580,8 +585,22 @@ height: 21px;
 }
 
 .bookmarks section h3 {
+    font-family:"UniveBla";
     color:#e67824;
+    font-size:16px;
 }
+
+.bookmarks section {
+    position:relative;
+      a {
+        position:absolute;
+        left:0;
+        bottom:0;
+        transform:translate(0%,200%);
+      }
+}
+
+
 
 
 

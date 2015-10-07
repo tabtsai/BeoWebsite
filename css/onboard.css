@@ -385,7 +385,7 @@ header {
   float: right;
   height: 68px;
   color: #e77824;
-  padding-top: 32px;
+  padding-top: 28px;
   font-size: 14.23px;
   text-decoration: none;
   font-weight: bold;
@@ -515,6 +515,9 @@ header {
   width: 836.231px;
   padding: 80px 0 78.298px;
 }
+.about_beo h2 {
+  text-align: center;
+}
 .about_beo h3 {
   text-align: center;
   margin: 0;
@@ -603,7 +606,6 @@ header {
 .beekeeper_aside {
   background-color: #e67824;
   padding-bottom: 30px;
-  height: 690px;
 }
 .beekeeper_aside .container4 {
   width: 315px;
