@@ -842,6 +842,9 @@ footer div.bottom ul a {
   float: left;
   width: 60%;
 }
+.left_side p {
+  font-size: 12px;
+}
 .right_side {
   float: right;
   width: 40%;
@@ -1011,6 +1014,6 @@ aside.overlay {
 }
 .videowrap {
   position: relative;
-  margin: 50px auto;
+  margin: 35px auto 0;
   z-index: 100;
 }
