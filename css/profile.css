@@ -796,10 +796,12 @@ footer ul a {
   color: #eceeee;
   text-transform: uppercase;
 }
-/*.in_progress, .progress_projects, .bookmarks, .completed_projects , .completed{
-    display:none;
+.in_progress,
+.bookmarks,
+.completed_projects,
+.completed {
+  display: none;
 }
-*/
 /*====================================================*/
 /*Drop Down Menu*/
 .drop_down {
