@@ -1133,7 +1133,7 @@ aside.overlay{ display:none;
   top: 20px;
 }
 
-/***********UPLLOAD PROJECT Modal Injected**********/
+/***********UPLOAD PROJECT Modal Injected**********/
 
 #upload_modal{
   cursor:pointer;
@@ -1157,33 +1157,71 @@ aside.overlay{ display:none;
   -o-transform: translate(-50%, -50%);
   padding: 20px;
 }
+
+.upload_project input, .upload_project textarea{
+
+    font-family:"SerifRom";
+    font-size:12px;
+
+}
 #title, #text_area, #file_upload {
   display:block;
 }
 #title {
     width:280px;
     height:39px;
-    border-radius:15px;
-    margin-bottom:20px;
-    border:none;
+    border-radius:10px;
+    margin-bottom:20px ;
+     border:solid 3px #B2B2B2;
+     padding:10px;
 }
 #text_area {
     width:280px;
     height:220px;
-    border-radius: 15px;
-    border:none;
+    border-radius: 10px;
+    border:solid 3px #B2B2B2;
+     padding:10px;
+
 }
 
-#file_upload {
-    width:232px;
-    height:279px;
-    border-radius: 15px;
-    border:1px solid black;
-    background: url(../img/drag_drop_icon.svg) no-repeat center ;
-    background-size: 60px 54px;
-    background-position:85px 23px;
+.dragdrop{
+  width:60px;
+  height: 54px;
+  padding:0;
+  background: url(../img/drag_drop_icon.svg) no-repeat center ;
+  background-position:center top;
+  margin: -20px auto 0;
+  }
+
+form div.dz-message h2{
+
+  position:relative;
+  top:10px;
+  color:#E67824;
+  font-size:18px;
+  text-align: center;
+  text-transform:uppercase;
+  margin: 0 auto;
+
 }
 
+.dz-message p{
+  font-family:;
+  position:relative;
+  color:#CBCBCB;
+  font-family:"UniveCon";
+
+
+}
+
+.dz-message span{
+  position:relative;
+  top:20px;
+  font-size: 13px;
+  color:#CBCBCB;
+  text-decoration:underline;
+
+}
 
 #submit_file {
     position: absolute;

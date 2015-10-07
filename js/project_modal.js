@@ -84,3 +84,10 @@ Project Upload Modal
 $( ".close" ).click(function() {
   $('.upload_project').hide( "slow" );
 });
+
+// $('#submit_file').click(function(){
+
+// 	var $oldImg = $('li#upload_modal').css('background-color','green')
+// 	alert($oldImg);
+
+// });

@@ -213,11 +213,12 @@
 .dropzone {
   float: right;
   height: 280px;
-  width: 210px;
-  border: 3px solid rgba(0, 0, 0, 0.3);
+  width: 220px;
+  border: 3px solid #B2B2B2;
   background: white;
-  padding: 20px 20px;
-  border-radius: 14px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
 }
 .dropzone.dz-clickable {
   cursor: pointer;

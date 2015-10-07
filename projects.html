@@ -781,25 +781,27 @@
 <!-- Upload Modal -->
 
             <aside class="upload_project"> 
-           
+           <h1>Submit your project</h1>
             <form>
-             <h2>Submit your project</h2>
+             
             <div class="left">
                <input id="title" type="text" placeholder="add a title"></input>
                 <textarea id="text_area" placeholder="write some info about your project"></textarea>
             </div>
 
-
-
-            <!--     <input id="file_upload" class="right clearfix" type="text" placeholder="Drag and Drop here! <br>
-                jpg,pdf,png, or gif <br>
-
-                "></input> -->
                 <button id="submit_file" type="submit">Submit</button>
             </form>
             <form action="/file-upload"
                   class="dropzone"
                   id="my-awesome-dropzone">
+
+                  <div class = "dz-message">
+                    <div class = "dragdrop"> </div>
+                    <h2>Drag and drop here!</h2>
+                    <p>jpg, pdf, png or gif</p>
+                    <span>Browse your computer</span>
+                </div>
+
              </form>
             
                  <!-- <a class="signup" href="profile.html">Log in</a>
