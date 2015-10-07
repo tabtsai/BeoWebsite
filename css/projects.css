@@ -1202,7 +1202,7 @@ aside.overlay {
   width: 5068px;*/
   height: 453px;
   width: 568px;
-  z-index: 100;
+  z-index: 950;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

@@ -85,9 +85,12 @@ $( ".close" ).click(function() {
   $('.upload_project').hide( "slow" );
 });
 
-// $('#submit_file').click(function(){
+$('#submit_file').click(function(event){
+	 event.preventDefault();
 
-// 	var $oldImg = $('li#upload_modal').css('background-color','green')
-// 	alert($oldImg);
+	var $oldImg = $('li#upload_modal');
+	$oldImg.css('background-color','green');
+console.log($('#upload_modal>img').html());
+	 $('.upload_project').hide( "slow" );
 
-// });
+});
