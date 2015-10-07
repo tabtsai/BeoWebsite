@@ -3,7 +3,7 @@
 Modal Show/Hide
 *************/
 
-$( "#course_modal" ).click(function() {
+$( "li[data-coursenumber='v1']" ).click(function() {
   $('.overlay').show( "slow" );
 });
 
@@ -23,8 +23,8 @@ $(document).keyup(function(e) {
 Slideshow
 *************/
 	
-	var currIndex = 0;
-	var totalSlides = $(".slideshow li").length;
+var currIndex = 0;
+	var totalSlides = $(".slideshow > li").length;
 
 	
   function next(){
@@ -37,10 +37,8 @@ Slideshow
   }
 
   function prev(){
-	  
-		var prevIndex = currIndex - 1;
-		
-		if (prevIndex < 0){
+	   var prevIndex = currIndex - 1;
+	   if (prevIndex < 0){
 			prevIndex = totalSlides - 1;
 		}
     gotoSlide(prevIndex);
@@ -49,10 +47,9 @@ Slideshow
 	function gotoSlide( $index ){
 		currIndex = $index;
 		var target = "#slide"+currIndex;
-		$(".slideshow li, nav ul li").removeClass("active");		
-		
-		$(target).addClass("active");
-		$("nav ul li").eq(currIndex).addClass("active");
+		$(".slideshow > li").removeClass("activeslide");		
+		$(target).addClass("activeslide");
+
 
 	}
 	
@@ -63,7 +60,6 @@ Slideshow
 	$("#prev").on("click", function(){
 		next();
 	});
-	
 
 	
 /************
