@@ -405,6 +405,7 @@ header {
 }
 .header_nav li:last-child {
   margin-right: 0;
+  font-family: "UniveBla";
 }
 .header_nav img {
   width: 39px;
@@ -693,6 +694,51 @@ footer div.bottom ul a {
   text-decoration: none;
   color: #eceeee;
   text-transform: capitalize;
+}
+/*====================================================*/
+/*Drop Down Menu*/
+.drop_down {
+  height: 100%;
+  text-align: center;
+  padding-top: 60px;
+  /*position:absolute;*/
+  position: fixed;
+  /*right:0;*/
+  right: -275px;
+  transition: all 0.3s ease-out;
+  top: 0;
+  width: 275px;
+  z-index: 9999;
+  background-color: #E67725;
+}
+.drop_down ul {
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.drop_down li {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 11px;
+  padding-top: 15px;
+  list-style: none;
+}
+.drop_down a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: "UniveCon";
+}
+.shift {
+  right: 0px;
+}
+.social_media li {
+  float: left;
+  width: 16.6666%;
+  border: none;
+}
+#riley1992 {
+  width: 192px;
+  height: 141px;
 }
 /* ==========================================================================
    Helper classes
