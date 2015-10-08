@@ -643,6 +643,7 @@ header {
   margin: 0 auto;
   /*padding-bottom:30px;*/
 }
+/*Footer*/
 footer {
   /* max-width: 1024px;*/
   width: 100%;
@@ -654,33 +655,34 @@ footer .bottom {
   /*width:80.762%;*/
   /*width:836.0028px;*/
   width: 836.231px;
-  height: 68px;
   text-decoration: none;
   color: #eceeee;
   background-color: #767676;
-  font-family: "UniveCon";
-  font-size: 13px;
-  height: 50px;
+  font-family: "SerifRom";
+  height: 68px;
 }
 footer p {
-  display: block;
+  margin-top: 23px;
+  display: inline-block;
   float: left;
+  font-size: 11px;
 }
-footer ul {
+footer div.bottom ul {
   float: right;
 }
-footer ul li {
+footer div.bottom ul li {
   display: inline-block;
   margin-right: 23px;
 }
-footer ul li:last-child {
+footer div.bottom ul li:last-child {
   margin-right: 0;
 }
-footer ul a {
-  font-family: "UniveCon";
+footer div.bottom ul a {
+  font-size: 11px;
+  font-family: "SerifRom";
   text-decoration: none;
   color: #eceeee;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 /***********Tab Modal Injected**********/
 .inputbox {
