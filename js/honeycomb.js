@@ -29,15 +29,16 @@ jQuery(document).ready(function($){
 		display: 'block'
 		},
 		animation: {
-		enable: true	
+		enable: false	
 		},
 	    callbacks: {
 	    	onMixStart:function(){
 	    		$('li.mix').css('opacity', 0);
-	    		$('.cd-fail-message').fadeOut(200);
+
+	    		$('.gallery div.cd-fail-message').fadeOut(200);
 	    	},
 	    	onMixFail: function(){
-	     		$('.cd-fail-message').fadeIn(200);
+	     		$('.gallery div.cd-fail-message').fadeIn(200);
 	    	 },
 
 
@@ -70,17 +71,6 @@ jQuery(document).ready(function($){
 			console.log($filteredItems);
 
 		    }
-
-		    // ,
-
-	    	// onMixStart: function(){
-	    	// 
-
-	    	// },
-	     //  	onMixFail: function(){
-	     //  		$('.cd-fail-message').fadeIn(200);
-	    	// }
-
 	   
 	    }
 	});
