@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 59.5 54.5" style="enable-background:new 0 0 59.5 54.5;" xml:space="preserve">
+	 viewBox="-449 253.5 59.6 54.4" style="enable-background:new -449 253.5 59.6 54.4;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#E67824;}
-	.st1{fill:#ECEEEE;}
-	.st2{font-family:'Univers-Black';}
-	.st3{font-size:42.011px;}
+	.st1{enable-background:new    ;}
+	.st2{fill:#ECEEEE;}
 </style>
-<path class="st0" d="M41.4,0H18.1c-2.3,0-4.4,1.2-5.5,3.2L0.8,24.4c-1.1,1.9-1.1,4.2,0,6.1l11.6,20.7c1.1,2,3.2,3.2,5.5,3.2h23.7
-	c2.3,0,4.4-1.2,5.5-3.2l11.6-20.7c1.1-1.9,1.1-4.2,0-6.1L46.9,3.2C45.7,1.2,43.6,0,41.4,0z"/>
-<text transform="matrix(1 0 0 1 15.8606 37.6266)" class="st1 st2 st3">+</text>
+<path class="st0" d="M-407.6,253.5h-23.3c-2.3,0-4.4,1.2-5.5,3.2l-11.8,21.2c-1.1,1.9-1.1,4.2,0,6.1l11.6,20.7
+	c1.1,2,3.2,3.2,5.5,3.2h23.7c2.3,0,4.4-1.2,5.5-3.2l11.6-20.7c1.1-1.9,1.1-4.2,0-6.1l-11.8-21.2
+	C-403.3,254.7-405.4,253.5-407.6,253.5z"/>
+<g class="st1">
+	<path class="st2" d="M-421.8,270h5v8h8.1v5h-8.1v8h-5v-8h-8.1v-5h8.1V270z"/>
+</g>
 </svg>
