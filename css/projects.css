@@ -601,6 +601,9 @@ scrollbar*/
   background-color: rgba(0, 0, 0, 0.5);
 }
 /*============================*/
+nav.content img.second {
+  display: none;
+}
 /*each projects*/
 .gallery_content .project_images li {
   float: left;

@@ -90,7 +90,8 @@ $('#submit_file').click(function(event){
 
 	var $oldImg = $('li#upload_modal');
 	$oldImg.css('background-color','green');
-console.log($('#upload_modal>img').html());
+    $('#upload_modal>img.first').hide();
+    $('#upload_modal>img.second').css('display','block').fadeIn();
 	 $('.upload_project').hide( "slow" );
 
 });
