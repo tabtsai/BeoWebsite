@@ -577,6 +577,7 @@ main {
 svg {
   width: 20px;
   fill: #ECEEEE;
+  margin-right: 8px;
 }
 .in_progress_nav {
   /* Styling block element, not required */
@@ -754,19 +755,6 @@ svg {
   bottom: 0;
   transform: translate(0%, 200%);
 }
-/*The other nav*/
-/*.main_right .right_content .courses_project_nav {
-    width:220px;
-    height:35px;
-    margin:35px auto;
-    border:solid;
-    text-align: center;
-    padding:1px;
-        li {
-            float:left;
-            width:50%;
-        }
-}*/
 .main_right .right_content .search {
   padding: 10px;
   background-color: #39a5e1;
