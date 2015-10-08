@@ -29,7 +29,7 @@ jQuery(document).ready(function($){
 		display: 'block'
 		},
 		animation: {
-		enable: false	
+		enable: true	
 		},
 	    callbacks: {
 	    	onMixStart:function(){
