@@ -669,14 +669,15 @@ body {
 }
 /*==========================================*/
 .buttonsubmit {
-  padding: 25px;
-  background: orange;
+  padding: 17px 27px;
+  background: #39A6E2;
   border-radius: 48px;
-  color: white;
+  color: #fff;
   text-align: center;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 16px;
   text-decoration: none;
+  float: right;
 }
 .modal nav {
   float: left;
@@ -685,7 +686,7 @@ body {
 }
 .modal h2 {
   font-family: "UniveCon";
-  font-size: 30px;
+  font-size: 27px;
   color: #E67824;
   text-transform: uppercase;
   text-align: left;
@@ -698,17 +699,31 @@ body {
   border: #bdbcbc solid 3px;
   display: block;
   margin: 10px auto;
+  height: 195px;
+}
+.modal nav {
+  text-transform: uppercase;
+  font-family: "UniveBla";
+  font-size: 14px;
+  color: #767676;
+  float: left;
+  width: 75%;
+  margin-top: 22px;
 }
 .modal li {
   display: none;
 }
+#topic {
+  width: 18px;
+  height: 11px;
+}
 .modal {
   display: none;
   position: absolute;
-  border-radius: 50px;
+  border-radius: 25px;
   background: #eceeee;
   text-align: center;
-  height: 400px;
+  height: 420px;
   width: 630px ;
   z-index: 100;
   top: 20%;
