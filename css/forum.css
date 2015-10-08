@@ -659,23 +659,26 @@ body {
 }
 /*==========================================*/
 .buttonsubmit {
-  padding: 20px;
+  padding: 25px;
   background: orange;
-  border-radius: 20px;
-  display: inline-block;
-  width: 200px;
+  border-radius: 48px;
   color: white;
   text-align: center;
   text-transform: uppercase;
-  font-famfily: sans-serif;
-  font-size: 25px;
+  font-size: 12px;
   text-decoration: none;
 }
+.modal nav {
+  float: left;
+  width: 60%;
+  text-align: right;
+}
 .modal h2 {
-  font-family: sans-serif;
+  font-family: "UniveCon";
   font-size: 30px;
   color: #E67824;
   text-transform: uppercase;
+  text-align: left;
 }
 .modal textarea {
   resize: none;
@@ -685,6 +688,9 @@ body {
   border: #bdbcbc solid 3px;
   display: block;
   margin: 10px auto;
+}
+.modal li {
+  display: none;
 }
 .modal {
   display: none;
@@ -708,6 +714,8 @@ body {
   position: absolute;
   right: 30px;
   top: 30px;
+  width: 28px;
+  height: 28px;
   cursor: pointer;
 }
 /* FOR APPENDING ITEMS TO THE FORUM PAGE
