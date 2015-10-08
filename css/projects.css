@@ -444,8 +444,8 @@ main {
 .main_left ul li {
   float: left;
   width: 50%;
-  margin-bottom: 25px;
-  font-size: 14px;
+  margin-bottom: 13px;
+  font-size: 13px;
   font-family: "SerifRom";
   list-style-image: url('../img/bullet_point.svg') no-repeat left 10px;
 }
@@ -459,7 +459,16 @@ main {
   padding: 0;
   margin: 0;
 }
+svg {
+  width: 25px;
+  height: 25px;
+  fill: #ECEEEE;
+  margin-right: 8px;
+}
 /*=========================================
+
+
+
 
 Carrot Nav Menu*/
 .main_right .right_top_nav li {
@@ -485,41 +494,13 @@ Carrot Nav Menu*/
 }
 .main_right .right_top_nav li a {
   font-family: "UniveCon";
+  display: block;
 }
 /* Required for Down Triangle */
 .main_right .right_top_nav .active {
   color: #e67824;
   border: solid #e67824;
-  /*border-left:solid #e67824;
-    border-right:solid #e67824;
-    border-bottom:solid #e67824;*/
 }
-/*  .active:before, .active:after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-color: transparent;
-    border-bottom: 0;
-    
-  }
-
-.active:before {
-    bottom: -23px;
-    left: 124px;
-
-
-    border-top-color: #e67824;
-    border-width: 22px;
-  }
-
-  .active:after {
-    bottom: -19px;
-    left: 127px;
-    border-top-color: #CBCBCB;
-    border-width: 19px;
-  }*/
 #mainmenu_tab .active:before,
 #mainmenu_tab .active:after {
   content: "";
@@ -542,6 +523,13 @@ Carrot Nav Menu*/
   left: 127px;
   border-top-color: #CBCBCB;
   border-width: 19px;
+}
+#mainmenu_tab .active a {
+  color: #E67824;
+  display: block;
+}
+#mainmenu_tab .active svg {
+  fill: #E67824;
 }
 .gallery_nav {
   /* Styling block element, not required */
@@ -678,6 +666,7 @@ scrollbar*/
 .top_right_section time {
   padding-bottom: 5px;
   display: block;
+  font-family: "UniveCon";
 }
 .top_right_section p {
   margin-top: 0;
@@ -697,6 +686,7 @@ scrollbar*/
   padding: 2px;
   color: #3A3C3B;
   display: block;
+  line-height: 1.5;
 }
 .user_feedback span {
   display: block;
@@ -756,6 +746,9 @@ feedback navigation*/
   display: none;
   padding-left: 25px;
 }
+.content_feedback li h1 {
+  font-size: 18px;
+}
 .content_feedback div {
   /*    padding-left:5px;*/
 }
@@ -774,6 +767,7 @@ feedback navigation*/
   margin-right: 8px;
   margin-top: 0;
 }
+/*Footer*/
 footer {
   /* max-width: 1024px;*/
   width: 100%;
@@ -788,29 +782,31 @@ footer .bottom {
   text-decoration: none;
   color: #eceeee;
   background-color: #767676;
-  font-family: "UniveCon";
-  font-size: 13px;
-  height: 50px;
+  font-family: "SerifRom";
+  height: 68px;
 }
 footer p {
-  display: block;
+  margin-top: 23px;
+  display: inline-block;
   float: left;
+  font-size: 11px;
 }
-footer ul {
+footer div.bottom ul {
   float: right;
 }
-footer ul li {
+footer div.bottom ul li {
   display: inline-block;
   margin-right: 23px;
 }
-footer ul li:last-child {
+footer div.bottom ul li:last-child {
   margin-right: 0;
 }
-footer ul a {
-  font-family: "UniveCon";
+footer div.bottom ul a {
+  font-size: 11px;
+  font-family: "SerifRom";
   text-decoration: none;
   color: #eceeee;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .messages {
   display: none;
@@ -827,6 +823,7 @@ display:none;
 .close {
   width: 28px;
   height: 28px;
+  cursor: pointer;
 }
 .left {
   float: left;
@@ -863,6 +860,7 @@ display:none;
   position: absolute;
   top: 20px;
   right: 0;
+  cursor: pointer;
 }
 .aside_header_container {
   width: 90%;
@@ -1016,6 +1014,7 @@ figcaption p time {
 #next {
   top: 50%;
   right: 15%;
+  cursor: pointer;
   position: absolute;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
@@ -1025,6 +1024,7 @@ figcaption p time {
 #prev {
   top: 50%;
   left: 15%;
+  cursor: pointer;
   position: absolute;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
@@ -1185,6 +1185,7 @@ aside.overlay {
   background-color: #ECEEEE;
   display: inline-block;
   position: absolute;
+  cursor: pointer;
   right: 20px;
   top: 20px;
 }
@@ -1289,6 +1290,7 @@ form div.dz-message h2 {
   position: absolute;
   right: 20px;
   top: 20px;
+  cursor: pointer;
 }
 /*====================================================*/
 /*Drop Down Menu*/

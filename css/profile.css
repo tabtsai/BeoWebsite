@@ -538,14 +538,12 @@ main {
   color: #eceeee;
   text-decoration: none;
   font-family: "UniveCon";
+  display: block;
 }
 /* Required for Down Triangle */
 .main_right .right_top_nav .active {
   color: #e67824;
   border: solid #e67824;
-  /*border-left:solid #e67824;
-    border-right:solid #e67824;
-    border-bottom:solid #e67824;*/
 }
 #mainmenu_tab .active:before,
 #mainmenu_tab .active:after {
@@ -569,6 +567,17 @@ main {
   left: 79px;
   border-top-color: #CBCBCB;
   border-width: 19px;
+}
+#mainmenu_tab .active svg {
+  fill: #E67824;
+}
+#mainmenu_tab .active a {
+  color: #e67824;
+}
+svg {
+  width: 20px;
+  fill: #ECEEEE;
+  margin-right: 8px;
 }
 .in_progress_nav {
   /* Styling block element, not required */
@@ -613,13 +622,15 @@ main {
 /*.in_progress active 2*/
 .main_right .right_content nav .active {
   background-color: #e67824;
-  color: #eceeee;
 }
 .main_right .right_content nav .active div:after {
   background-color: #e67824;
 }
+.main_right .right_content nav .active div p {
+  color: #eceeee;
+}
 .right_content nav .courses_project_nav li div p {
-  margin-top: 5px;
+  margin-top: 7px;
 }
 .right_content .courses_project_nav {
   list-style: none;
@@ -639,6 +650,7 @@ main {
 }
 .right_content .courses_project_nav li a {
   text-decoration: none;
+  display: block;
 }
 .right_content .courses_project_nav li p {
   font-family: "UniveBla";
@@ -730,24 +742,19 @@ main {
   margin-bottom: 45px;
 }
 .bookmarks section h3 {
+  font-family: "UniveBla";
   color: #e67824;
+  font-size: 16px;
 }
-.test {
-  fill: #E67725;
+.bookmarks section {
+  position: relative;
 }
-/*The other nav*/
-/*.main_right .right_content .courses_project_nav {
-    width:220px;
-    height:35px;
-    margin:35px auto;
-    border:solid;
-    text-align: center;
-    padding:1px;
-        li {
-            float:left;
-            width:50%;
-        }
-}*/
+.bookmarks section a {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translate(0%, 200%);
+}
 .main_right .right_content .search {
   padding: 10px;
   background-color: #39a5e1;
@@ -768,33 +775,34 @@ footer .bottom {
   margin: 0 auto;
   /*width:80.762%;*/
   width: 827.0028px;
-  height: 68px;
   text-decoration: none;
   color: #eceeee;
   background-color: #767676;
-  font-family: "UniveCon";
-  font-size: 13px;
-  height: 50px;
+  font-family: "SerifRom";
+  height: 68px;
 }
 footer p {
-  display: block;
+  margin-top: 23px;
+  display: inline-block;
   float: left;
+  font-size: 11px;
 }
-footer ul {
+footer div.bottom ul {
   float: right;
 }
-footer ul li {
+footer div.bottom ul li {
   display: inline-block;
   margin-right: 23px;
 }
-footer ul li:last-child {
+footer div.bottom ul li:last-child {
   margin-right: 0;
 }
-footer ul a {
-  font-family: "UniveCon";
+footer div.bottom ul a {
+  font-size: 11px;
+  font-family: "SerifRom";
   text-decoration: none;
   color: #eceeee;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .in_progress,
 .bookmarks,

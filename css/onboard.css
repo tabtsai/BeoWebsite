@@ -385,7 +385,7 @@ header {
   float: right;
   height: 68px;
   color: #e77824;
-  padding-top: 32px;
+  padding-top: 28px;
   font-size: 14.23px;
   text-decoration: none;
   font-weight: bold;
@@ -515,6 +515,9 @@ header {
   width: 836.231px;
   padding: 80px 0 78.298px;
 }
+.about_beo h2 {
+  text-align: center;
+}
 .about_beo h3 {
   text-align: center;
   margin: 0;
@@ -603,7 +606,6 @@ header {
 .beekeeper_aside {
   background-color: #e67824;
   padding-bottom: 30px;
-  height: 690px;
 }
 .beekeeper_aside .container4 {
   width: 315px;
@@ -641,6 +643,7 @@ header {
   margin: 0 auto;
   /*padding-bottom:30px;*/
 }
+/*Footer*/
 footer {
   /* max-width: 1024px;*/
   width: 100%;
@@ -652,33 +655,34 @@ footer .bottom {
   /*width:80.762%;*/
   /*width:836.0028px;*/
   width: 836.231px;
-  height: 68px;
   text-decoration: none;
   color: #eceeee;
   background-color: #767676;
-  font-family: "UniveCon";
-  font-size: 13px;
-  height: 50px;
+  font-family: "SerifRom";
+  height: 68px;
 }
 footer p {
-  display: block;
+  margin-top: 23px;
+  display: inline-block;
   float: left;
+  font-size: 11px;
 }
-footer ul {
+footer div.bottom ul {
   float: right;
 }
-footer ul li {
+footer div.bottom ul li {
   display: inline-block;
   margin-right: 23px;
 }
-footer ul li:last-child {
+footer div.bottom ul li:last-child {
   margin-right: 0;
 }
-footer ul a {
-  font-family: "UniveCon";
+footer div.bottom ul a {
+  font-size: 11px;
+  font-family: "SerifRom";
   text-decoration: none;
   color: #eceeee;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 /***********Tab Modal Injected**********/
 .inputbox {
@@ -779,11 +783,11 @@ input[type="password"] {
   height: 65px;
 }
 .close {
-  background: white;
+  background: #ECEEEE;
   display: inline-block;
   position: absolute;
-  right: 15px;
-  top: 15px;
+  right: 30px;
+  top: 30px;
   width: 20px;
   height: 20px;
 }
