@@ -3,7 +3,7 @@
 Modal Show/Hide
 *************/
 
-$( "li[data-coursenumber='v1']" ).click(function() {
+$( "[data-coursenumber='v1']" ).click(function() {
   $('.overlay').show( "slow" );
 });
 

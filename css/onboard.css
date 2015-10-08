@@ -706,6 +706,7 @@ footer div.bottom ul a {
   padding-left: 50px;
 }
 input[type="email"] {
+  padding-left: 50px;
   border-radius: 10px;
   background: #eceeee;
   border: #bdbcbc solid 1px;
@@ -713,12 +714,12 @@ input[type="email"] {
   width: 320px;
   height: 40px;
   margin: 10px auto;
-  padding-left: 50px;
   background: url(../img/email_icon.svg) no-repeat left;
   background-size: 25.7px 17.1px;
   background-position: 16px;
 }
 input[type="password"] {
+  padding-left: 50px;
   border-radius: 10px;
   background: #eceeee;
   border: #bdbcbc solid 1px;
@@ -726,7 +727,6 @@ input[type="password"] {
   width: 320px;
   height: 40px;
   margin: 10px auto;
-  padding-left: 50px;
   background: url(../img/password_icon.svg) no-repeat left;
   background-size: 18.425px 21.467px;
   background-position: 16px;
@@ -801,6 +801,214 @@ input[type="password"] {
   width: 20px;
   height: 20px;
   cursor: pointer;
+}
+/* Course Preview Modal*/
+#project_modal {
+  cursor: pointer;
+}
+.wrap .slide .top_bee {
+  text-transform: uppercase;
+  color: #8BC53F;
+  font-size: 12px;
+  padding-top: 15px;
+}
+.wrap .slide img {
+  width: 20px;
+  height: 20px;
+}
+.wrap .slide h2 {
+  font-family: "UniveBla";
+  font-size: 27px;
+  margin-bottom: 5px;
+}
+.wrap .slide h3 {
+  font-family: "UniveCond";
+  font-size: 18px;
+  margin: 0;
+}
+.aside_container {
+  padding: 0;
+  width: 600px;
+}
+.left_side {
+  float: left;
+  width: 60%;
+}
+.left_side p {
+  font-size: 12px;
+}
+.right_side {
+  float: right;
+  width: 40%;
+}
+.right_side h4 {
+  padding-left: 50px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+.right_side ul {
+  margin-top: 0;
+  margin-bottom: 60px;
+  padding-left: 50px;
+}
+.right_side li {
+  list-style-type: disc;
+  font-family: "SerifRom";
+  font-size: 12px;
+}
+.right_side .button {
+  padding: 17px 45px;
+  background-color: #3AA4E0;
+  color: #fff;
+  border-radius: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/*
+.button {
+  padding: 20px 40px;
+  background: orange;
+  border-radius: 20px;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 25px;
+  text-decoration: none;
+  cursor: pointer;
+}*/
+.buttonnav {
+  /*  background: #999;
+  position: absolute;
+  display: block;
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;*/
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 70px;
+  cursor: pointer;
+}
+#next {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+#prev {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+/*.wrap h2 {
+  font-family: sans-serif;
+  font-size: 30px;
+  color: #E67824;
+  text-transform: uppercase;
+}*/
+.inputbox {
+  border-radius: 10px;
+  background: #eceeee;
+  border: #bdbcbc solid 1px;
+  display: block;
+  width: 320px;
+  height: 40px;
+  margin: 10px auto;
+}
+/*.wrap p {
+  font-size: 12px;
+  margin-bottom: 20px;
+}*/
+.wrap {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  width: 900px ;
+  z-index: 999;
+}
+aside.overlay {
+  display: none;
+  background: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 950;
+}
+.slide-container {
+  position: relative;
+  border-radius: 30px;
+  background: #eceeee;
+  text-align: left;
+  min-height: 780px;
+  min-width: 670px;
+  width: 50%;
+  z-index: 100;
+  padding: ;
+  margin: 0 auto;
+  top: 30px;
+}
+.close {
+  background-color: #ECEEEE;
+  display: inline-block;
+  position: absolute;
+  cursor: pointer;
+  right: 20px;
+  top: 20px;
+  width: 28px;
+  height: 28px;
+}
+/*.wrap ul {
+  list-style: none;
+}*/
+.slideshow {
+  position: relative;
+}
+.slideshow > li.slide {
+  display: none;
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.3s ease-out;
+}
+/*.wrap h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}*/
+.slideshow > li.activeslide {
+  display: block;
+}
+#end-poster {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  background: white;
+  color: black;
+  border: black solid 1px;
+  height: 300px;
+  width: 600px;
+  text-align: center;
+  z-index: 199;
+}
+.videowrap {
+  position: relative;
+  margin: 35px auto 0;
+  z-index: 100;
 }
 /* ==========================================================================
    Helper classes

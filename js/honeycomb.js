@@ -34,7 +34,12 @@ jQuery(document).ready(function($){
 	    callbacks: {
 	    	onMixStart:function(){
 	    		$('li.mix').css('opacity', 0);
+	    		$('.cd-fail-message').fadeOut(200);
 	    	},
+	    	onMixFail: function(){
+	     		$('.cd-fail-message').fadeIn(200);
+	    	 },
+
 
 	    	onMixEnd: function(){
 			// $(this).mixItUp('setOptions', {
@@ -69,7 +74,7 @@ jQuery(document).ready(function($){
 		    // ,
 
 	    	// onMixStart: function(){
-	    	// 	$('.cd-fail-message').fadeOut(200);
+	    	// 
 
 	    	// },
 	     //  	onMixFail: function(){
