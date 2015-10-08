@@ -731,7 +731,7 @@ feedback navigation*/
   background: #fff;
   border-left: 6px solid #eceeee;
   border-top: 6px solid #eceeee;
-  -moz-transform: rotate(-135deg);
+  -moz-transform: rotate(-225deg);
   -webkit-transform: rotate(135deg);
 }
 #vertical_nav .active {
@@ -1174,6 +1174,9 @@ aside.overlay {
   width: 70px;
   height: 70px;
 }
+.other_user_profile ul li p {
+  font-size: 9px;
+}
 .user_profile .honeycomb_progress {
   width: 70%;
   margin: 0 auto;
@@ -1193,6 +1196,18 @@ aside.overlay {
 .user_profile .honeycomb_progress img {
   width: 152.181px;
   height: 114.136px;
+}
+#green {
+  color: #8BC53F;
+}
+#orange {
+  color: #E67824;
+}
+#blue {
+  color: #39A5E1;
+}
+#yellow {
+  color: #EAB81D;
 }
 .user_profile .close {
   background-color: #ECEEEE;
