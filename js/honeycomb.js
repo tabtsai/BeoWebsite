@@ -37,14 +37,14 @@ jQuery(document).ready(function($){
 	    	},
 
 	    	onMixEnd: function(){
-			$(this).mixItUp('setOptions', {
-				animation: {
-				enable: true,
-				duration: 200,
-				effects: 'stagger(34ms) scale(3.00) translateZ(960px) fade',
-				easing: 'cubic-bezier(0.47, 0, 0.745, 0.715)'	
-				}
-			});	
+			// $(this).mixItUp('setOptions', {
+			// 	animation: {
+			// 	enable: true,
+			// 	duration: 200,
+			// 	effects: 'stagger(34ms) scale(3.00) translateZ(960px) fade',
+			// 	easing: 'cubic-bezier(0.47, 0, 0.745, 0.715)'	
+			// 	}
+			// });	
 
 			$('ul li.mix').removeClass('top-position1 top-position2 position3 position4');
 			
