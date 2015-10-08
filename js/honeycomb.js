@@ -29,17 +29,21 @@ jQuery(document).ready(function($){
 		display: 'block'
 		},
 		animation: {
-		enable: false		
+		enable: false	
 		},
 	    callbacks: {
+	    	onMixStart:function(){
+	    		$('li.mix').css('opacity', 0);
+	    	},
 
 	    	onMixEnd: function(){
 			$(this).mixItUp('setOptions', {
 				animation: {
-				enable: false,
-				duration: 500,
-				effects: 'fade'	
-				},
+				enable: true,
+				duration: 200,
+				effects: 'stagger(34ms) scale(3.00) translateZ(960px) fade',
+				easing: 'cubic-bezier(0.47, 0, 0.745, 0.715)'	
+				}
 			});	
 
 			$('ul li.mix').removeClass('top-position1 top-position2 position3 position4');
@@ -57,6 +61,7 @@ jQuery(document).ready(function($){
 				$filteredItems.eq(i).addClass('position4');
 			}
 
+			$filteredItems.css('opacity', 1);
 			console.log($filteredItems);
 
 		    }
@@ -150,10 +155,14 @@ var buttonFilter = {
     	var self = this;
 
     	self.$filters.on('click', 'a', function(e){
-	      	self.parseFilters();
+	      	//$('ul li.mix').css('opacity', 0);
+	      	self.parseFilters()
+	      	//$('ul li.mix').css('opacity', 1);
     	});
 	    self.$filters.on('change', function(){
-	      self.parseFilters();           
+	    	//$('ul li.mix').css('opacity', 0);
+	     	self.parseFilters()
+	     	//$('ul li.mix').css('opacity', 1);
 	    });
   	},
   
