@@ -190,7 +190,7 @@ header {
             float:right;
             height:68px;
             color:#e77824;
-            padding-top:32px; 
+            padding-top:28px; 
             font-size:14.23px;
             text-decoration: none;
             font-weight: bold;
@@ -330,11 +330,15 @@ header {
         /*width:80.762%;*/
         width:836.231px;
         padding:80px 0 78.298px;
+        h2 {
+          text-align:center;
+        }
         h3 {
             text-align: center;
             margin:0;
             text-transform: uppercase;
             padding-top:20px;
+
         }
         .answer {
             .container2;  
@@ -416,7 +420,7 @@ header {
 .beekeeper_aside {
     background-color: #e67824;
     padding-bottom:30px;
-    height:690px;
+   
         .container4{
             width:315px;
             margin:0 auto;
@@ -449,6 +453,7 @@ header {
         }
 }
 
+/*Footer*/
 footer {
     
    /* max-width: 1024px;*/
@@ -462,18 +467,21 @@ footer .bottom {
     text-decoration: none;
     color:#eceeee;
     background-color:#767676;
-    font-family:"UniveCon";
-    font-size:13px;
-    height:50px; 
+    font-family:"SerifRom";
+    height:68px; 
+  
 
 }
 
 footer p {
-    display:block;
-    float:left;
+    margin-top:23px;
+    display:inline-block;
+    float:left; 
+    font-size:11px;
+   
 }
 
-footer ul {
+footer div.bottom ul {
     float:right;
         li {
             display:inline-block;
@@ -482,13 +490,15 @@ footer ul {
                 margin-right:0;
               }
         }
-        a{
-             font-family:"UniveCon";
+        a{  font-size:11px;
+              font-family:"SerifRom";
              text-decoration: none;
              color:#eceeee;
-             text-transform: uppercase;
+             text-transform:capitalize;
         }
 }
+
+
 
 /***********Tab Modal Injected**********/
 
@@ -586,11 +596,11 @@ input[type="password"] {
   }
 
 .close{
-  background:white;
+  background:#ECEEEE;
   display: inline-block;
   position: absolute;
-  right:15px;
-  top:15px;
+  right:30px;
+  top:30px;
   width:20px;
   height:20px;
 }
