@@ -568,8 +568,15 @@ main {
   border-top-color: #CBCBCB;
   border-width: 19px;
 }
+#mainmenu_tab .active svg {
+  fill: #E67824;
+}
 #mainmenu_tab .active a {
   color: #e67824;
+}
+svg {
+  width: 20px;
+  fill: #ECEEEE;
 }
 .in_progress_nav {
   /* Styling block element, not required */
@@ -746,9 +753,6 @@ main {
   left: 0;
   bottom: 0;
   transform: translate(0%, 200%);
-}
-.test {
-  fill: #E67725;
 }
 /*The other nav*/
 /*.main_right .right_content .courses_project_nav {

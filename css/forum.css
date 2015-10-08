@@ -458,7 +458,7 @@ div {
 }
 input[type="text"] {
   width: 328.81px;
-  height: 44px;
+  height: 43px;
   border: solid #fff;
   padding-left: 40px;
   margin-left: 13px;
@@ -695,7 +695,7 @@ body {
   height: 400px;
   width: 630px ;
   z-index: 100;
-  top: 50%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
