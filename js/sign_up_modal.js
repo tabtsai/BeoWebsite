@@ -36,12 +36,16 @@ $(document).keyup(function(e) {
 //   duration: 1000
   
 // })
+// $('#bigBee').velocity({ opacity: 1 },{
+// 	duration: 1000
+ 
+// // });
 
-// $('#bigBee').velocity({ translateY: 125 }, {
+// $('#bigBee').velocity({ translateY: 500 }, {
 
 //   duration: 5000,
-//   easing: [ 100, 8 ]
-// })
+//   easing: [ 100, 8]
+// });
 
 
  // .delay(750)
