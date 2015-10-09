@@ -46,15 +46,15 @@ $('.buttonsubmit').click(function(){
                     '</div>' +
                 '</article>'
 
-	)
-
-	
-
-
-	var tag = $( "#tag option:selected").val();
-	$newTag.text(tag).appendTo($newQuestion);
+	);
 
 	$('.modal').hide( "slow" );
+
+
+	// var tag = $( "#tag option:selected").val();
+	// $newTag.text(tag).appendTo($newQuestion);
+
+
 
 });
  
