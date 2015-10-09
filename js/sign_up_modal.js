@@ -12,3 +12,30 @@ $(document).keyup(function(e) {
 
     }
 });
+// setInterval(function() {
+// $('#bigBee').velocity("callout.bounce")}, 2000);
+
+// $('#bigBee').velocity(
+//   { top: -100 }, 
+//   { loop: 5 }
+// );
+
+
+// /* Create an array of animations */
+// var mySequence = [
+//   { elements: $('#bigBee'), properties: { translateX: 50 }, options: { duration: 1000 } },
+//   { elements: $('#bigBee'), properties: { translateX: -20}, options: { duration: 1000 } },
+//   { elements: $('#bigBee'), properties: { translateY: 50}, options: { duration: 1000 } }
+
+// ];
+
+// /* Run the sequence */
+// $.Velocity.RunSequence(mySequence);
+
+$('#bigBee').velocity({ translateY: 125 }, {
+
+  duration: 4000,
+  easing: [ 300, 8 ]
+})
+ // .delay(750)
+ //      .velocity({ opacity: 0 }, 750);
