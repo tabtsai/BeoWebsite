@@ -415,6 +415,8 @@ header {
   padding-bottom: 32.913px;
 }
 .welcome img {
+  position: relative;
+  top: -125px;
   width: 342px;
   height: 165px;
 }

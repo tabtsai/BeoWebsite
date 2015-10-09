@@ -34,8 +34,9 @@ $(document).keyup(function(e) {
 
 $('#bigBee').velocity({ translateY: 125 }, {
 
-  duration: 4000,
-  easing: [ 300, 8 ]
+  duration: 5000,
+  easing: [ 700, 8 ],
+  opacity
 })
  // .delay(750)
  //      .velocity({ opacity: 0 }, 750);
