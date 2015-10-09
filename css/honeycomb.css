@@ -607,7 +607,7 @@ div {
   height: 62px;
 }
 input[type="text"] {
-  width: 198px;
+  width: 190px;
   height: 36px;
   border: solid #fff;
   padding-left: 40px;
@@ -622,7 +622,7 @@ input[type="text"] {
   display: block;
   position: absolute;
   top: 2px;
-  left: 198px;
+  left: 190px;
   width: 26px;
   height: 26px;
   background: #EDEFEE;
