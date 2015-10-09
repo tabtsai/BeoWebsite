@@ -867,6 +867,7 @@ footer div.bottom ul a {
 }
 .left_side p {
   font-size: 12px;
+  line-height: 1.5;
 }
 .right_side {
   float: right;
@@ -888,12 +889,14 @@ footer div.bottom ul a {
   font-size: 12px;
 }
 .right_side .button {
-  padding: 17px 45px;
+  padding: 17px 20px;
   background-color: #3AA4E0;
   color: #fff;
   border-radius: 40px;
   text-decoration: none;
   text-transform: uppercase;
+  position: absolute;
+  right: -30px;
 }
 /*
 .button {
