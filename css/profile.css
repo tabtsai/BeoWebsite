@@ -583,6 +583,7 @@ main {
 }
 #mainmenu_tab .active a {
   color: #e67824;
+  transition: all 0.3s linear;
 }
 svg {
   width: 19px;
@@ -638,6 +639,7 @@ svg {
 }
 .main_right .right_content nav .active div p {
   color: #eceeee;
+  transition: all 0.1s ease-in;
 }
 .right_content nav .courses_project_nav li div p {
   margin-top: 7px;
@@ -817,7 +819,8 @@ footer div.bottom ul a {
   color: #eceeee;
   text-transform: capitalize;
 }
-.in_progress,
+/*.in_progress*/
+.progress_projects,
 .bookmarks,
 .completed_projects,
 .completed {
