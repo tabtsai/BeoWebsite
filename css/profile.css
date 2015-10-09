@@ -526,7 +526,7 @@ main {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  /* cursor:pointer;*/
+  cursor: pointer;
   color: #E9EBEA;
   font-size: 16px;
   padding: 9.5px;
@@ -786,22 +786,25 @@ footer {
   width: 100%;
   margin: 0 auto;
   background-color: #767676;
+  position: absolute;
+  bottom: 0;
 }
 footer .bottom {
   margin: 0 auto;
   /*width:80.762%;*/
   width: 827.0028px;
+  height: 68px;
   text-decoration: none;
   color: #eceeee;
   background-color: #767676;
   font-family: "SerifRom";
-  height: 68px;
+  height: 55px;
 }
 footer p {
   margin-top: 23px;
   display: inline-block;
   float: left;
-  font-size: 11px;
+  font-size: 12px;
 }
 footer div.bottom ul {
   float: right;
@@ -814,7 +817,7 @@ footer div.bottom ul li:last-child {
   margin-right: 0;
 }
 footer div.bottom ul a {
-  font-size: 11px;
+  font-size: 12px;
   font-family: "SerifRom";
   text-decoration: none;
   color: #eceeee;
