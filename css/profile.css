@@ -764,6 +764,9 @@ svg {
   left: 0;
   bottom: 0;
   transform: translate(0%, 200%);
+  -webkit-transform: translate(0%, 200%);
+  -moz-transform: translate(0%, 200%);
+  -o-transform: translate(0%, 200%);
 }
 .main_right .right_content .search {
   padding: 10px;

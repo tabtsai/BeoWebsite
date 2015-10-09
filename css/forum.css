@@ -488,6 +488,8 @@ input[type="text"] {
   border-left: 6px solid #eceeee;
   border-top: 6px solid #eceeee;
   transform: rotate(135deg);
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(135deg);
 }
 /*   left:50%;*/
 .left {

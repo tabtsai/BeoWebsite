@@ -484,6 +484,9 @@ main h3 {
   width: 16px;
   height: 23px;
   transform: translate(-105%, 75%);
+  -webkit-transform: translate(-105%, 75%);
+  -moz-transform: translate(-105%, 75%);
+  -o-transform: translate(-105%, 75%);
 }
 hr {
   width: 209px;
@@ -595,6 +598,9 @@ hr {
   top: 50%;
   left: -50%;
   transform: translate(25%, -50%);
+  -webkit-transform: translate(25%, -50%);
+  -moz-transform: translate(25%, -50%);
+  -o-transform: translate(25%, -50%);
 }
 .yellow {
   background-color: #ecba1d;
