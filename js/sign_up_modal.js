@@ -31,12 +31,18 @@ $(document).keyup(function(e) {
 
 // /* Run the sequence */
 // $.Velocity.RunSequence(mySequence);
+// $('#bigBee').velocity({ opacity: 1}, {
 
-$('#bigBee').velocity({ translateY: 125 }, {
+//   duration: 1000
+  
+// })
 
-  duration: 5000,
-  easing: [ 700, 8 ],
-  opacity
-})
+// $('#bigBee').velocity({ translateY: 125 }, {
+
+//   duration: 5000,
+//   easing: [ 100, 8 ]
+// })
+
+
  // .delay(750)
  //      .velocity({ opacity: 0 }, 750);
