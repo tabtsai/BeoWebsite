@@ -549,6 +549,9 @@ article img {
   width: 47.66px;
   height: 47.66px;
 }
+#addArticle {
+  display: none;
+}
 /*This holds the figure and forum top*/
 .left_container {
   float: left;
