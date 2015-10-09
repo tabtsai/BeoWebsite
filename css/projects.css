@@ -537,9 +537,11 @@ Carrot Nav Menu*/
 #mainmenu_tab .active a {
   color: #E67824;
   display: block;
+  transition: all 0.3s ease-in;
 }
 #mainmenu_tab .active svg {
   fill: #E67824;
+  transition: all 0.3s ease-in;
 }
 .gallery_nav {
   /* Styling block element, not required */

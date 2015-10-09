@@ -580,6 +580,7 @@ main {
 }
 #mainmenu_tab .active svg {
   fill: #E67824;
+  transition: all 0.3s ease-in;
 }
 #mainmenu_tab .active a {
   color: #e67824;
