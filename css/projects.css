@@ -1306,11 +1306,12 @@ form div.dz-message h2 {
   border-radius: 30px;
   background-color: #39a5e1;
   color: #fff;
-  padding: 15px 16px;
+  padding: 24px 16px;
   text-transform: uppercase;
   border: none;
   font-family: "UniveBla";
   font-size: 14px;
+  line-height: 0;
 }
 .upload_project h2 {
   text-align: left;
