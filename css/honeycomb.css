@@ -836,7 +836,7 @@ footer div.bottom ul a {
   text-transform: uppercase;
   color: #8BC53F;
   font-size: 12px;
-  padding-top: 15px;
+  padding-top: 45px;
 }
 .wrap .slide img {
   width: 20px;
@@ -959,7 +959,7 @@ footer div.bottom ul a {
 }*/
 .wrap {
   position: fixed;
-  top: 50%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -989,7 +989,7 @@ aside.overlay {
   z-index: 100;
   padding: ;
   margin: 0 auto;
-  top: 30px;
+  top: 10px;
 }
 .close {
   background-color: #ECEEEE;
