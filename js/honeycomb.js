@@ -46,7 +46,7 @@ jQuery(document).ready(function($){
 			$(this).mixItUp('setOptions', {
 				animation: {
 				enable: true,
-				duration: 400,
+				duration: 200,
 				effects: 'stagger(34ms) scale(3.00) translateZ(960px) fade',
 				easing: 'cubic-bezier(0.47, 0, 0.745, 0.715)'	
 				}
